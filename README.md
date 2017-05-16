@@ -5,7 +5,9 @@ This is the documentation for [Eiskis/vue-webpack](https://github.com/Eiskis/vue
 
 **Note**: This is **not** an official Vue project.
 
+## Table of contents
 
+{% include "./SUMMARY.md" %}
 
 ## About these docs
 
