@@ -5,6 +5,12 @@ This is the documentation for [Eiskis/vue-webpack](https://github.com/Eiskis/vue
 
 **Note**: This is **not** an official Vue project.
 
+## Requirements
+
+Node. The preferred version of Node is configured in `.nvmrc`, so it's a good idea to use [nvm](https://github.com/creationix/nvm) and `nvm use`.
+
+For more info, see the [README in the actual project](https://github.com/Eiskis/vue-webpack).
+
 ## Table of contents
 
 {% include "./SUMMARY.md" %}
