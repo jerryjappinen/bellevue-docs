@@ -1,11 +1,19 @@
 
 - [Intro](README.md)
 - Overview
+	- [Stack](overview/stack.md)
 	- [Project structure](overview/project-structure.md)
 	- [Known issues](overview/known-issues.md)
 	- [To do](overview/todo.md)
+- Coding conventions
+	- [JS](conventions/js.md)
+	- [CSS and SCSS](conventions/css.md)
+	- [HTML](conventions/html.md)
+	- [Vue components](conventions/vue-components.md)
+	- [Vue models](conventions/vue-models.md)
 - Pipeline
 	- [Linting](pipeline/linting.md)
 	- [URL resolution and aliases](pipeline/urls.md)
 - How-tos
+	- [Creating a new component](howto/components.md)
 	- [Creating new pages and routes](howto/routes.md)
