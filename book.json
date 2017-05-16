@@ -8,11 +8,11 @@
 	],
 	"pluginsConfig": {
 		"edit-link": {
-			"base": "https://github.com/vuejs/vue-ssr-docs/edit/master/",
+			"base": "https://github.com/Eiskis/vue-webpack-docs/edit/master/",
 			"label": "Edit This Page"
 		},
 		"github": {
-			"url": "https://github.com/vuejs/vue-ssr-docs/"
+			"url": "https://github.com/Eiskis/vue-webpack-docs/"
 		}
 	},
 	"links": {
