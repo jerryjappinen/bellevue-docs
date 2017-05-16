@@ -1,0 +1,26 @@
+{
+  "name": "vue-webpack-docs",
+  "version": "0.0.1",
+  "description": "This repo houses the documentation for my Eiskis/vue-webpack.",
+  "private": true,
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eiskis/vue-webpack-docs.git"
+  },
+  "author": "Jerry Jäppinen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eiskis/vue-webpack-docs/issues"
+  },
+  "homepage": "https://github.com/Eiskis/vue-webpack-docs",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-github": "^3.0.0",
+    "gitbook-plugin-theme-vuejs": "pearofducks/gitbook-plugin-theme-vuejs"
+  }
+}
