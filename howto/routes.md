@@ -1,7 +1,9 @@
 
 # Creating new pages and routes
 
-We use [`vue-router`](https://router.vuejs.org/en/) to handle the routing, so take a look at the docs if you're not familiar with the configuration format.
+We use `vue-router` to handle the routing, so take a look at the docs if you're not familiar with the configuration format.
+
+- Official docs: [router.vuejs.org](https://router.vuejs.org/en/)
 
 ## Creating pages
 
