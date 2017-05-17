@@ -14,6 +14,7 @@
 - Pipeline
 	- [Linting](pipeline/linting.md)
 	- [URL resolution and aliases](pipeline/urls.md)
+	- [Webpack](pipeline/webpack.md)
 - How-tos
 	- [Creating a new component](howto/components.md)
 	- [Creating new pages and routes](howto/routes.md)
