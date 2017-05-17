@@ -18,3 +18,4 @@
 - How-tos
 	- [Creating a new component](howto/components.md)
 	- [Creating new pages and routes](howto/routes.md)
+	- [Creating transitions and animations](howto/transitions.md)
