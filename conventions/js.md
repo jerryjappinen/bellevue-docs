@@ -1,14 +1,16 @@
 
 # JavaScript coding conventions
 
-We have predefined the confing style as much
+We have predefined the coding style as much as possible with eslint. The rules are configured in `src/.eslintrc.js`.
 
 ## TL;DR
 
 - Use tabs
 - Use semicolons
-- Avoid arrow functions
-- Write consistent code that doesn't spare `:` and `=`
+- Use single quotes
+- Declare vars one by one in the lowest scope as you use them, not in a batch
+- Avoid arrow notation, just say `function`
+- Write consistent code with `:` and `=`
 - Use `import` rather than `require`
 - Use `export` rather than `module.exports`
 
@@ -24,9 +26,10 @@ When cleaning up these dependencies, nothing will fail when you forget to remove
 
 ### Destructuring assignments in ES6
 
-Although it is sometimes convenient, destructuring assigments are discouraged.
+Although it is sometimes convenient, destructuring assigments are discouraged. It's better to try to write code that is consistent to all other types of assigments.
 
 ```js
+// Given the following
 var a = {
 	foo: 123,
 	bar: 'Some string'
@@ -38,7 +41,7 @@ var someVar = a.foo;
 // Don't do this
 { foo: someVar } = a;
 
-// The same rules disallow this
+// The same eslint rule disallows this
 var b = {
 	a,
 	...
