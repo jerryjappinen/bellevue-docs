@@ -15,6 +15,7 @@
 	- With app icon builds: startup around 30 s
 	- Without: still around 10 s
 	- Compiling all SCSS is probably slow as well
+	- Recompiling after saving changes to a file generally around 750-1500 ms
 
 ## Client-side features
 
