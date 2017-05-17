@@ -1,5 +1,5 @@
 
-# Creating a new component
+# View components
 
 ```
 src/
@@ -12,15 +12,28 @@ src/
 
 Components are **reusable** and **nestable** UI snippets that encapsulate view logic in one... component. In Vue, a component is authored as one HTML-like file with three elements: `template`, `script` and `style`. Vue's view components closely follow web standards and are built on HTML, JS and CSS respectively.
 
-## Component lifecycle
+![Vue component lifecycle](https://vuejs.org/images/lifecycle.png)
 
-![Vue vomponent lifecycle](https://vuejs.org/images/lifecycle.png)
+## Best practices
 
-## Templating
+- Keep components small. If a component bloats, split it. It's better to have many small components than small number of bloated ones.
+- Create dedicated components for pages which users navigate to. These page components should not do a lot more than define meta information and include other components and `<route-views>`.
 
-- Always have one parent element in your component
+### View model
 
-## Styles
+- View models should **not** include any business logic code.
+	- Feel free to `import` [models](models.md) and vendor libraries as needed.
+- Recurring view model code can be reused:
+	- You can write custom plugins and directives for Vue.
+	- Plugins and directives are also not for business logic though.
+
+### Templating
+
+- Always have one parent element in your component.
+- Always use the `:` and `@` shorthands with bindings.
+- Avoid adding a lot of JS expressions in the template. Add a computed property in the view model instead.
+
+### Styles
 
 You can and should use SASS in component styles. You can `@import` the shared styles to use shared mixins and other tools.
 

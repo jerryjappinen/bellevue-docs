@@ -1,7 +1,12 @@
 
 # JavaScript coding conventions
 
-We have predefined the coding style as much as possible with eslint. The rules are configured in `src/.eslintrc.js`.
+The coding style of the application code is defined as closely as possible with ESLint. The rules are configured and annotated in:
+
+```
+src/
+  |__ .eslintrc.js
+```
 
 ## TL;DR
 

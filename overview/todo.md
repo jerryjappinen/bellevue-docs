@@ -9,6 +9,13 @@
 	- https://github.com/vuejs/awesome-vue#validation
 - Integrate localisation
 	- https://github.com/vuejs/awesome-vue#i18n
+- VS Code IntelliSense
+	- Is there something we can do to improve the support?
+- TypeScript support
+	- Integrate `.ts` support into pipeline
+	- Integrate `.ts` support in Vue components
+	- Convert existing code into TS
+	- Provide type hints etc.
 - Services/plugins/global state modules
 	- Feature detection (Wrap Modernizr?)
 	- Some kind of date/time service with current time

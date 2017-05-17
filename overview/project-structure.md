@@ -7,26 +7,26 @@
 
 ```
 src/
-  |__ app-icon/
-  |__ assets/
-  |__ fonts/
-  |__ styles/
-  |__ svg/
-  |__ vendor/
-  |__ vue-components/
-  |__ vue-directives/
-  |__ vue-plugins/
-  |__ vuex-store/
+  |_ app-icon/
+  |_ assets/
+  |_ fonts/
+  |_ styles/
+  |_ svg/
+  |_ vendor/
+  |_ vue-components/
+  |_ vue-directives/
+  |_ vue-plugins/
+  |_ vuex-store/
 
 static/
 
 test/
-  |__ e2e/
-  |__ unit/
-    |__ specs/
-      |__ components/
-      |__ models/
-      |__ store/
+  |_ e2e/
+  |_ unit/
+    |_ specs/
+      |_ components/
+      |_ models/
+      |_ store/
 
 ```
 
