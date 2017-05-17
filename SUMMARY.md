@@ -19,3 +19,4 @@
 	- [Creating a new component](howto/components.md)
 	- [Creating new pages and routes](howto/routes.md)
 	- [Creating transitions and animations](howto/transitions.md)
+	- [Setting page meta information](howto/transitions.md)
