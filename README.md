@@ -1,13 +1,11 @@
 
 # Vue Webpack
 
-- This is the documentation for [Eiskis/vue-webpack](https://github.com/Eiskis/vue-webpack).
-- It's an advanced, opinionated Vue/Webpack project template for complex projects.
-- It's **not** an official Vue project.
+This is the documentation for [Eiskis/vue-webpack](https://github.com/Eiskis/vue-webpack). It's an advanced, opinionated Vue/Webpack project template for complex projects. It's **not** an official Vue project.
 - It's based on the official template.
 	- [Source for `vuejs-templates/webpack`](https://github.com/vuejs-templates/webpack)
 	- [Docs for `vuejs-templates/webpack`](http://vuejs-templates.github.io/webpack/)
-	- [Docs for vue-loader](http://vuejs.github.io/vue-loader)
+	- [Docs for vue-loader](http://vuejs.github.io/vue-loader/en/)
 - Setup instructions: [project README](https://github.com/Eiskis/vue-webpack).
 
 ## Table of contents

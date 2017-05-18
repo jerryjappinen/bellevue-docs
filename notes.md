@@ -103,7 +103,7 @@
 	- Optimization and cleanup with SVGO
 	- Sprites usable with URL resolving
 	- Dedicated component
-- `[vuex](http://vuex.vuejs.org/en/intro.html)` for state management
+- [Vuex](http://vuex.vuejs.org/en/intro.html) for state management
 	- Trivial counter app example: [jsfiddle.net/n9jmu5v7/341](https://jsfiddle.net/n9jmu5v7/341/)
 	- More complex example: https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart
 - `browserslist` in package.json
@@ -250,7 +250,11 @@ Did not test E2E, needs a JDK installed in order to be run from the command line
 		- Example 1: https://github.com/iFgR/vue-shortkey/blob/master/src/index.js
 		- Example 2: https://github.com/scaccogatto/vue-throttle-event/blob/master/src/index.js
 - How does API communication and resource loading work?
-	- Should we use `[vue-resource](https://github.com/pagekit/vue-resource)`
+	- Should we use [vue-resource](https://github.com/pagekit/vue-resource)?
+	- HTTP is not a problem
+	- Writing models is not a problem
+	- Should we use a more high-level REST library?
+	- Should there be a tighter coupling or a wrapper API library we write for out API?
 - How and where do we build for production?
 	- Local building works fine but production builds should be done via CI
 	- Do we need to test production builds separately? They can look quite different from dev builds (no hot reload module swapping, minified single-file code etc.)
