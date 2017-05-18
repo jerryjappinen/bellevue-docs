@@ -22,7 +22,7 @@
 	- [Styles processing](pipeline/styles.md)
 	- [App icon generation](pipeline/app-icons.md)
 	- [SVG compilation](pipeline/svg-compilation.md)
-	- [URL resolution and aliases](pipeline/urls.md)
+	- [URL resolving and aliases](pipeline/urls.md)
 - Client app architecture
 	- [Assets](app/assets.md)
 	- [Web fonts](app/webfonts.md)
