@@ -26,5 +26,7 @@
 ## Development and IDE support
 
 - `.ejs` files are not currently linted. We only have one such file and it very rarely changes though.
+- Visual Studio Code does not seem to support intellisense for JavaScript embedded in HTML, and by extension `.vue` files.
+	- Seriously what?
 - The Stylelint extension for Visual Studio Code only lints `.css` and `.scss` files
 	- Linting via command line or webpack still works as expected even in `.vue` and `.html` files

@@ -1,7 +1,7 @@
 
 # Dependency management
 
-All the dependencies of both the pipeline and the application code are managed by node and Webpack. Dependency management can handle modules (`module.exports = {}` and `require()`) or ES6 `import`/`export`.
+All the dependencies of both the pipeline and the application code are managed by node and Webpack. Dependency management can handle modules (`module.exports = {}` and `require()`) or ES6 `import`/`export`. See more information in the [Webpack docs](https://webpack.js.org/concepts/modules/#what-is-a-webpack-module) or a three-paragraph tutorial into module bundling in the [Vue guide](https://vuejs.org/v2/guide/single-file-components.html#For-Users-New-to-Module-Build-Systems-in-JavaScript).
 
 Internal or external Dependencies declared in any `.vue`, `.scss` or `.js` file will be resolved by Webpack and node.
 

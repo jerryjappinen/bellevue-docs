@@ -128,12 +128,8 @@
 
 ## Missing features
 
-- Better `README`
-	- How to use pipeline, how to code, how the pipeline works, how to adjust local variables etc.
-
 ### Missing client-side
 
-- Route-specific meta information (changing favicon, page title etc.)
 - Offline handling
 	- Requires some manifest files etc. plus UI work
 - Input validation
@@ -151,16 +147,14 @@
 	- https://vuejs.org/v2/guide/plugins.html
 - Localisation
 	- https://github.com/vuejs/awesome-vue#i18n
-- Authentication
-	- https://github.com/vuejs/awesome-vue#authenticationauthorization
 - Persistent state
 	- Can be trivial, just save and load Vuex state to local storage
+- Authentication
+	- https://github.com/vuejs/awesome-vue#authenticationauthorization
 - Splitting global state management
 	- Vuex supports modules
 	- Multiple stores?
 	- What are the best practices for this? Need to look at a real application
-- Do we need more PostCSS functionality?
-	- http://postcss.parts/
 
 ### Problems/missing in pipeline
 
@@ -174,13 +168,6 @@
 	- Web app manifests
 	- robots.txt
 	- etc.
-- Do we care about using TypeScript?
-	- Can improve IDE experience
-	- Makes code more robust
-	- Rapid iteration might get more complicated
-	- Introduces some more "boilerplate" code
-	- Might make sense for more mature features, but we still want to demo and try out new things fast without cumbersome code quality requirements (same with tests)
-	- https://vuejs.org/v2/guide/typescript.html
 - Server-side rendering
 	- We're dealing with fresh data all the time (so we need true SSR, not build-time prerendering)
 	- If we implement embedded widgets, prerendering might be useful for those (abuse report form etc.)
@@ -267,7 +254,8 @@ Did not test E2E, needs a JDK installed in order to be run from the command line
 - How and where do we build for production?
 	- Local building works fine but production builds should be done via CI
 	- Do we need to test production builds separately? They can look quite different from dev builds (no hot reload module swapping, minified single-file code etc.)
-
+- Should we add more PostCSS functionality?
+	- http://postcss.parts/
 
 
 # IDE integration
