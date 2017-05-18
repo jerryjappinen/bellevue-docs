@@ -14,20 +14,20 @@ src/
 
 Use aliases like so:
 
-JavaScript:
+JavaScript (**no** `~` prefix):
 
 ```js
 import config from '@config.js';
 var imgPath = require('@assets/logo.png');
 ```
 
-HTML and `.vue` templates:
+HTML (**with** `~` prefix):
 
 ```html
 <img src="~@assets/logo.png">
 ```
 
-SCSS:
+SCSS (**with** `~` prefix):
 
 ```scss
 @import '~@styles/shared';
