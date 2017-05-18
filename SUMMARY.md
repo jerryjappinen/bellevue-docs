@@ -1,6 +1,7 @@
 
 - [Intro](README.md)
 - Overview
+	- [Setup and requirements](overview/setup.md)
 	- [Project structure](overview/project-structure.md)
 	- [Known issues](overview/known-issues.md)
 	- [IDE integration](overview/ide.md)
