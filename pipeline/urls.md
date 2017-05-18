@@ -12,7 +12,7 @@ src/
   |_ config.js
 ```
 
-Use aliases like so:
+## Using aliases
 
 JavaScript (**no** `~` prefix):
 
