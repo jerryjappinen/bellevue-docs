@@ -17,7 +17,17 @@ Components are **reusable** and **nestable** UI snippets that encapsulate view l
 ## Best practices
 
 - Keep components small. If a component bloats, split it. It's better to have many small components than small number of bloated ones.
-- Create dedicated components for pages which users navigate to. These page components should not do a lot more than define meta information and include other components and `<route-views>`.
+- Create dedicated components for **pages** which users navigate to and which have routes associated with them.
+	- These page components should not do a lot more than define meta information and include other components and `<route-views>`.
+- In `.vue` files, write the code in the following order:
+	- `<script>`
+		- vendor imports
+		- directive imports
+		- child component imports
+		- helpers
+		- view model (`export default { ... }`)
+	- `<template>`
+	- `<style>`
 
 ### View model
 

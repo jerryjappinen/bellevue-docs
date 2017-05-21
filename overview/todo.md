@@ -31,8 +31,9 @@
 	- Wrap Modernizr?
 - Some kind of viewport service with screen size information (should emit throttled events perhaps?)
 	- `this.$viewport.onChangeUnder(1400, function () { ... });` ???
+- Tests for models
 
-Components:
+## Components
 
 - Click/set/toggle
 - Checkboxes, radio buttons, switches
@@ -53,13 +54,18 @@ Components:
 
 ## Investigate
 
+- Running only some tests from command line
+- Exposing configuration values to SCSS
+- Exposing SCSS constants with JS
 - Server-side rendering
 	- Prerendering vs. true SSR
 
 Code intelligence and TypeScript
 
-- JSDoc?
-- Type hints?
+- Typing with Flow?
+	- https://medium.freecodecamp.com/why-use-static-types-in-javascript-part-1-8382da1e0adb
+	- https://flow.org/
+	- https://alligator.io/vuejs/components-flow/
 - VS Code IntelliSense
 	- Great features out of the box for JS files. Needs more work to make work with .vue files.
 	- Formatted comments?

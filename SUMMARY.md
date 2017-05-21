@@ -32,9 +32,12 @@
 	- [Vue directives](app/directives.md)
 	- [Vue plugins](app/plugins.md)
 	- [Vendor code](app/vendor.md)
+- Stylesheets
+	- [Constants](ui/style-constants.md)
+	- [Mixins](ui/scss-mixins.md)
+	- [Global base styling](ui/global-styles.md)
+	- [Style utilities](ui/style-utilities.md)
 - UI code
-	- [Atomic styles: mixins](ui/scss-mixins.md)
-	- [Atomic styles: constants](ui/scss-constants.md)
 	- [Localisation](ui/localisation.md)
 	- [Transitions](ui/transitions.md)
 - How-to guides
