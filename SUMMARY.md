@@ -33,6 +33,7 @@
 	- [Vue plugins](app/plugins.md)
 	- [Vendor code](app/vendor.md)
 - Stylesheets
+	- [Classnames and selectors](ui/style-selectors.md)
 	- [Constants](ui/style-constants.md)
 	- [Mixins](ui/scss-mixins.md)
 	- [Global base styling](ui/global-styles.md)
