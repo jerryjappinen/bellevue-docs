@@ -20,7 +20,7 @@
 
 ### Pipeline
 
-- [Stack](pipeline/stack.md)
+- [Stack summary](pipeline/stack.md)
 - [Dependency management](pipeline/dependencies.md)
 - [Development builds](pipeline/development.md)
 - [Production builds](pipeline/production.md)

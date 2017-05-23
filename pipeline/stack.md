@@ -1,7 +1,5 @@
 
-# Stack
-
-## Summary
+# Stack summary
 
 - Fully running on Node
 	- Version configured in `.nvmrc`
