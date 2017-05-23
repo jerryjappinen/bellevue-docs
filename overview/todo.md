@@ -39,7 +39,8 @@
 - Remove vendor
 - Write current time service
 - Write env service
-- Write network service (offline)
+- Switch to global registration of services?
+- Switch to global registration of directives?
 
 ## Components
 
@@ -51,7 +52,11 @@
 
 - Write about `key` atrribute in transitions
 - Write about controls vs form elements
-- Write about services and why writing plugins is difficult
+- Write about services
+	- What they do
+	- How they work
+	- Reference to existing services
+	- Write howto about writing a new one
 - Explain the difference between util, services and state
 	- Utils are custom libraries of common functions that could just as well be external libraries. They are only included as integrated libraries and not published separately for convenience and the fact that they are written for specific needs instead of providing a full-fledged experience as an external library to other developers. Changes are not automatically detected.
 	- Services are viewless, "global" Vue objects that can have values, computed values and helpers. They are recomputed during startup and runtime. Change detection is enabled but persistence is not.

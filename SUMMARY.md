@@ -32,14 +32,15 @@
 
 ### Client app architecture
 
-- [Assets](app/assets.md)
-- [Web fonts](app/webfonts.md)
 - [Models](app/models.md)
-- [State management](app/state.md)
-- [Vue components](app/components.md)
-- [Vue directives](app/directives.md)
-- [Vue plugins](app/plugins.md)
+- [Components](app/components.md)
+- [Services](app/services.md)
+- [Vue mixins](app/vue-mixins.md)
+- [Vue plugins](app/vue-plugins.md)
+- [Utilities](app/util.md)
 - [Vendor code](app/vendor.md)
+- [State management](app/state.md)
+- [Extending Vue](app/extending-vue.md)
 
 ### Stylesheets
 
@@ -51,6 +52,8 @@
 
 ### UI code
 
+- [Assets](ui/assets.md)
+- [Web fonts](ui/webfonts.md)
 - [Localisation](ui/localisation.md)
 - [Transitions](ui/transitions.md)
 
