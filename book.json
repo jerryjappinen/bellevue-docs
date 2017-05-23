@@ -1,6 +1,7 @@
 {
 	"gitbook": ">3.0.0",
 	"plugins": [
+		"theme-default",
 		"edit-link",
 		"-fontsettings",
 		"mermaid",
@@ -8,6 +9,9 @@
 		"github"
 	],
 	"pluginsConfig": {
+		"theme-default": {
+			"showLevel": true
+		},
 		"edit-link": {
 			"base": "https://github.com/Eiskis/vue-webpack-docs/edit/master/",
 			"label": "Edit this page"
