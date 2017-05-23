@@ -38,13 +38,11 @@ You can also use `Vue.extend({ ... })` to write new models that you can instanti
 ```js
 // somefile.js
 var Foo = Vue.extend({
-	data: function () {
-		return {
-			title: {
-				type: String,
-				default: 'Foo'
-			}
-		};
+	props: {
+		title: {
+			type: String,
+			default: 'Foo'
+		}
 	},
 	computed: {
 		titleWithPrefix: function () {
