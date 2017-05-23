@@ -32,16 +32,30 @@
 - Some kind of viewport service with screen size information (should emit throttled events perhaps?)
 	- `this.$viewport.onChangeUnder(1400, function () { ... });` ???
 - Tests for models
+- Allow destructuring statements in ESLint
+	- Add guidelines about never using destructuring assignments in docs
+- File directives, mixins and plugins under vue folder
+- Rename vue-store to store
+- Remove vendor
+- Write current time service
+- Write env service
+- Write network service (offline)
 
 ## Components
 
-- Click/set/toggle
-- Checkboxes, radio buttons, switches
+- Small checkmark element
 - Text, email, password and number fields
 - Responsive popovers
 
 ## Examples and docs
 
+- Write about `key` atrribute in transitions
+- Write about controls vs form elements
+- Write about services and why writing plugins is difficult
+- Explain the difference between util, services and state
+	- Utils are custom libraries of common functions that could just as well be external libraries. They are only included as integrated libraries and not published separately for convenience and the fact that they are written for specific needs instead of providing a full-fledged experience as an external library to other developers. Changes are not automatically detected.
+	- Services are viewless, "global" Vue objects that can have values, computed values and helpers. They are recomputed during startup and runtime. Change detection is enabled but persistence is not.
+	- State is for things that user can directly control and would expect (explicitly or implicitly) the application to know, keep track of and ensure persistence of. Change detection is enabled, but writing code that mutates it has its own architecture.
 - Example component with all supported functionality
 	- `$watch`ing
 	- All component lifecycle hooks

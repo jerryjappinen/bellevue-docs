@@ -2,14 +2,15 @@
 	"gitbook": ">3.0.0",
 	"plugins": [
 		"edit-link",
-		"theme-vuejs@git+https://github.com/pearofducks/gitbook-plugin-theme-vuejs.git",
 		"-fontsettings",
+		"mermaid",
+		"todo",
 		"github"
 	],
 	"pluginsConfig": {
 		"edit-link": {
 			"base": "https://github.com/Eiskis/vue-webpack-docs/edit/master/",
-			"label": "Edit This Page"
+			"label": "Edit this page"
 		},
 		"github": {
 			"url": "https://github.com/Eiskis/vue-webpack-docs/"
