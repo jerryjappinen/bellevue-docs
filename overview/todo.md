@@ -50,7 +50,10 @@
 
 ## Examples and docs
 
-- Write about `key` atrribute in transitions
+- Update project structure
+- Update all file locations
+- Update component guides (no need to import components/directives)
+- Write about `key` attribute in transitions
 - Write about controls vs form elements
 - Write about services
 	- What they do
