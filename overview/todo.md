@@ -70,8 +70,9 @@
 	- Using plugins from `this`
 - [ ] Event usage examples
 	- `_.debounce`
-	- Integrate `vue-throttle-event`
+	- Using `vue-throttle-event`
 	- Component event bindings (`this.$on`, `this.$emit`)
+	- Binding modifiers (`.stop`)
 	- Keyboard/other event binding (will `this.$on('blur')` work out of the box for example?)
 
 ## Investigate
