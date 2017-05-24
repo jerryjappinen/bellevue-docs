@@ -7,7 +7,7 @@
 
 ```
 src/
-  |_ app-icon/
+  |_ app-icon/         // Original app icon assets
   |_ assets/
   |_ fonts/
   |_ styles/
