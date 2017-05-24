@@ -80,6 +80,6 @@ modelInstance.doSomething()
 
 ## camelCase
 
-- `camelCase` for all other `vuex` keys
+- `camelCase` for all other `vuex` keys (state variables, getters, actions ...)
 - camelCase for all other exported values in JS
 - camelCase for all other JS files and variables
