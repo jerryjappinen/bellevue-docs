@@ -14,9 +14,12 @@ src/
 SCSS variable names and mixins:
 
 ```scss
-$some-variable: 12px;
-@mixin viewport-over-large ($some-parameter: $some-variable) {
-	@content;
+$breakpoint: 800px;
+
+@mixin viewport-over ($breakpoint) {
+	@media (min-width: ($breakpoint)) {
+		@content;
+	}
 }
 ```
 
