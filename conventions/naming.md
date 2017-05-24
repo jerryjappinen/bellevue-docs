@@ -15,7 +15,7 @@ SCSS mixins:
 
 ```scss
 @mixin viewport-over-large {
-	@content
+	@content;
 }
 ```
 
@@ -62,8 +62,8 @@ Component names and files:
 
 ```
 src/
-|_ vue-components/
-|_ MyComponent.vue
+  |_ components/
+    |_ MyComponent.vue
 ```
 
 Models, constructor classes and component names in JS.
