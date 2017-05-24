@@ -14,7 +14,7 @@ src/
 SCSS variable names and mixins:
 
 ```scss
-$breakpoint: 800px;
+$some-breakpoint: 800px;
 
 @mixin viewport-over ($breakpoint) {
 	@media (min-width: ($breakpoint)) {
