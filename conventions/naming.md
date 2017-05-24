@@ -48,13 +48,13 @@ export const mutations = {
 		state.someValue==;
 	}
 };
+
+export const actions = {
+	doSomething: function (context) {
+		context.commit('ITERATE_VALUE');
+	}
+};
 ```
-
-## camelCase
-
-- `camelCase` for all other `vuex` keys
-- camelCase for all other exported values in JS
-- camelCase for all other JS files and variables
 
 ## CapitalCamelCase
 
@@ -74,3 +74,8 @@ var modelInstance = new SomeModel();
 modelInstance.doSomething()
 ```
 
+## camelCase
+
+- `camelCase` for all other `vuex` keys
+- camelCase for all other exported values in JS
+- camelCase for all other JS files and variables
