@@ -23,7 +23,7 @@ import '@styles/global';
 import '@styles/utilities';
 ```
 
-```css
+```scss
 // Import external dependency
 @import '~semantic-ui-css/semantic.css';
 

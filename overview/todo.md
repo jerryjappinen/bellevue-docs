@@ -3,72 +3,72 @@
 
 ## Pipeline
 
-- Split global state management
+- [ ] Split global state management
 	- Vuex also supports splitting modules
 	- Actions, getters, etc. can also be split into different files easily
 	- Is using multiple stores an antipattern?
 	- What are the best practices for this? Need to look at a real application.
-- Persistent global state
+- [ ] Persistent global state
 	- Just store in localstorage or something
 	- What about Vuex modules?
 	- https://github.com/vuejs/awesome-vue#persistence
-- More full-featured index.html templating
+- [ ] More full-featured index.html templating
 	- Add more full-featured meta tags
 	- https://github.com/jantimon/favicons-webpack-plugin
 	- https://github.com/jantimon/html-webpack-plugin#third-party-addons
 
 ## Application code
 
-- Integrate localisation
+- [ ] Integrate localisation
 	- https://github.com/vuejs/awesome-vue#i18n
-- Integrate client-side form/input validation
+- [ ] Integrate client-side form/input validation
 	- https://github.com/vuejs/awesome-vue#validation
-- Some kind of date/time service with current time
+- [ ] Some kind of date/time service with current time
 	- Also wrap moment.js?
-- Some kind of env/device service
+- [ ] Some kind of env/device service
 	- Feature detection
 	- Touch vs. no touch
 	- Wrap Modernizr?
-- Some kind of viewport service with screen size information (should emit throttled events perhaps?)
+- [ ] Some kind of viewport service with screen size information (should emit throttled events perhaps?)
 	- `this.$viewport.onChangeUnder(1400, function () { ... });` ???
-- Tests for models
-- Allow destructuring statements in ESLint
+- [ ] Tests for models
+- [ ] Allow destructuring statements in ESLint
 	- Add guidelines about never using destructuring assignments in docs
-- File directives, mixins and plugins under vue folder
-- Rename vue-store to store
-- Remove vendor
-- Write current time service
-- Write env service
-- Switch to global registration of services?
-- Switch to global registration of directives?
+- [ ] File directives, mixins and plugins under vue folder
+- [ ] Rename vue-store to store
+- [ ] Remove vendor
+- [ ] Write current time service
+- [ ] Write env service
+- [ ] Switch to global registration of services?
+- [ ] Switch to global registration of directives?
 
 ## Components
 
-- Small checkmark element
-- Text, email, password and number fields
-- Responsive popovers
+- [ ] Small checkmark element
+- [ ] Text, email, password and number fields
+- [ ] Responsive popovers
+- [ ] List with pagination
 
 ## Examples and docs
 
-- Update project structure
-- Update all file locations
-- Update component guides (no need to import components/directives)
-- Write about `key` attribute in transitions
-- Write about controls vs form elements
-- Write about services
+- [ ] Update all file locations
+- [ ] Update component guides (no need to import components/directives)
+- [ ] Write about `key` attribute in transitions
+- [ ] Write about controls vs form elements
+- [ ] Write about services
 	- What they do
 	- How they work
 	- Reference to existing services
 	- Write howto about writing a new one
-- Explain the difference between util, services and state
+- [ ] Explain the difference between util, services and state
 	- Utils are custom libraries of common functions that could just as well be external libraries. They are only included as integrated libraries and not published separately for convenience and the fact that they are written for specific needs instead of providing a full-fledged experience as an external library to other developers. Changes are not automatically detected.
 	- Services are viewless, "global" Vue objects that can have values, computed values and helpers. They are recomputed during startup and runtime. Change detection is enabled but persistence is not.
 	- State is for things that user can directly control and would expect (explicitly or implicitly) the application to know, keep track of and ensure persistence of. Change detection is enabled, but writing code that mutates it has its own architecture.
-- Example component with all supported functionality
+- [ ] Example component with all supported functionality
 	- `$watch`ing
 	- All component lifecycle hooks
 	- Using plugins from `this`
-- Event usage examples
+- [ ] Event usage examples
 	- `_.debounce`
 	- Integrate `vue-throttle-event`
 	- Component event bindings (`this.$on`, `this.$emit`)
@@ -76,26 +76,26 @@
 
 ## Investigate
 
-- Running only some tests from command line
-- Exposing configuration values to SCSS
-- Exposing SCSS constants with JS
-- Server-side rendering
+- [ ] Running only some tests from command line
+- [ ] Exposing configuration values to SCSS
+- [ ] Exposing SCSS constants with JS
+- [ ] Server-side rendering
 	- Prerendering vs. true SSR
 
-Code intelligence and TypeScript
+### Code intelligence and TypeScript
 
-- Typing with Flow?
-	- https://medium.freecodecamp.com/why-use-static-types-in-javascript-part-1-8382da1e0adb
-	- https://flow.org/
-	- https://alligator.io/vuejs/components-flow/
-- VS Code IntelliSense
+- [ ] VS Code IntelliSense
 	- Great features out of the box for JS files. Needs more work to make work with .vue files.
 	- Formatted comments?
 	- Manifest files?
 	- More workspace configuration?
 	- Is there something we can do to improve the support?
 	- VS Code still has troubles understanding webpack aliases. `jsconfig.json` and `tsconfig.json` could be configured with the same aliases to make this work.
-- TypeScript support
+- [ ] Typing with Flow?
+	- https://medium.freecodecamp.com/why-use-static-types-in-javascript-part-1-8382da1e0adb
+	- https://flow.org/
+	- https://alligator.io/vuejs/components-flow/
+- [ ] TypeScript support
 	- Integrate `.ts` support into pipeline
 	- Integrate `.ts` support in Vue components
 	- Convert existing code into TS
@@ -120,9 +120,11 @@ We already have config files under `src/`. These can also be imported by the app
 
 Can we improve the pipeline to automate redundant tasks? Things such as the following cause a lot of boilerplate code that has to be manually maintained:
 
-- Importing and declaring child components
-- Importing and declaring directives used in components
-- Explicitly renaming child components locally
-- Importing shared SCSS in `.vue` files
-- Ensuring dependencies are up to date (directives and plugins imported in components must be installed via npm and `package.json` up to date)
-- Webpack disallows dynamic requiring just like ES6 imports, but `require.context` could perhaps be used to improve automation
+- [x] Importing and declaring child components
+- [x] Importing and declaring directives used in components
+- [x] Explicitly renaming child components locally
+- [ ] Explicitly exporting components/directives/plugins/services/models in index files
+- [ ] Explicitly importing services in each component
+- [ ] Explicitly importing shared SCSS in `.vue` files
+- [ ] Ensuring dependencies are up to date (directives and plugins imported in components must be installed via npm and `package.json` up to date)
+- [ ] Webpack disallows dynamic requiring just like ES6 imports, but `require.context` could perhaps be used to improve automation

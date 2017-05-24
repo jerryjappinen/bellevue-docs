@@ -11,11 +11,15 @@ src/
     |_ shared.scss
 ```
 
-SCSS mixins:
+SCSS variable names and mixins:
 
 ```scss
-@mixin viewport-over-large {
-	@content
+$some-breakpoint: 800px;
+
+@mixin viewport-over ($breakpoint) {
+	@media (min-width: ($breakpoint)) {
+		@content;
+	}
 }
 ```
 
@@ -38,31 +42,44 @@ export default {
 }
 ```
 
-## CapitalCamelCase
+## UPPER_CASE_WITH_UNDERSCORE
 
-Models, constructor classes and component names in JS.
+`vuex` mutations
 
 ```js
-import { exportedVar as someVar } from '@components/foo'
+export const mutations = {
+	'ITERATE_VALUE': function (state) {
+		state.someValue==;
+	}
+};
+
+export const actions = {
+	doSomething: function (context) {
+		context.commit('ITERATE_VALUE');
+	}
+};
 ```
+
+## CapitalCamelCase
 
 Component names and files:
 
 ```
 src/
-  |_ vue-components/
+  |_ components/
     |_ MyComponent.vue
 ```
 
+Models, constructor classes and component names in JS.
+
 ```js
-export default {
-	name: 'my-component'
-}
+import SomeModel from '@models';
+var modelInstance = new SomeModel();
+modelInstance.doSomething()
 ```
 
-**CapitalCamelCase** for model names and files
+## camelCase
 
-- `UPPER_CASE_WITH_UNDERSCORE` for `vuex` mutations
-- `camelCase` for all other `vuex` keys
+- `camelCase` for all other `vuex` keys (state variables, getters, actions ...)
 - camelCase for all other exported values in JS
 - camelCase for all other JS files and variables

@@ -10,7 +10,7 @@ The following development tools have been configured for development aids:
 
 ## Debugging
 
-![Debugging]('../images/debugging.png')
+![Debugging](../images/debugging.png)
 
 - [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en): Chrome extension for Vue development
 - You will see errors and linting issues
