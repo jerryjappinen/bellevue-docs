@@ -11,10 +11,11 @@ src/
     |_ shared.scss
 ```
 
-SCSS mixins:
+SCSS variable names and mixins:
 
 ```scss
-@mixin viewport-over-large {
+$some-variable: 12px;
+@mixin viewport-over-large ($some-parameter: $some-variable) {
 	@content;
 }
 ```
