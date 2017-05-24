@@ -10,14 +10,12 @@ src/
 
 ## TL;DR
 
-- Use tabs
-- Use semicolons
-- Use single quotes
-- Declare vars one by one in the lowest scope as you use them, not in a batch
-- Avoid arrow notation, just say `function`
-- Write consistent code with `:` and `=`
-- Use `import` rather than `require`
-- Use `export` rather than `module.exports`
+- Use tabs, semicolons, single quotes.
+- Declare vars one by one in the lowest scope as you use them, not in a batch.
+- Avoid arrow notation; use `function` to avoid any gotchas with `this` or unclear syntax.
+- Write consistent code with `:` and `=`, avoid mixing typical assignment syntax with unclear object shorthands.
+- Use `import` rather than `require`.
+- Use `export` rather than `module.exports`.
 
 ## Gotchas
 
@@ -67,7 +65,6 @@ import { foo as someVar } from 'someFile.js';
 ```
 
 It's easy to mix these up since the import/export is so similar to normal object assignment syntax. It's a different language feature however.
-
 
 ### Object shorthands
 
