@@ -9,27 +9,6 @@
 - [To do](overview/todo.md)
 - [Misc. notes](overview/notes.md)
 
-### Coding conventions
-
-- [Naming conventions](conventions/naming.md)
-- [JS](conventions/js.md)
-- [SCSS](conventions/scss.md)
-- [HTML](conventions/html.md)
-- [Vue components](conventions/vue-components.md)
-- [Vue models](conventions/vue-models.md)
-
-### Pipeline
-
-- [Stack summary](pipeline/stack.md)
-- [Dependency management](pipeline/dependencies.md)
-- [Development builds](pipeline/development.md)
-- [Production builds](pipeline/production.md)
-- [Testing](pipeline/testing.md)
-- [Styles processing](pipeline/styles.md)
-- [App icon generation](pipeline/app-icons.md)
-- [SVG compilation](pipeline/svg-compilation.md)
-- [URL resolving and aliases](pipeline/urls.md)
-
 ### Client app architecture
 
 - [Models](app/models.md)
@@ -63,3 +42,24 @@
 - [Creating new pages and routes](howto/routes.md)
 - [Setting page meta information](howto/meta.md)
 - [Using a new Vue plugin](howto/vue-plugin.md)
+
+### Coding conventions
+
+- [Naming conventions](conventions/naming.md)
+- [JS](conventions/js.md)
+- [SCSS](conventions/scss.md)
+- [HTML](conventions/html.md)
+- [Vue components](conventions/vue-components.md)
+- [Vue models](conventions/vue-models.md)
+
+### Pipeline
+
+- [Stack summary](pipeline/stack.md)
+- [Dependency management](pipeline/dependencies.md)
+- [Development builds](pipeline/development.md)
+- [Production builds](pipeline/production.md)
+- [Testing](pipeline/testing.md)
+- [Styles processing](pipeline/styles.md)
+- [App icon generation](pipeline/app-icons.md)
+- [SVG compilation](pipeline/svg-compilation.md)
+- [URL resolving and aliases](pipeline/urls.md)
