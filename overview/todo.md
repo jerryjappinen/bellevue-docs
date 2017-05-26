@@ -34,13 +34,10 @@
 - [ ] Tests for models
 - [ ] Allow destructuring statements in ESLint
 	- Add guidelines about never using destructuring assignments in docs
-- [ ] File directives, mixins and plugins under vue folder
-- [ ] Rename vue-store to store
-- [ ] Remove vendor
-- [ ] Write current time service
 - [ ] Write env service
 - [ ] Switch to global registration of services?
-- [ ] Switch to global registration of directives?
+- [ ] Try `vue-supply`, `vue-apollo` and GraphQL
+	- https://github.com/Akryum/vue-supply
 
 ## Components
 
@@ -86,12 +83,12 @@
 ### Code intelligence and TypeScript
 
 - [ ] VS Code IntelliSense
-	- Great features out of the box for JS files. Needs more work to make work with .vue files.
+	- Great features out of the box for JS files. Needs more work to make work with `.vue` files.
 	- Formatted comments?
 	- Manifest files?
 	- More workspace configuration?
 	- Is there something we can do to improve the support?
-	- VS Code still has troubles understanding webpack aliases. `jsconfig.json` and `tsconfig.json` could be configured with the same aliases to make this work.
+	- VS Code still has troubles understanding Webpack aliases. `jsconfig.json` and `tsconfig.json` could be configured with the same aliases to make this work.
 - [ ] Typing with Flow?
 	- https://medium.freecodecamp.com/why-use-static-types-in-javascript-part-1-8382da1e0adb
 	- https://flow.org/

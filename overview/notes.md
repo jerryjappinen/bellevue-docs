@@ -5,8 +5,8 @@
 ### Vue
 
 - Excellent guides and documentation at [vuejs.org](https://vuejs.org/v2/guide/).
-- Curated list of awesome things related to Vue.js available at [github.com/vuejs/awesome-vue](https://github.com/vuejs/awesome-vue).
-- Looong list of popuplar components and libraries: [github.com/vuejs/awesome-vue#components--libraries](https://github.com/vuejs/awesome-vue#components--libraries)
+- Curated list of awesome things related to Vue.js available at [GitHub](https://github.com/vuejs/awesome-vue).
+	- [Components and libraries](https://github.com/vuejs/awesome-vue#components--libraries)
 
 ### Webpack
 
@@ -21,7 +21,7 @@
 
 ### Coding conventions
 
-- Based on the official webpack project structure
+- Based on the official Webpack project structure
 	- https://github.com/vuejs-templates/webpack
 	- Vuex support has been added
 	- Non-trivial global SCSS styles have been added (loaded by root component)
@@ -40,7 +40,7 @@
 ### TypeScript
 
 - Could be very useful in models and separate utilities.
-- Requires some extra setup work to play nicely with webpack aliases and Vue components.
+- Requires some extra setup work to play nicely with Webpack aliases and Vue components.
 - Vue components have to be written in a certain way to work with TS.
 - Vue components are generally very simple, so TS usefulness is limited.
 - We already have linting for all languages and some level of IntelliSense in VS Code available.
@@ -49,7 +49,7 @@
 
 ## Existing features
 
-- Linting via CLI and webpack
+- Linting via CLI and Webpack
 - Per-environment configuration
 	- See `config/`
 - Vue and all its goodies
@@ -92,7 +92,7 @@
 	- http://vue-loader.vuejs.org/en/configurations/asset-url.html
 - CSS pipeline
 	- CSS extraction for most popular CSS pre-processors (LESS, SASS, Stylus, and PostCSS)
-	- To use a pre-processor, all you need to do is installing the appropriate webpack loader for it
+	- To use a pre-processor, all you need to do is installing the appropriate Webpack loader for it
 	- Autoprefixing included
 	- http://vuejs-templates.github.io/webpack/pre-processors.html
 	- SCSS and global styling structure added (mixins, custom functions etc.)
@@ -160,7 +160,7 @@
 
 - The state of modern web development: the whole pipeline is a delicate flower
 - SCSS took a lot of work to get just right in the pipeline, but now works
-- `htmllint` is not integrated with webpack 2 yet
+- `htmllint` is not integrated with Webpack 2 yet
 - App icons for multiple platforms, devices etc.
 	- Maybe not needed
 - Manifest file generation
@@ -227,7 +227,7 @@ Did not test E2E, needs a JDK installed in order to be run from the command line
 	- Explicitly renaming child components locally
 	- Importing shared SCSS in `.vue` files
 	- Ensuring dependencies are up to date (directives and plugins imported in components must be installed via npm and `package.json` up to date)
-	- webpack disallows dynamic requiring just like ES6 imports, but `require.context` could perhaps be used to improve automation
+	- Webpack disallows dynamic requiring just like ES6 imports, but `require.context` could perhaps be used to improve automation
 - What should our conventions be?
 	- At some point we will have a project structure and pipeline - but how do we use it effectively to write good UIs that scale?
 	- ESLint allows configuring all of them
@@ -250,7 +250,7 @@ Did not test E2E, needs a JDK installed in order to be run from the command line
 		- Example 1: https://github.com/iFgR/vue-shortkey/blob/master/src/index.js
 		- Example 2: https://github.com/scaccogatto/vue-throttle-event/blob/master/src/index.js
 - How does API communication and resource loading work?
-	- Should we use [vue-resource](https://github.com/pagekit/vue-resource)?
+	- Should we use [`vue-resource`](https://github.com/pagekit/vue-resource)?
 	- HTTP is not a problem
 	- Writing models is not a problem
 	- Should we use a more high-level REST library?

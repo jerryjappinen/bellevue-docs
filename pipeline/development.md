@@ -4,9 +4,9 @@
 The following development tools have been configured for development aids:
 
 - EditorConfig
-- eslint: JS linting
+- ESLint: JS linting
 - htmllint: HTML linting
-- stylelint: SCSS linting
+- Stylelint: SCSS linting
 
 ## Debugging
 
@@ -20,4 +20,4 @@ The following development tools have been configured for development aids:
 - Any issues detected by the development version of Vue will be reported with detailed messaging in the browser's console.
 - Client-side issues will be reported by the browser's console as expected.
 
-During development, webpack will automatically recompile any of the assets needed and only the components that have changed will be rerendered in the browser. This is called "hot reload" or "module hot swapping". Browser extensions or other setup is required for this.
+During development, Webpack will automatically recompile any of the assets needed and only the components that have changed will be rerendered in the browser. This is called "hot reload" or "module hot swapping". Browser extensions or other setup is required for this.

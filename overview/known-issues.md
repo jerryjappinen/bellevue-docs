@@ -6,7 +6,7 @@
 - Desired source code order is hard to set
 	- Utility styles should come after component styles, but style source order is magical
 	- Not currently an issue with JS
-- The app icon generator webpack plugin
+- The app icon generator Webpack plugin
 	- Does not support passing all options to the plugin generating meta tags with color information etc.
 	- Does not compile a web favicon
 	- https://github.com/jantimon/favicons-webpack-plugin
@@ -35,4 +35,4 @@ Currently some tests pass, some don't, without very clear indication as to why. 
 - Visual Studio Code does not seem to support intellisense for JavaScript embedded in HTML, and by extension `.vue` files.
 	- Seriously what?
 - The Stylelint extension for Visual Studio Code only lints `.css` and `.scss` files
-	- Linting via command line or webpack still works as expected even in `.vue` and `.html` files
+	- Linting via command line or Webpack still works as expected even in `.vue` and `.html` files

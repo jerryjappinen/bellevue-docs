@@ -40,11 +40,11 @@ You should generally **not** have to touch these files during application develo
 
 ## Webpack plugins
 
-- [favicons-webpack-plugin](https://github.com/jantimon/favicons-webpack-plugin) generates app icons for multiple platforms from one source file
+- [`favicons-webpack-plugin`](https://github.com/jantimon/favicons-webpack-plugin) generates app icons for multiple platforms from one source file
 
 ## Webpack loaders
 
-- [vue-loader](http://vue-loader.vuejs.org/en/) loads `.vue` files
-- [sass-loader](https://github.com/webpack-contrib/sass-loader) loads `.scss` files
-- [postcss-loader](https://github.com/postcss/postcss-loader) loads CSS files
-- [external-svg-sprite-loader](https://www.npmjs.com/package/external-svg-sprite-loader) loads SVGs and compiles them into sprites
+- [`vue-loader`](http://vue-loader.vuejs.org/en/) loads `.vue` files
+- [`sass-loader`](https://github.com/webpack-contrib/sass-loader) loads `.scss` files
+- [`postcss-loader`](https://github.com/postcss/postcss-loader) loads CSS files
+- [`external-svg-sprite-loader`](https://www.npmjs.com/package/external-svg-sprite-loader) loads SVGs and compiles them into sprites
