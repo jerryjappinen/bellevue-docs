@@ -14,7 +14,7 @@ Vue has built-in `<transition>` components which trigger transition-oriented cla
 
 It's preferred to write reusable named transitions. For common use cases, a named transition looks something like this:
 
-`src/vue-components/MyComponent.vue`
+`src/components/MyComponent.vue`
 
 ```html
 <transition name="transition-fade">

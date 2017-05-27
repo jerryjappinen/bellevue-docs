@@ -3,14 +3,14 @@
 
 ```
 src/
-  |__ vue-components/
+  |__ components/
     |__ NewComponent.vue/
     |__ OldComponent.vue/
 ```
 
-## 1. Create a new `.vue` file under `src/vue-components`
+## 1. Create a new `.vue` file
 
-`src/vue-components/NewComponent.js`
+`src/components/NewComponent.js`
 
 ```html
 <script>
@@ -28,7 +28,7 @@ src/
 
 ## 2. Use in parent component
 
-`src/vue-components/OldComponent.js`
+`src/components/OldComponent.js`
 
 ```html
 <script>

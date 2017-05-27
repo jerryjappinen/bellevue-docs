@@ -3,10 +3,11 @@
 
 ```
 src/
-  |_ vue-components/
+  |_ components/
     |_ my-component.js/
-  |_ vue-plugins/
-    |_ vue-plugin-foo.js/
+  |_ vue/
+    |_ plugins/
+      |_ vue-plugin-foo.js/
   main.js
 ```
 
@@ -18,7 +19,7 @@ npm install vue-plugin-foo
 
 ## 2. Add a new plugin setup file
 
-`src/vue-plugins/vue-plugin-foo.js`
+`src/vue/plugins/vue-plugin-foo.js`
 ``
 
 ```js
@@ -40,7 +41,7 @@ import '@plugins/vue-plugin-foo';
 
 ## 4. Use plugin as intended in components
 
-`src/vue-components/my-component.js`
+`src/components/my-component.js`
 
 ```js
 computed: {

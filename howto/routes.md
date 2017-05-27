@@ -17,7 +17,7 @@ Page components don't have to be nested in the project structure, and their stru
 
 ## Configuring a route
 
-Routes are configured in `src/config.routes.js`. Things to keep in mind when managing routes:
+Routes are configured in `src/config/config-routes.js`. Things to keep in mind when managing routes:
 
 ```
 {

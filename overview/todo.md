@@ -16,6 +16,7 @@
 	- Add more full-featured meta tags
 	- https://github.com/jantimon/favicons-webpack-plugin
 	- https://github.com/jantimon/html-webpack-plugin#third-party-addons
+- [ ] Get tests to work as expected
 
 ## Application code
 
@@ -23,32 +24,30 @@
 	- https://github.com/vuejs/awesome-vue#i18n
 - [ ] Integrate client-side form/input validation
 	- https://github.com/vuejs/awesome-vue#validation
-- [ ] Some kind of date/time service with current time
-	- Also wrap moment.js?
+- [ ] Time formatting
+	- Wrap `moment.js` in time service?
 - [ ] Some kind of env/device service
 	- Feature detection
 	- Touch vs. no touch
 	- Wrap Modernizr?
-- [ ] Some kind of viewport service with screen size information (should emit throttled events perhaps?)
-	- `this.$viewport.onChangeUnder(1400, function () { ... });` ???
 - [ ] Tests for models
-- [ ] Allow destructuring statements in ESLint
-	- Add guidelines about never using destructuring assignments in docs
-- [ ] Write env service
-- [ ] Switch to global registration of services?
+- [ ] Tests for services
+- [ ] Inject services into components?
 - [ ] Try `vue-supply`, `vue-apollo` and GraphQL
 	- https://github.com/Akryum/vue-supply
 
 ## Components
 
 - [ ] Small checkmark element
-- [ ] Text, email, password and number fields
-- [ ] Responsive popovers
+- [ ] Text, email, password
+- [ ] Number fields
+- [ ] Date picker
+- [ ] Reliable in-place popover positioning
+- [ ] Click handling and blur events for closing in-place popover
 - [ ] List with pagination
 
 ## Examples and docs
 
-- [ ] Update all file locations
 - [ ] Update component guides (no need to import components/directives)
 - [ ] Write about `key` attribute in transitions
 - [ ] Write about controls vs form elements
@@ -112,7 +111,7 @@ TS features can be introduced gradually as features mature, but we still want to
 
 As a typical modern JavaScript system, Webpack is configured by scripting in JS. There are configuration values and other things that can be imported from separate configuration files to a larger extend than now. This way developers don't have to touch Webpack build scripts when making adjustments to things that are then fed to the build scripts rather than editing the script files directly, which tends to lead into accidental and hard-to-debug problems.
 
-We already have config files under `src/`. These can also be imported by the application code, so that we have access to any configuration values also during run-time.
+We already have config files under `src/config/`. These can also be imported by the application code, so that we have access to any configuration values also during run-time.
 
 ### Automation
 

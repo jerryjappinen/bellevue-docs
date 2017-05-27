@@ -3,7 +3,7 @@
 
 ```
 src/
-  |__ vue-components/
+  |__ components/
     |__ MyComponent.vue/
 ```
 
