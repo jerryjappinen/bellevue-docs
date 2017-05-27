@@ -36,21 +36,21 @@
 - [Localisation](ui/localisation.md)
 - [Transitions](ui/transitions.md)
 
+### Coding guidelines
+
+- [Naming conventions](conventions/naming.md)
+- [JS](conventions/js.md)
+- [SCSS](conventions/scss.md)
+- [HTML](conventions/html.md)
+- [Vue components](conventions/components.md)
+- [Vue models](conventions/vue-models.md)
+
 ### How-to guides
 
 - [Creating a new component](howto/creating-components.md)
 - [Creating new pages and routes](howto/routes.md)
 - [Setting page meta information](howto/meta.md)
 - [Using a new Vue plugin](howto/vue-plugin.md)
-
-### Coding conventions
-
-- [Naming conventions](conventions/naming.md)
-- [JS](conventions/js.md)
-- [SCSS](conventions/scss.md)
-- [HTML](conventions/html.md)
-- [Vue components](conventions/vue-components.md)
-- [Vue models](conventions/vue-models.md)
 
 ### Pipeline
 
