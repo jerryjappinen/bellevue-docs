@@ -45,11 +45,10 @@
 - [ ] Reliable in-place popover positioning
 - [ ] Click handling and blur events for closing in-place popover
 - [ ] List with pagination
+- [ ] Prevent double click text select in all controls
 
 ## Examples and docs
 
-- [ ] Update component guides (no need to import components/directives)
-- [ ] Write about `key` attribute in transitions
 - [ ] Write about controls vs form elements
 - [ ] Write about services
 	- What they do
@@ -60,10 +59,6 @@
 	- Utils are custom libraries of common functions that could just as well be external libraries. They are only included as integrated libraries and not published separately for convenience and the fact that they are written for specific needs instead of providing a full-fledged experience as an external library to other developers. Changes are not automatically detected.
 	- Services are viewless, "global" Vue objects that can have values, computed values and helpers. They are recomputed during startup and runtime. Change detection is enabled but persistence is not.
 	- State is for things that user can directly control and would expect (explicitly or implicitly) the application to know, keep track of and ensure persistence of. Change detection is enabled, but writing code that mutates it has its own architecture.
-- [ ] Example component with all supported functionality
-	- `$watch`ing
-	- All component lifecycle hooks
-	- Using plugins from `this`
 - [ ] Event usage examples
 	- `_.debounce`
 	- Using `vue-throttle-event`
