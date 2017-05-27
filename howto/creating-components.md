@@ -6,11 +6,12 @@ src/
   |__ components/
     |__ NewComponent.vue/
     |__ OldComponent.vue/
+    |__ index.js
 ```
 
 ## 1. Create a new `.vue` file
 
-`src/components/NewComponent.js`
+`src/components/NewComponent.vue`
 
 ```html
 <script>
@@ -26,23 +27,29 @@ src/
 </style>
 ```
 
-## 2. Use in parent component
+## 2. Add to components manifest
 
-`src/components/OldComponent.js`
+`src/components/index.js`
+
+```js
+import NewComponent from './NewComponent';
+export {
+	...
+	NewComponent
+	...
+};
+export default {
+	...
+	NewComponent
+	...
+};
+```
+
+## 3. Use in parent component
+
+`src/components/OldComponent.vue`
 
 ```html
-<script>
-	import NewComponent from '@components/NewComponent'
-
-	export default {
-		name: 'old-component',
-
-		components: {
-			NewComponent: NewComponent
-		}
-
-	}
-</script>
 <template>
 	<div class="view-old-component">
 		<new-component></new-component>

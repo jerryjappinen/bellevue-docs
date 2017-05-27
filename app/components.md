@@ -59,18 +59,8 @@ One components can generally appear under multiple different parent components i
 
 ```html
 <script>
-	import Spinner from '@components/snippets/Spinner';
-	import SomeDirective from '@directives/some-directive';
 	export default {
 		name: 'my-component',
-
-		components: {
-			Spinner: Spinner
-		},
-
-		directives: {
-			SomeDirective: SomeDirective
-		},
 
 		data: function () {
 			return {};
@@ -99,12 +89,14 @@ One components can generally appear under multiple different parent components i
 
 <template>
 	<div class="view-my-component">
-		<div class="view-my-component-something"></div>
+		<div class="view-my-component-something">
+			<spinner></spinner>
+		</div>
 	</div>
 </template>
 
 <style lang="scss">
-	@import '~@styles/shared.scss';
+	@import '~@styles/shared';
 
 	.view-my-view {}
 
@@ -123,29 +115,10 @@ One components can generally appear under multiple different parent components i
 	// Vendor code
 	import _ from 'lodash';
 
-	// Child components
-	import Spinner from '@components/snippets/Spinner';
-
-	// Directives used in this component
-	import SomeDirective from '@directives/some-directive';
-
 	// Component's view model
 	export default {
 
 		name: 'my-component',
-
-		// Declare which other components are nested in this component
-		components: {
-
-			// NOTE: Spinner defines its own name (as 'spinner')
-			Spinner: Spinner
-
-		},
-
-		// Declare which directives are used in this component
-		directives: {
-			SomeDirective: SomeDirective
-		},
 
 		data: function () {
 			return {
@@ -205,13 +178,22 @@ One components can generally appear under multiple different parent components i
 <template>
 
 	<div class="view-my-component">
-		<h1 :data-title="titleToRender" @click="changeColor" ref="titleElement">{{ titleToRender }} <em :style="{ color: color }">Color!</em></h1>
+
+		<!-- HTML element with dynamic bindings -->
+		<h1 :data-title="titleToRender"
+			@click="changeColor"
+			ref="titleElement">
+			{{ titleToRender }} <em :style="{ color: color }">Color!</em>
+		</h1>
+
+		<!-- Child component -->
+		<spinner></spinner>
 	</div>
 
 </template>
 
 <style lang="scss">
-	@import '~@styles/shared.scss';
+	@import '~@styles/shared';
 
 	.view-my-component {
 		color: blue;

@@ -18,7 +18,7 @@ src/
 JavaScript (**no** `~` prefix):
 
 ```js
-import config from '@config.js';
+import config from '@config';
 var imgPath = require('@assets/logo.png');
 ```
 
