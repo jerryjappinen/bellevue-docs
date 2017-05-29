@@ -46,6 +46,7 @@
 - [ ] Click handling and blur events for closing in-place popover
 - [ ] List with pagination
 - [ ] Prevent double click text select in all controls
+- [ ] Tabs
 
 ## Examples and docs
 
@@ -89,7 +90,7 @@
 	- https://alligator.io/vuejs/components-flow/
 - [ ] TypeScript support
 	- Integrate `.ts` support into pipeline
-	- Integrate `.ts` support in Vue components
+	- Integrate `.ts` support in Vue components, services, models...
 	- Convert existing code into TS
 	- Provide type hints etc.
 	- https://vuejs.org/v2/guide/typescript.html

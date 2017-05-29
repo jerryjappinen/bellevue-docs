@@ -35,9 +35,9 @@ src/
 	|_ svg/                          // SVG assets that will be compiled into a sprite
 	|_ util/                         // JS custom misc. utilities
 	|_ vue/
-	|_ directives/                   // Vue directives
-	|_ mixins/                       // Vue mixins
-	|_ plugins/                      // Vue plugins
+		|_ directives/               // Vue directives
+		|_ mixins/                   // Vue mixins
+		|_ plugins/                  // Vue plugins
 index.html.ejs
 .eslintrc.js
 .htmllintrc
