@@ -38,10 +38,13 @@ src/
 		|_ directives/               // Vue directives
 		|_ mixins/                   // Vue mixins
 		|_ plugins/                  // Vue plugins
-index.html.ejs
+index.html.ejs                       // Main HTML template
+
+// Linter configuration
 .eslintrc.js
 .htmllintrc
 stylelint.config.js
+
 // Static files to host alongside the production build
 static/
 

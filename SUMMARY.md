@@ -50,6 +50,7 @@
 - [Creating a new component](howto/creating-components.md)
 - [Creating new pages and routes](howto/routes.md)
 - [Setting page meta information](howto/meta.md)
+- [Adding new assets](howto/new-assets.md)
 - [Using a new Vue plugin](howto/vue-plugin.md)
 
 ### Pipeline

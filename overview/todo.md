@@ -3,6 +3,7 @@
 
 ## Pipeline
 
+- [ ] Support local config files outside of version control
 - [ ] Split global state management
 	- Vuex also supports splitting modules
 	- Actions, getters, etc. can also be split into different files easily
