@@ -16,7 +16,7 @@
 - [Services](app/services.md)
 - [Vue mixins](app/vue-mixins.md)
 - [Vue plugins](app/vue-plugins.md)
-- [Utilities](app/util.md)
+- [Utilities](app/utilities.md)
 - [Vendor code](app/vendor.md)
 - [State management](app/state.md)
 - [Extending Vue](app/vue.md)
