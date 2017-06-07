@@ -20,7 +20,6 @@ src/
 	|_ services/                     // JS custom (reactive) services
 	|_ store/                        // JS state management code
 	|_ styles/                       // Global base styling and style utilities
-		|_ svg/                      // SVG assets that will be compiled into a sprite
 		|_ base/
 		|_ definitions/
 		|_ keyframes/
@@ -31,7 +30,6 @@ src/
 		|_ transitions/
 		|_ utilities-base/
 		|_ utilities-composed/
-	|_ webfonts/
 	|_ svg/                          // SVG assets that will be compiled into a sprite
 	|_ util/                         // JS custom misc. utilities
 	|_ vue/
