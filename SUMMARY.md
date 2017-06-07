@@ -11,15 +11,15 @@
 
 ### Client app architecture
 
-- [Models](app/models.md)
 - [Components](app/components.md)
+- [Models](app/models.md)
 - [Services](app/services.md)
 - [Vue mixins](app/vue-mixins.md)
 - [Vue plugins](app/vue-plugins.md)
 - [Utilities](app/util.md)
 - [Vendor code](app/vendor.md)
 - [State management](app/state.md)
-- [Extending Vue](app/extending-vue.md)
+- [Extending Vue](app/vue.md)
 
 ### Stylesheets
 
@@ -42,8 +42,6 @@
 - [JS](conventions/js.md)
 - [SCSS](conventions/scss.md)
 - [HTML](conventions/html.md)
-- [Vue components](conventions/components.md)
-- [Vue models](conventions/vue-models.md)
 
 ### How-to guides
 

@@ -4,7 +4,7 @@
 ```
 src/
   |__ components/
-    |__ MyComponent.vue/
+    |__ MyComponent.vue
 ```
 
 - Official guide: [vuejs.org/v2/guide/components](https://vuejs.org/v2/guide/components)
@@ -31,6 +31,7 @@ Components are **reusable** and **nestable** UI snippets that encapsulate view l
 
 ### View model
 
+- View models are only for declaring the behavior, styling and structure of one component as clearly as possible.
 - View models should **not** include any business logic code.
 	- Feel free to `import` [models](models.md) and vendor libraries as needed.
 - Recurring view model code can be reused:
