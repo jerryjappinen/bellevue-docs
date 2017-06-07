@@ -14,12 +14,13 @@
 - [Components](app/components.md)
 - [Models](app/models.md)
 - [Services](app/services.md)
-- [Vue mixins](app/vue-mixins.md)
-- [Vue plugins](app/vue-plugins.md)
+- [State management](app/state.md)
 - [Utilities](app/utilities.md)
 - [Vendor code](app/vendor.md)
-- [State management](app/state.md)
 - [Extending Vue](app/vue.md)
+- ~~Vue mixins~~
+- ~~Vue directives~~
+- ~~Vue plugins~~
 
 ### Stylesheets
 
@@ -32,7 +33,7 @@
 ### UI code
 
 - [Assets](ui/assets.md)
-- [Web fonts](ui/webfonts.md)
+- ~~Web fonts~~
 - [Localisation](ui/localisation.md)
 - [Transitions](ui/transitions.md)
 
@@ -41,7 +42,7 @@
 - [Naming conventions](conventions/naming.md)
 - [JS](conventions/js.md)
 - [SCSS](conventions/scss.md)
-- [HTML](conventions/html.md)
+- ~~HTML~~
 
 ### How-to guides
 
