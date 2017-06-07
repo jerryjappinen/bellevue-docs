@@ -17,6 +17,7 @@
 	- Add more full-featured meta tags
 	- https://github.com/jantimon/favicons-webpack-plugin
 	- https://github.com/jantimon/html-webpack-plugin#third-party-addons
+- [ ] Enable app icon generation based on config rather than crudely commenting it out
 - [ ] Get tests to work as expected
 
 ## Application code
@@ -53,14 +54,8 @@
 
 - [ ] Write about controls vs form elements
 - [ ] Write about services
-	- What they do
-	- How they work
 	- Reference to existing services
 	- Write howto about writing a new one
-- [ ] Explain the difference between util, services and state
-	- Utils are custom libraries of common functions that could just as well be external libraries. They are only included as integrated libraries and not published separately for convenience and the fact that they are written for specific needs instead of providing a full-fledged experience as an external library to other developers. Changes are not automatically detected.
-	- Services are viewless, "global" Vue objects that can have values, computed values and helpers. They are recomputed during startup and runtime. Change detection is enabled but persistence is not.
-	- State is for things that user can directly control and would expect (explicitly or implicitly) the application to know, keep track of and ensure persistence of. Change detection is enabled, but writing code that mutates it has its own architecture.
 - [ ] Event usage examples
 	- `_.debounce`
 	- Using `vue-throttle-event`
