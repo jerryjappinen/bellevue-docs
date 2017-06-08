@@ -3,11 +3,11 @@
 
 Vendor code is `imported` via `npm`. You can install any library you wish and then import it in any component, service, model or utility. The dependencies are defined and maintained in `package.json`.
 
-**NOTE!** remember that every vendor library you import will increase the size of your codebase and make it slower to load for the end-user.
+**Note:** remember that every vendor library you import will increase the size of your codebase and make it slower to load for the end-user.
 
-**NOTE!** remember to remove any libraries you no longer use from your `package.json`.
+**Note:** remember to remove any libraries you no longer use from your `package.json`.
 
-**NOTE!** when installing, remember to `--save-dev` any dependencies you only need for tooling and not for client-side application code.
+**Note:** when installing, remember to `--save-dev` any dependencies you only need for tooling and not for client-side application code.
 
 ## Example
 
