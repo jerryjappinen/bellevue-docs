@@ -25,7 +25,7 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 |Preconfigured aliases|More|Some
 |Preconfigured linter config and plugins|Yes|-
 |SCSS support in `.scss` files|Yes|-
-|SCSS support in `.scss` files|Yes|-
+|SCSS support in `.vue` files|Yes|-
 |SVG optimisation and sprite compilation (components included)|Yes|-
 |App icon (+ meta tag) generation|[Yes](pipeline/app-icons.md) (crude)|-
 |Preconfigured web font loading|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/styles/webfonts)|-
