@@ -27,16 +27,20 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 |SCSS support in `.scss` files|Yes|-
 |SCSS support in `.vue` files|Yes|-
 |SVG optimisation and sprite compilation (components included)|Yes|-
-|App icon (+ meta tag) generation|[Yes](pipeline/app-icons.md) (crude)|-
+|App icon (+ meta tag) generation|[Yes](../pipeline/app-icons.md) (crude)|-
 |Preconfigured web font loading|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/styles/webfonts)|-
 |Global stylesheet architecture|[Yes](../stylesheets/stylesheet/architecture.md)|-
 |Centralised config for tooling and app code|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/config)|-
 |Centralised registration of Vue plugins, components, directives and mixins|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/main.js)|-
 |Preconfigured routing|[Yes](ui/routing.md) (`vue-router`)|-
-|Preconfigured localisation capability|[Yes](ui/localisation.md) (`vue-i18n`)|-
-|Preconfigured Vuex|[Yes](app/vuex.md)|-
+|Preconfigured localisation capability|[Yes](../ui/localisation.md) (`vue-i18n`)|-
+|Preconfigured Vuex|[Yes](../app/vuex.md)|-
 |App code architecture: services|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/services)|-
 |App code architecture: business logic models|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/models)|-
 |App code architecture: custom utilities|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/utilities)|-
 |Preconfigured VS Code|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/.vscode/settings.json)|-
 |Support for generated docs|Yes (using Docco)|-
+
+If you only need a subset of these features, the extra capabilities can easily be removed to stramline your app. Visit the corresponding section of the documentation for more information on how to remove specific features.
+
+**Note:** this project is still early in development, and some features are implemented in a more mature form than others. If you choose to start from the official basic template, you will have to implement the missing features from scratch however.
