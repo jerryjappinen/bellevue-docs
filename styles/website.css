@@ -29,12 +29,12 @@ body {
 .book-summary {
 	font-size: 14px;
 	background-color: #fafafa;
-    border-color: rgba(0,0,0,.15);
+    border-color: rgba(52, 73, 94, 0.15);
 }
 
 #book-search-input {
 	background-color: #fff;
-    border-color: rgba(0,0,0,.15);
+    border-color: rgba(52, 73, 94, 0.15);
 }
 
 /* Sidebar */
@@ -44,17 +44,22 @@ body {
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 }
 
+.book-summary ul.summary li a:hover {
+	text-decoration: none;
+	background-color: rgba(52, 73, 94, 0.07);
+}
+
 /*Section headers*/
 .book-summary ul.summary li.header {
 	text-transform: none;
 	color: #7f8c8d;
 	font-weight: 600;
 	margin-top: 1em;
-	border-top: 1px solid rgba(0,0,0,.15);
+	border-top: 1px solid rgba(52, 73, 94, 0.15);
 }
 
 .book-summary ul.summary li.divider {
-	background-color: rgba(0,0,0,.15);
+	background-color: rgba(52, 73, 94, 0.15);
 }
 
 .book-summary ul.summary li.divider + li.header {
