@@ -1,5 +1,5 @@
 
-# Vue Webpack
+# Eiskis/vue-webpack
 
 `Eiskis/vue-webpack` is an advanced, opinionated Webpack project template for complex Vue projects.
 
