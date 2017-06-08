@@ -1,0 +1,10 @@
+
+/*More breathing room at the end of an article*/
+.body-inner {
+	padding-bottom: 10%;
+}
+
+/* Unavailable sidebar items */
+.book-summary ul.summary li span {
+	opacity: 0.6;
+}
