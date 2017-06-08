@@ -10,15 +10,9 @@
 
 {% include "./SUMMARY.md" %}
 
-## About these docs
+## Other resources
 
-This documentation is housed at [Eiskis/vue-webpack-docs](https://github.com/Eiskis/vue-webpack-docs). It's a Git repo in the [GitBook format](https://toolchain.gitbook.com/structure.html).
-
-To contribute, file an issue or make a pull request. :)
-
-## All resources
-
-`Eiskis/vue-webpack` is **not** an official Vue project, but is based on the officially supported materials. The relevant docs for those are available here:
+`Eiskis/vue-webpack` is **not** an official Vue project, but is based on the officially supported materials and commonly used plugins. The relevant docs for those are available here:
 
 - Official `vuejs-templates/webpack` project template
 	- [Read documentation](http://vuejs-templates.github.io/webpack/)
@@ -26,5 +20,15 @@ To contribute, file an issue or make a pull request. :)
 - `vue-loader` (Webpack loader for single-file `.vue` components)
 	- [Read documentation](http://vuejs.github.io/vue-loader/en/)
 	- [View source on GitHub](https://github.com/vuejs/vue-loader)
+- `vue-router`
+	- [Read documentation](https://router.vuejs.org/en/)
+	- [View source on GitHub](https://github.com/vuejs/vue-router)
+- `vue-i18n`
+	- [Read documentation](https://kazupon.github.io/vue-i18n/en/)
+	- [View source on GitHub](https://github.com/kazupon/vue-i18n)
 
-Do you want to contribute to this documentation? You can edit this documentation at [github.com/Eiskis/vue-webpack-docs](https://github.com/Eiskis/vue-webpack-docs).
+## Contributing
+
+Do you want to contribute to the template? Please [file an issue](https://github.com/Eiskis/vue-webpack/issues) or a [pull request](https://github.com/Eiskis/vue-webpack/pulls) on GitHub.
+
+Do you want to contribute to this documentation? It's a Git repo in the [GitBook format](https://toolchain.gitbook.com/structure.html). You can [edit this documentation on GitHub](https://github.com/Eiskis/vue-webpack-docs).
