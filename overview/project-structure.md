@@ -5,6 +5,8 @@
 
 ## App source
 
+[Browse source on GitHub](https://github.com/Eiskis/vue-webpack)
+
 ```
 docs/                                // Documentation generated from codebase
 src/
