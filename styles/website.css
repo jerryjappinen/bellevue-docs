@@ -5,6 +5,10 @@
 }
 
 /* Unavailable sidebar items */
+.book-summary ul.summary li b {
+	color: #939da3;
+}
+
 .book-summary ul.summary li span {
-	opacity: 0.6;
+	color: #939da3;
 }
