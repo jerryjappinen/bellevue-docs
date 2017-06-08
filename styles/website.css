@@ -7,6 +7,7 @@
 /* Unavailable sidebar items */
 .book-summary ul.summary li b {
 	color: #939da3;
+	font-weight: inherit;
 }
 
 .book-summary ul.summary li span {
