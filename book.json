@@ -21,9 +21,7 @@
 		}
 	},
 	"links": {
-		"sidebar": {
-			"Vue Webpack Docs": false
-		},
+		"sidebar": {},
 		"sharing": {
 			"facebook": false,
 			"twitter": false
