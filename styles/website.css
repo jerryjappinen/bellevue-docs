@@ -26,10 +26,27 @@ body {
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 }
 
+.book-summary {
+	font-size: 14px;
+	background-color: #fafafa;
+}
+
+#book-search-input {
+	background-color: #fff;
+}
+
 /* Sidebar */
 .book-summary ul.summary li a,
 .book-summary ul.summary li span {
+    padding: 0.5em 1em;
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*Section headers*/
+.book-summary ul.summary li.header {
+	text-transform: none;
+	color: #7f8c8d;
+	font-weight: 600;
 }
 
 /* Unavailable sidebar items */
@@ -40,21 +57,13 @@ body {
 /* Bold numbers in sidebar */
 .book-summary ul.summary li b {
 	color: #7f8c8d;
-	font-weight: inherit;
+	font-weight: 600;
 }
 
 /*Active sidebar item*/
 .book-summary ul.summary li.active > a {
 	color: #42b983;
 	font-weight: 600;
-}
-
-#book-search-input {
-	background-color: #fafafa;
-}
-
-.book-summary {
-	background-color: #fff;
 }
 
 /* Markdown content found on pages */
@@ -142,6 +151,7 @@ pre code {
 	position: relative;
 }
 
+/*Language identifiers in code blocks*/
 pre code.lang-html:after,
 pre code.lang-js:after,
 pre code.lang-bash:after,
