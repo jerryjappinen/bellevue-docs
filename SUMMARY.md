@@ -3,6 +3,7 @@
 
 - [Intro](README.md)
 - [Setup and requirements](overview/setup.md)
+- [Feature comparison](overview/comparison.md)
 - [Project structure](overview/project-structure.md)
 - [Known issues](overview/known-issues.md)
 - [IDE integration](overview/ide.md)
