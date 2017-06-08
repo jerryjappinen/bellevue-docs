@@ -1,10 +1,6 @@
 
 # Project structure
 
-
-
-## App source
-
 [Browse source on GitHub](https://github.com/Eiskis/vue-webpack)
 
 ```
@@ -66,7 +62,7 @@ test/
 
 
 
-## Pipeline
+## Tooling
 
 ```
 build/         // Webpack build scripts
