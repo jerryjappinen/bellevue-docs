@@ -11,8 +11,13 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 | -- | -- | -- |
 |ES6|Yes|Yes
 |Webpack 2|Yes|Yes
+|URL resolution for all file types and all assets|Yes|Yes
+|True static assets|Yes|Yes
 |Hot reload|Per-module|Per-module
-|Asset minification|Yes|Yes
+|Asset minification and compilation|Yes|Yes
+|Production builds|Yes|Yes
+|Unit and E2E tests|Yes (crude and iffy)|Yes (crude and iffy)
+|Excellent error reporting|Yes|Yes
 |JavaScript linting|Yes|Yes
 |CSS linting|Yes|-
 |SCSS linting|Yes|-
