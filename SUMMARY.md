@@ -14,7 +14,7 @@
 - [Components](app/components.md)
 - [Models](app/models.md)
 - [Services](app/services.md)
-- [State management](app/state.md)
+- [Vuex state management](app/vuex.md)
 - [Utilities](app/utilities.md)
 - [Vendor code](app/vendor.md)
 - [Extending Vue](app/vue.md)
@@ -24,6 +24,7 @@
 
 ### Stylesheets
 
+- [Stylesheet architecture](stylesheets/stylesheet-architecture.md)
 - ~~Classnames and selectors~~<!-- (ui/style-selectors.md) -->
 - ~~Constants~~<!-- (ui/style-constants.md) -->
 - ~~Mixins~~<!-- (ui/scss-mixins.md) -->
@@ -35,6 +36,7 @@
 - [Assets](ui/assets.md)
 - ~~Web fonts~~
 - [Localisation](ui/localisation.md)
+- [Routing](ui/routing.md)
 - [Transitions](ui/transitions.md)
 
 ### Coding guidelines
@@ -47,7 +49,6 @@
 ### How-to guides
 
 - [Creating a new component](howto/creating-components.md)
-- [Creating new pages and routes](howto/routes.md)
 - [Setting page meta information](howto/meta.md)
 - [Adding new assets](howto/new-assets.md)
 - [Using a new Vue plugin](howto/vue-plugin.md)

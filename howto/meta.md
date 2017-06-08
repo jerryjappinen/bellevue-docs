@@ -11,5 +11,5 @@ However you are free to add any other meta tags to `index.html.ejs`. These are t
 
 Use the `metaInfo` property in your page component. We use the `vue-meta` component which reads this and updates the page title and other tags when this component is navigated to.
 
-- [Read more about creating pages](routes.md)
+- [Read more about creating routed pages](../ui/routing.md)
 - [Read more about `vue-meta`](https://github.com/declandewet/vue-meta)

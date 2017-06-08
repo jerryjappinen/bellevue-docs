@@ -15,7 +15,7 @@ src/
 		|_ config-aliases.js
 		|_ config-base.js
 		|_ config-routes.js
-	|_ fonts/                        // Web font files
+	|_ fonts/                        // Web font assets
 	|_ models/                       // JS business logic objects
 	|_ services/                     // JS custom (reactive) services
 	|_ store/                        // JS state management code
@@ -30,6 +30,10 @@ src/
 		|_ transitions/
 		|_ utilities-base/
 		|_ utilities-composed/
+		|_ webfonts/
+		|_ global.scss               // All global base styling
+		|_ shared.scss               // All SCSS constants and mixins
+		|_ utilities.scss            // All global CSS utilities
 	|_ svg/                          // SVG assets that will be compiled into a sprite
 	|_ util/                         // JS custom misc. utilities
 	|_ vue/

@@ -37,6 +37,7 @@
 - [ ] Inject services into components?
 - [ ] Try `vue-supply`, `vue-apollo` and GraphQL
 	- https://github.com/Akryum/vue-supply
+- [ ] Support lazy loading localisation files
 
 ## Components
 

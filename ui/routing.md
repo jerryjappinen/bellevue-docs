@@ -27,6 +27,8 @@ Routes are configured in `src/config/config-routes.js`. Things to keep in mind w
 }
 ```
 
+### Best practices
+
 - Avoid unnecessary nesting. Remember that routes don't have to match any specific navigation element or menu 1:1.
 - Match the _route_ name with the _page component's_ name.
 	- This name should make sense to the developers.
