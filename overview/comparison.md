@@ -38,3 +38,5 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 |App code architecture: services|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/services)|-
 |App code architecture: business logic models|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/models)|-
 |App code architecture: custom utilities|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/utilities)|-
+|Preconfigured VS Code|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/.vscode/settings.json)|-
+|Support for generated docs|Yes (using Docco)|-

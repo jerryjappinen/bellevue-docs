@@ -64,3 +64,4 @@
 - [App icon generation](pipeline/app-icons.md)
 - [SVG compilation](pipeline/svg-compilation.md)
 - [URL resolving and aliases](pipeline/urls.md)
+- ~~Generating docs~~
