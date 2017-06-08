@@ -38,22 +38,16 @@ src/
         |_ directives/               // Vue directives
         |_ mixins/                   // Vue mixins
         |_ plugins/                  // Vue plugins
-    |_ main.js                       // Vue setup and main entry point for client app
     |_ index.html.ejs                // Main HTML template
-
-    // Linter configuration
-    |_ .eslintrc.js
-    |_ .htmllintrc
-    |_ stylelint.config.js
-
-// Static files to host alongside the production build
-static/
-
-// End-to-end and unit tests
+    |_ main.js                       // Vue setup and main entry point for client app
+    |_ stylelint.config.js           // Linter configuration
+    |_ .htmllintrc                   // Linter configuration
+    |_ .eslintrc.js                  // Linter configuration
+static/                              // Static files to host alongside product
 test/
-    |_ e2e/
+    |_ e2e/                          // End-to-end tests on Nightwatch
         |_ custom-assertions/
-    |_ unit/
+    |_ unit/                         // Unit tests on Karma and Mocha
         |_ specs/
             |_ components/
             |_ models/
@@ -67,8 +61,8 @@ test/
 ```
 build/             // Webpack build scripts
 config/            // Webpack environment configuration
-.nvmrc             // Node.js version
 package.json       // Dev and app dependencies, development scripts
+.nvmrc             // Node.js version
 ```
 
 ## Extras
