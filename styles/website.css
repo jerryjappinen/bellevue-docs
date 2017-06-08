@@ -29,10 +29,12 @@ body {
 .book-summary {
 	font-size: 14px;
 	background-color: #fafafa;
+    border-color: rgba(0,0,0,.15);
 }
 
 #book-search-input {
 	background-color: #fff;
+    border-color: rgba(0,0,0,.15);
 }
 
 /* Sidebar */
@@ -47,6 +49,13 @@ body {
 	text-transform: none;
 	color: #7f8c8d;
 	font-weight: 600;
+	margin-top: 1em;
+	border-top: 1px solid rgba(0,0,0,.15);
+}
+
+.book-summary ul.summary li.divider + li.header {
+	margin-top: 0;
+	border-top-width: 0;
 }
 
 /* Unavailable sidebar items */
