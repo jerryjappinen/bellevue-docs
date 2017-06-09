@@ -13,6 +13,7 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 |Webpack 2|Yes|Yes
 |URL resolution for all file types and all assets|Yes|Yes
 |True static assets|Yes|Yes
+|Loader for `.vue` files|Yes|Yes
 |Hot reload|Per-module|Per-module
 |Asset minification and compilation|Yes|Yes
 |Production builds|Yes|Yes
@@ -22,8 +23,8 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 |CSS linting|Yes|-
 |SCSS linting|Yes|-
 |HTML linting|Yes|-
-|Preconfigured aliases|More|Some
 |Preconfigured linter config and plugins|Yes|-
+|Preconfigured aliases|More|Some
 |SCSS support in `.scss` files|Yes|-
 |SCSS support in `.vue` files|Yes|-
 |SVG optimisation and sprite compilation (components included)|Yes|-
