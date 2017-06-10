@@ -1,20 +1,17 @@
 
-# Global state management
+# Vuex
 
 - Official Vuex docs: [vuex.vuejs.org](https://vuex.vuejs.org/en/)
 
-Global state is for things that user can directly control and would expect (explicitly or implicitly) the application to know, keep track of and ensure persistence of. Global state is shared between components.
-
-In Vuex, change detection is enabled, but the architecture used for writing global state code is different from writing other Vue code. Vuex can be powerful, but you might also consider using [services](services.md) if you're not sure you need it.
-
+Global state is for things that user can directly control and would expect (explicitly or implicitly) the application to know, keep track of and ensure persistence of (latter is currently not included). Global state is shared between components.
 
 ## Alternatives
 
-How complex should we make global state management?
+In Vuex, change detection is enabled, but the architecture used for writing global state code is different from writing other Vue code. Vuex can be powerful, but you might also consider using [services](services.md) if you're not sure you need it - they are shared Vue objects with global state, written as Vue objects instead of using the Vuex pattern.
 
 Vuex is very complex, but well integrated into Vue development tools, and uses some common patterns shared with other state management solutions.
 
-There are [many authored alternatives](https://github.com/vuejs/awesome-vue#state-management) out there. Simply writing custom services as viewless Vue objects can also work very nicely.
+There are [many authored alternatives](https://github.com/vuejs/awesome-vue#state-management) out there.
 
 ## Removing Vuex
 

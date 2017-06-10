@@ -3,16 +3,18 @@
 
 ## Pipeline
 
-- [ ] Support local config files outside of version control
-- [ ] Split global state management
-	- Vuex also supports splitting modules
-	- Actions, getters, etc. can also be split into different files easily
-	- Is using multiple stores an antipattern?
-	- What are the best practices for this? Need to look at a real application.
-- [ ] Persistent global state
-	- Just store in localstorage or something
-	- What about Vuex modules?
-	- https://github.com/vuejs/awesome-vue#persistence
+- [ ] Support local Webpack config files outside of version control
+	- Need to be able to set different ports for development for example
+- [ ] Vuex
+	- [ ] Limit using Vuex to a couple of sample components so it's easier to remove
+	- [ ] Split Vuex state management
+		- Vuex supports splitting modules
+		- Actions, getters, etc. can also be split into different files easily
+		- Is using multiple stores an antipattern?
+		- What are the best practices for this? Need to look at a real application.
+	- [ ] Persistent Vuex  state
+		- Just store in localstorage or something
+		- https://github.com/vuejs/awesome-vue#persistence
 - [ ] More full-featured index.html templating
 	- Add more full-featured meta tags
 	- https://github.com/jantimon/favicons-webpack-plugin
@@ -34,7 +36,6 @@
 	- Wrap Modernizr?
 - [ ] Tests for models
 - [ ] Tests for services
-- [ ] Inject services into components?
 - [ ] Try `vue-supply`, `vue-apollo` and GraphQL
 	- https://github.com/Akryum/vue-supply
 - [ ] Support lazy loading localisation files
@@ -54,9 +55,6 @@
 ## Examples and docs
 
 - [ ] Write about controls vs form elements
-- [ ] Write about services
-	- Reference to existing services
-	- Write howto about writing a new one
 - [ ] Event usage examples
 	- `_.debounce`
 	- Using `vue-throttle-event`

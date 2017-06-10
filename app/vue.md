@@ -7,7 +7,7 @@ Anything can be written as a Vue object. You can always create a new Vue instanc
 
 ```js
 // somefile.js
-var someService = new Vue({
+export default new Vue({
 	data: function () {
 		return {
 			someNumber: 1
@@ -24,13 +24,12 @@ var someService = new Vue({
 		}
 	}
 });
-export default someService;
 
 // anotherfile.js
-import s from 'somefile.js';
-console.log(s.someNumber, s.someNumberTimesTen); // 1, 10
-s.iterate();
-console.log(s.someNumber, s.someNumberTimesTen); // 2, 20
+import thing from 'somefile.js';
+console.log(thing.someNumber, thing.someNumberTimesTen); // 1, 10
+thing.iterate();
+console.log(thing.someNumber, thing.someNumberTimesTen); // 2, 20
 ```
 
 You can also use `Vue.extend({ ... })` to write new models that you can instantiate later (this is how our [models](models.md) are written).
@@ -77,8 +76,15 @@ f.title = 'Vue';
 
 ## Vue plugins
 
+- [Official guide on Vue plugins](https://vuejs.org/v2/guide/plugins)
+
 What exactly is a "Vue plugin" is not strictly defined. Generally plugins are externally managed JS packages that add functionality as parameters, methods, directives and/or mixins to Vue either globally or on component level.
 
-Vue provides a way to install and use a plugin, but other than that it's up to the author to use the API of Vue to deliver the intended functionality in whatever format they wish. Because of this, it can take some time to learn the best practices about authoring Vue plugins, especially if you expect change detection to work reliably. Because of this, it's better to write custom code as [custom utilities](services.md) or [custom services](services.md).
+Vue provides a way to install and use a plugin, but there is no strict and guided plugin architecture. It's up to the author to use the API of Vue to deliver the intended functionality in whatever format they wish. Because of this, it can take some time to learn the best practices about authoring Vue plugins, especially if you expect change detection to work reliably.
 
-- [Official guide on Vue plugins](https://vuejs.org/v2/guide/plugins)
+This project template provides a framework for writing different parts of your app in a structured way - all powered by Vue.
+
+- [Components](components.md)
+- [Models](models.md).
+- [Services](services.md)
+- [Utilities](utilities.md) (plain JS, not Vue)

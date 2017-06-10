@@ -44,6 +44,7 @@
 - Vue components have to be written in a certain way to work with TS.
 - Vue components are generally very simple, so TS usefulness is limited.
 - We already have linting for all languages and some level of IntelliSense in VS Code available.
+- Most functionality depends on run-time stuff, how useful will TS be with Vue?
 
 # Project features
 
@@ -148,7 +149,8 @@
 - Localisation
 	- https://github.com/vuejs/awesome-vue#i18n
 - Persistent state
-	- Can be trivial, just save and load Vuex state to local storage
+	- Works for services
+	- Trivial to add for Vuex
 - Authentication
 	- https://github.com/vuejs/awesome-vue#authenticationauthorization
 - Splitting global state management
@@ -159,7 +161,6 @@
 ### Problems/missing in pipeline
 
 - The state of modern web development: the whole pipeline is a delicate flower
-- SCSS took a lot of work to get just right in the pipeline, but now works
 - `htmllint` is not integrated with Webpack 2 yet
 - App icons for multiple platforms, devices etc.
 	- Maybe not needed
@@ -169,8 +170,6 @@
 	- robots.txt
 	- etc.
 - Server-side rendering
-	- We're dealing with fresh data all the time (so we need true SSR, not build-time prerendering)
-	- If we implement embedded widgets, prerendering might be useful for those (abuse report form etc.)
 	- Prerendering plugin for this pipeline: http://vuejs-templates.github.io/webpack/prerender.html
 	- About SSR on Vue: https://vuejs.org/v2/guide/ssr.html
 	- Full SSR guide for Vue: https://ssr.vuejs.org/en/
@@ -191,29 +190,14 @@ Did not test E2E, needs a JDK installed in order to be run from the command line
 
 ## Questions
 
-- Where is the doc that explains the project pipeleline structure?
-	- Explain directories
-	- Explain how the pipeline works
-	- Explain common developer use cases (where to put files, how to name them, where and how to export and import things etc.)
-- Where is the doc that explains naming conventions?
-	- kebab-case for SCSS files
-	- kebab-case for SCSS mixins
-	- kebab-case for CSS classes
-	- kebab-case for HTML tags and attributes
-	- CapitalCamelCase for imported classes in JS
-	- CapitalCamelCase for component names and files
-	- camelCase for other JS files and variables
-	- camelCase for other exported values in JS
-	- `UPPER_CASE_WITH_UNDERSCORE` for `vuex` mutations
-	- `camelCase` for all other `vuex` keys
 - Need to write more about coding conventions to make code reviews painless
 	- Linting is a big help
 	- Tests help, but what kind of tests should we write?
 - What are the most relevant practical sample projects we should look at?
 	- https://vuejs.org/v2/examples/
 - How complex should we make global state management?
+	- Services work very nicely
 	- There are many standard alternatives: https://github.com/vuejs/awesome-vue#state-management
-	- Simple custom Vue services work very nicely
 	- But Vuex is the "official" solution
 	- Vuex integrates into Vue dev tools
 	- "If you’re coming from React, you may be wondering how vuex compares to redux, the most popular Flux implementation in that ecosystem. Redux is actually view-layer agnostic, so it can easily be used with Vue via some simple bindings. Vuex is different in that it knows it’s in a Vue app. This allows it to better integrate with Vue, offering a more intuitive API and improved development experience."
@@ -229,35 +213,14 @@ Did not test E2E, needs a JDK installed in order to be run from the command line
 	- Ensuring dependencies are up to date (directives and plugins imported in components must be installed via npm and `package.json` up to date)
 	- Webpack disallows dynamic requiring just like ES6 imports, but `require.context` could perhaps be used to improve automation
 - What should our conventions be?
-	- At some point we will have a project structure and pipeline - but how do we use it effectively to write good UIs that scale?
-	- ESLint allows configuring all of them
-	- ES6 requires some education and relearning, but most modern examples use it
-- Is configuration available run-time?
-	- We should have a place for client-side configuration
-	- Things like API paths, some values for controlling UI features (e.g. multiple account thresholds) etc. should be configurable somewhere
-	- All config needs to be site-specific
-	- Or should we load this from server? Old client needs this stuff too.
-- What's the best way to extend the pipeline?
-	- Configure through `vue-loader` as much as possible?
-	- Add Webpack loaders?
-- How do we split our state management and services/actions/utilities?
-	- We have Webpack loaders, Vuex modules, Vuex plugins, Vue plugins, and of course external vendor or custom libraries.
-- Where should we write custom utilities that don't directly mutate state?
-	- Should we write a lot of small libraries? We can `import` everything.
-	- We can expose a lot of functionality as Vue plugins
-		- Could be separate repos, or integrated into the pipeline (with tests and bootstrapping code)
-		- Docs: https://vuejs.org/v2/guide/plugins.html
-		- Example 1: https://github.com/iFgR/vue-shortkey/blob/master/src/index.js
-		- Example 2: https://github.com/scaccogatto/vue-throttle-event/blob/master/src/index.js
+	- We have a project structure and pipeline: but how do we use it effectively to write good UIs that scale?
 - How does API communication and resource loading work?
 	- Should we use [`vue-resource`](https://github.com/pagekit/vue-resource)?
 	- HTTP is not a problem
 	- Writing models is not a problem
 	- Should we use a more high-level REST library?
 	- Should there be a tighter coupling or a wrapper API library we write for out API?
-- How and where do we build for production?
-	- Local building works fine but production builds should be done via CI
-	- Do we need to test production builds separately? They can look quite different from dev builds (no hot reload module swapping, minified single-file code etc.)
+	- GraphQL?
 - Should we add more PostCSS functionality?
 	- http://postcss.parts/
 
