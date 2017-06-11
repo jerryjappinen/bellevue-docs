@@ -1,12 +1,34 @@
 
 # Production builds
 
+In production builds, the Webpack pipeline will do a lot of things to bundle all the requires code and assets as efficiently as possible for production environments.
+
+Among other things,
+
 - HTML
-	- Will be minified
-	- Comments will be removed
+	- will be minified,
+	- comments will be removed
 - CSS
-	- Will be minified
-	- Comments will be removed
+	- will be minified
+	- comments will be removed
 - JS
-	- Will be minified and uglified
-	- Comments will be removed
+	- will be minified and uglified
+	- comments will be removed
+
+## Running the build scripts
+
+To compile a bundle for production, simply use the following command:
+
+```sh
+npm run build
+```
+
+The build process will take a while, but once it's done, you will see a satisfying report in your terminal:
+
+![Build report](../images/build-cli.png)
+
+You can also `npm run build --report` to get a more detailed report on your final bundle. At the end of the build, Webpack will open an inspectable graph in your browser that gives you a great overview of how your bundle breaks down.
+
+![Detailed build report](../images/build-report.png)
+
+This is a great way to get a better understanding of which libraries take up the lions' share of the bundle size, and where to optimize if your production builds are too big. This will also reveal any unintendedly included libraries.
