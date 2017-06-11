@@ -3,8 +3,9 @@
 
 `Eiskis/vue-webpack` is an advanced, opinionated Webpack project template for complex Vue projects.
 
-- **Read documentation:** [eiskis.gitbooks.io/vue-webpack-docs](https://eiskis.gitbooks.io/vue-webpack-docs/)
-- Project source code on GitHub: [github.com/Eiskis/vue-webpack](https://github.com/Eiskis/vue-webpack)
+- Demo: [vue.netlify.com](https://vue.netlify.com/)
+- Documentation: [eiskis.gitbooks.io/vue-webpack-docs](https://eiskis.gitbooks.io/vue-webpack-docs/)
+- Source: [github.com/Eiskis/vue-webpack](https://github.com/Eiskis/vue-webpack)
 
 ## Table of contents
 
