@@ -5,15 +5,10 @@ In production builds, the Webpack pipeline will do a lot of things to bundle all
 
 Among other things,
 
-- HTML
-	- will be minified,
-	- comments will be removed
-- CSS
-	- will be minified
-	- comments will be removed
-- JS
-	- will be minified and uglified
-	- comments will be removed
+- HTML will be minified, and comments will be removed.
+- CSS will be minified, and comments will be removed.
+- JS will be minified and uglified, and comments will be removed.
+- All static assets will be copied ofer to a the assets directory, and all related URLs resolved.
 
 ## Running the build scripts
 
