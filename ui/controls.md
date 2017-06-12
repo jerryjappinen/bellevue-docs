@@ -1,7 +1,7 @@
 
 # Controls and form elements
 
-Before we talk about form elements, let's summarize the difference between **1-way** and **2-way** data binding.
+Before we talk about form elements, let's summarize the difference between **1-way** and **2-way** data binding. If you're not familiar with this topic, it might also be a good idea to read through the [official documentation on form input bindings](https://vuejs.org/v2/guide/forms.html) before proceeding.
 
 ### 1-way data binding
 
@@ -23,13 +23,13 @@ While this project template is not intended to be a component library, it does c
 
 ### Read-write control components
 
-These are traditional form elements that both **visualize** and **mutate** values.
+These components use 2-way data binding. These are traditional form elements that both **visualize** and **mutate** values.
 
 Example: [`Textinput.vue`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/controls/Textinput.vue)
 
 ### Write-only control components
 
-These are components that **only mutate** values. This allows to abstract certain types of input behavior, such as toggling on and off, to only one component and avoid having to duplicate the same input handling logic elsewhere. This comes in handy in a couple of very common use cases:
+These components use 2-way data binding. These are components that **only mutate** values. This allows to abstract certain types of input behavior, such as toggling on and off, to only one component and avoid having to duplicate the same input handling logic elsewhere. This comes in handy in a couple of very common use cases:
 
 1. We're using more than one type of toggle or checkbox components in our UI that share the same behavior but not visual styling or template structure.
 2. We want to control the **hit area** of an input independent of the visual representation of the input. For example, the user should be able to press on a long text label next to a checkbox to toggle the checkbox, or anywhere on the table row to toggle a radio button.
@@ -41,7 +41,7 @@ This pattern is similar to how the `<label>` and `<input>` tags work in standard
 
 ### Read-only form components
 
-These are components that represent user-facing form elements, but they **only visualize** values, and do not include any logic for mutating it. Typically these are used inside _controls_ to represent the UI state, which the user can then change by interacting with the _controls_.
+These components use 1-way data binding. These are components that represent user-facing form elements, but they **only visualize** values, and do not include any logic for mutating it. Typically these are used inside _controls_ to represent the UI state, which the user can then change by interacting with the _controls_.
 
 Sometimes you might also use a read-only form component to visualize state without allowing the user to directly change it with a control element. A typical use case would be using a checkbox component to visualize if some computed property is true.
 
