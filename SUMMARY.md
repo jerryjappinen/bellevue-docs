@@ -20,16 +20,16 @@
 ### Stylesheets
 
 - [Stylesheet architecture](stylesheets/stylesheet-architecture.md)
-- ~~Classnames and selectors~~<!-- (ui/style-selectors.md) -->
-- ~~Constants~~<!-- (ui/style-constants.md) -->
-- ~~Mixins~~<!-- (ui/scss-mixins.md) -->
-- ~~Global base styling~~<!-- (ui/global-styles.md) -->
-- ~~Style utilities~~<!-- (ui/style-utilities.md) -->
+- Classnames and selectors<!-- (ui/style-selectors.md) -->
+- Constants<!-- (ui/style-constants.md) -->
+- Mixins<!-- (ui/scss-mixins.md) -->
+- Global base styling<!-- (ui/global-styles.md) -->
+- Style utilities<!-- (ui/style-utilities.md) -->
 
 ### UI code
 
 - [Assets](ui/assets.md)
-- ~~Web fonts~~
+- Web fonts
 - [Localisation](ui/localisation.md)
 - [Routing](ui/routing.md)
 - [Transitions](ui/transitions.md)
@@ -39,7 +39,7 @@
 - [Naming conventions](conventions/naming.md)
 - [JS](conventions/js.md)
 - [SCSS](conventions/scss.md)
-- ~~HTML~~
+- HTML
 
 ### How-to guides
 

@@ -7,6 +7,8 @@ src/
     |__ MyModel.js
 ```
 
+- [See included examples on GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/models)
+
 Models are **viewless** Vue objects intended for encapsulating business logic in the classical object-oriented way. Viewless in this context means that they have no template, and are never rendered directly.
 
 We use models to encapsulate reusable logic and take advantage of the reactivity and structure provided by Vue. In any practical application, the information architecture should be designed in a way that the same type of data objects are often rendered in multiple different ways.

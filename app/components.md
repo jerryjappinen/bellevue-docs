@@ -7,10 +7,12 @@ src/
     |__ MyComponent.vue
 ```
 
-- Official guide: [vuejs.org/v2/guide/components](https://vuejs.org/v2/guide/components)
-- Full reference: [vuejs.org/v2/api](https://vuejs.org/v2/api/)
+- [See included examples on GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/util)
 
 Components are **reusable** and **nestable** UI snippets that encapsulate view logic in one... component. In Vue, a component is authored as one HTML-like file with three elements: `template`, `script` and `style`. Vue's view components closely follow web standards and are built on HTML, JS and CSS respectively.
+
+- Official guide: [vuejs.org/v2/guide/components](https://vuejs.org/v2/guide/components)
+- Full reference: [vuejs.org/v2/api](https://vuejs.org/v2/api/)
 
 ![Vue component lifecycle](https://vuejs.org/images/lifecycle.png)
 
