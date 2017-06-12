@@ -30,7 +30,7 @@
 
 - [Assets](ui/assets.md)
 - [Backend communication](ui/http.md)
-- [Control and form elements](ui/controls.md)
+- [Controls and form elements](ui/controls.md)
 - Form validation<!-- (ui/form-validation.md) -->
 - [Localisation](ui/localisation.md)
 - [Routing](ui/routing.md)
