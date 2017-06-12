@@ -11,9 +11,9 @@ src/
 
 Services are viewless, "global" Vue objects that can be shared across components. They can expose values, computed values and helpers like any other Vue object. Change detection is enabled, and you can use any data, computed valuers and methods of a service in your components or other parts of the application code as you would expect.
 
-Values stored in a service can be made to persist in `LocalStorage`. The main app looks for the `serialized` (computed) property of a servize and will write any changes made to that into local storage. During startup, the main app will load stored values and set `serialized` - pretty straight-forward. [See example](https://github.com/Eiskis/vue-webpack/tree/master/src/services/panels.js).
-
 Services are used for things such as storing and providing access to state of shared UI elements (like "is a popup visible?") and other UI-related things (like "what is the current time?").
+
+Values stored in a service can be made to persist in `LocalStorage`. The main app looks for the `serialized` (computed) property of a servize and will write any changes made to that into local storage. During startup, the main app will load stored values and set `serialized` - pretty straight-forward. [See example](https://github.com/Eiskis/vue-webpack/tree/master/src/services/panels.js).
 
 ## Services vs. Vuex
 

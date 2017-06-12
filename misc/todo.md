@@ -23,8 +23,7 @@
 
 ## Application code
 
-- [ ] Integrate localisation
-	- https://github.com/vuejs/awesome-vue#i18n
+- [ ] Remove Axios from Vue plugins: it cna just as well be used as an external dependency
 - [ ] Integrate client-side form/input validation
 	- https://github.com/vuejs/awesome-vue#validation
 - [ ] Time formatting

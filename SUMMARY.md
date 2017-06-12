@@ -29,10 +29,12 @@
 ### UI code
 
 - [Assets](ui/assets.md)
-- Web fonts
+- [Backend communication](ui/http.md)
+- Form validation
 - [Localisation](ui/localisation.md)
 - [Routing](ui/routing.md)
 - [Transitions](ui/transitions.md)
+- Web fonts
 
 ### Coding guidelines
 
