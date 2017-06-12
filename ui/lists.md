@@ -1,13 +1,13 @@
 
 # Listing data
 
-**Note**: this article is heavily WIP.
-
-Example: [`PageList`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/controls/Toggle.vue)
+Example of a page listing dynamic data with pagination based on routes: [`PageList`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/pages/PageList.vue)
 
 ## Blank states
 
 Remember to cover cases when the list you're aiming to render is empty. Each blank state case is different depending on what type of data you're listing and what the business logic behind it is. If you expect the user to do something in order to see something in your list, you should explain this in your blank state visualisation and also provide a button to initiate the creation flow.
+
+Example: [`BlankState`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/snippets/BlankState.vue)
 
 ## Using remote data
 
@@ -47,13 +47,27 @@ export default {
 
 In your template, you can now easily react to both `isLoading` and `isEmpty`.
 
+```html
+<div class="view-my-component">
+	<transition name="transition-fade" mode="out-in">
+		<spinner v-if="isLoading"></spinner>
+		<template v-else>
+			<blank-state v-if="isEmpty" title="No accounts found"></blank-state>
+			<div v-else>
+				<!-- Here you can finally render your list -->
+			</div>
+		</template>
+	</transition>
+</div>
+```
+
 ## Using models
 
-Instead of working with raw data, it's generally desirable to instantiate models for the data you fetch from the backend. It's generally a good idea to do so immediately after fetching the raw data, so that the components rendering this data can consistently work with all the goodies that come with models.
+Instead of working with raw data, it's generally desirable to instantiate [models](../app/models.md) for the data you fetch from the backend. It's generally a good idea to do so immediately after fetching the raw data, so that the components rendering this data can consistently work with all the goodies that come with models.
 
 ```js
 // ...
-axios.get(url, options).then(function (response) {
+axios.get('/api/accounts').then(function (response) {
 	vm.data = _.map(response.data, function (item) {
 		return new Account({
 			propsData: item
