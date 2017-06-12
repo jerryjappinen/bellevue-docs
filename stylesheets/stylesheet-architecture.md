@@ -33,7 +33,7 @@ Any practical modern web application will be built with a mix of stylesheet code
 
 Components are written as `.vue` files, which include a `<style>` tag for writing component styles.
 
-Vue's `<style scoped>` is **not** used, as this will break the cascade. If you've traditionally had troubles with the cascade though, and are not interested using the power of overwriting child component styles per context for good, you might want to use `scoped` in your components.
+Vue's `<style scoped>` is **not** used, as this will break the cascade. If you've traditionally had troubles with the cascade though, and are not interested in overwriting child component styles per context, you might want to use `scoped` in your components.
 
 ## Sharing SCSS tools
 
