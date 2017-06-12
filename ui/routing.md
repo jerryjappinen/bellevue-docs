@@ -1,6 +1,15 @@
 
 # Routing and pages
 
+```
+src/
+    |_ components/
+  	    |_ pages/
+  	        |_ PageSomething.vue
+    |_ config/
+  	    |_ config-routes.js
+```
+
 We use `vue-router` to handle the routing, so take a look at the docs if you're not familiar with the configuration format.
 
 - Official docs: [router.vuejs.org](https://router.vuejs.org/en/)
@@ -17,7 +26,7 @@ Page components don't have to be nested in the project structure, and their stru
 
 ## Configuring a route
 
-Routes are configured in `src/config/config-routes.js`. Things to keep in mind when managing routes:
+Routes are configured in `src/config/config-routes.js`.
 
 ```
 {
