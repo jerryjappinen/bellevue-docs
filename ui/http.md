@@ -1,27 +1,29 @@
 
 # Backend communication
 
-For simple use cases and generic HTTP communication, this template comes with **Axios**. It is a good, popular and generic library for HTTP communication.
+Projects can be very different in terms of what kind communication they have with different backends. There are countless alternatives for various use cases, and what works best will vary on a project-to-project basis. Some of the alternatives recommended for Vue are listed on [Awesome Vue](https://github.com/vuejs/awesome-vue#http-requests)
+
+## Axios
+
+Axios us a popular simple and generic HTTP communication.
 
 - Axios documentation: [github.com/mzabriskie/axios](https://github.com/mzabriskie/axios)
 
-## Alternatives
+Axios is already included in this template. If you don't want to use it, simply remove it from `package.json` and remove the part in `ConsolePlugins.vue` where it is used.
 
-Projects can be very different in terms of what kind communication they have with different backends. There are countless alternatives for various use cases, and what works best will vary on a project-to-project basis. Some of the alternatives recommended for Vue are listed on [Awesome Vue](https://github.com/vuejs/awesome-vue#http-requests)
-
-### Fetch API
+## Fetch API
 
 Native Fetch API might be fine for you if you only need low-level network communication, and the browser support is enough for your project.
 
 - [Read more on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
-### SuperAgent
+## SuperAgent
 
 SuperAgent is another popular generic library for communication.
 
 - [SuperAgent on GitHub](https://github.com/visionmedia/superagent)
 
-### GraphQL
+## GraphQL
 
 If you're into GraphQL, Apollo is a popular solution and can be integrated with Vue.
 

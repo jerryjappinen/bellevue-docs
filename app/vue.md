@@ -1,7 +1,7 @@
 
 # Extending Vue
 
-## Vue objects
+## Initializing new Vue objects
 
 Anything can be written as a Vue object. You can always create a new Vue instance with `new Vue({ ... })` (this is how our [services](services.md) are written) and write an object that can take advantage of Vue's change detection, computed properties, lifecycle hooks and other goodies. Vue can deliver a lot of great functionality even if you never intend to render anything.
 
@@ -31,6 +31,8 @@ console.log(thing.someNumber, thing.someNumberTimesTen); // 1, 10
 thing.iterate();
 console.log(thing.someNumber, thing.someNumberTimesTen); // 2, 20
 ```
+
+## Extending new Vue objects
 
 You can also use `Vue.extend({ ... })` to write new models that you can instantiate later (this is how our [models](models.md) are written).
 
@@ -65,6 +67,34 @@ var f = new Foo({
 // titleWithPrefix will be 'Bar Vue'
 f.title = 'Vue';
 ```
+
+## Injecting any library into components
+
+If you prefer to write component code with plugins available in `this` (such as `this.$http`), you can inject any library into the Vue prototype as explained by the Vue team [on Medium](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4).
+
+For example, to inject [Axios](../ui/http.md) into Vue instead of using it like any other vendor code, you can load it up like other plugins like this:
+
+```js
+// src/vue/plugins/vue-http.js
+import Vue from 'vue';
+import Axios from 'axios';
+Vue.prototype.$http = Axios;
+export default Axios;
+
+// src/vue/plugins/index.js
+import VueHttp from './vue-http';
+export {
+	VueHttp,
+	...
+};
+export default {
+	VueHttp,
+	...
+};
+```
+
+After this, Axios is available as `this.$http` in your components.
+
 
 ## Vue mixins
 
