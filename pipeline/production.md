@@ -10,6 +10,8 @@ Among other things,
 - JS will be minified and uglified, and comments will be removed.
 - All static assets will be copied ofer to a the assets directory, and all related URLs resolved.
 
+As server-side rendering is not yet included in this template, the result of the production build is simply a collection of static assets, i.e. files that you can serve over any simple server, be it on Node, Apache, Nginx or other.
+
 ## Running the build scripts
 
 To compile a bundle for production, simply use the following command:

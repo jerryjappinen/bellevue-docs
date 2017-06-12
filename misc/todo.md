@@ -5,7 +5,7 @@
 
 - [ ] Support local Webpack config files outside of version control
 	- Need to be able to set different ports for development for example
-- [ ] Vuex
+- [ ] Vuex features
 	- [ ] Split Vuex state management
 		- Vuex supports splitting modules
 		- Actions, getters, etc. can also be split into different files easily
@@ -23,11 +23,8 @@
 
 ## Application code
 
-- [ ] Remove Axios from Vue plugins: it cna just as well be used as an external dependency
 - [ ] Integrate client-side form/input validation
 	- https://github.com/vuejs/awesome-vue#validation
-- [ ] Time formatting
-	- Wrap `moment.js` in time service?
 - [ ] Some kind of env/device service
 	- Feature detection
 	- Touch vs. no touch
