@@ -12,7 +12,7 @@
 - [Components](app/components.md)
 - [Models](app/models.md)
 - [Services](app/services.md)
-- [Vuex state management](app/vuex.md)
+- [Vuex](app/vuex.md)
 - [Utilities](app/utilities.md)
 - [Vendor code](app/vendor.md)
 - [Extending Vue](app/vue.md)
