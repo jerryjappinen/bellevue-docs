@@ -1,5 +1,5 @@
 
-# Creating new pages and routes
+# Routing and pages
 
 We use `vue-router` to handle the routing, so take a look at the docs if you're not familiar with the configuration format.
 
