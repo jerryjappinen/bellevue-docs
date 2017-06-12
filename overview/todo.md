@@ -6,7 +6,6 @@
 - [ ] Support local Webpack config files outside of version control
 	- Need to be able to set different ports for development for example
 - [ ] Vuex
-	- [ ] Limit using Vuex to a couple of sample components so it's easier to remove
 	- [ ] Split Vuex state management
 		- Vuex supports splitting modules
 		- Actions, getters, etc. can also be split into different files easily
