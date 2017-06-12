@@ -28,7 +28,7 @@ import '@styles/utilities';
 @import '~semantic-ui-css/semantic.css';
 
 // Import internal dependency
-@import '~@styles/shared.scss';
+@import '~@shared-styles';
 ```
 
 Currently there is no magical globals configured for JavaScript and no magical base CSS injected outside the components.

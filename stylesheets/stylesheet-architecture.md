@@ -40,7 +40,8 @@ Vue's `<style scoped>` is **not** used, as this will break the cascade. If you'v
 In both global and component styles, you can import any SCSS mixins and constants you need. The easiest way to do this is to simply import the shared styles like this:
 
 ```scss
-@import '~@styles/shared';
+// `@shared-styles` is an aliased defined in src/config/config-aliases.js
+@import '~@shared-styles';
 ```
 
 Notice that this does not result in any new CSS output. `shared.scss` only imports mixins and constants.

@@ -31,7 +31,7 @@ HTML (**with** `~` prefix):
 SCSS (**with** `~` prefix):
 
 ```scss
-@import '~@styles/shared';
+@import '~@shared-styles';
 .foo {
 	background-image: url('~@assets/logo.png');
 }

@@ -97,7 +97,7 @@ One components can generally appear under multiple different parent components i
 </template>
 
 <style lang="scss">
-	@import '~@styles/shared';
+	@import '~@shared-styles';
 
 	.view-my-view {}
 
@@ -194,7 +194,7 @@ One components can generally appear under multiple different parent components i
 </template>
 
 <style lang="scss">
-	@import '~@styles/shared';
+	@import '~@shared-styles';
 
 	.view-my-component {
 		color: blue;
