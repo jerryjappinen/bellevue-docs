@@ -5,7 +5,6 @@
 - [Setup and requirements](overview/setup.md)
 - [Feature comparison](overview/comparison.md)
 - [Project structure](overview/project-structure.md)
-- [Known issues](overview/known-issues.md)
 - [IDE integration](overview/ide.md)
 
 ### Client app architecture
@@ -67,5 +66,6 @@
 
 ### Miscellaneous
 
-- [Miscellaneous notes](./notes.md)
-- [To do](./todo.md)
+- [Miscellaneous notes](misc/notes.md)
+- [To do](misc/todo.md)
+- [Known issues](misc/known-issues.md)
