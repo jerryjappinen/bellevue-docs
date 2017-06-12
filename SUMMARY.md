@@ -34,6 +34,7 @@
 - Form validation<!-- (ui/form-validation.md) -->
 - [Localisation](ui/localisation.md)
 - [Routing](ui/routing.md)
+- [Server-side rendering (not included)](ui/ssr.md)
 - [Transitions](ui/transitions.md)
 - Web fonts
 
