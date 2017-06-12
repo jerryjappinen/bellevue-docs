@@ -16,9 +16,6 @@
 - [Utilities](app/utilities.md)
 - [Vendor code](app/vendor.md)
 - [Extending Vue](app/vue.md)
-- ~~Vue mixins~~
-- ~~Vue directives~~
-- ~~Vue plugins~~
 
 ### Stylesheets
 
