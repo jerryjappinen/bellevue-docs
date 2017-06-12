@@ -19,7 +19,7 @@ While it requires a bit more work to set up and keep track of 2-way bindings, it
 
 ## Form components
 
-While this project template is not intended to be a component library, it does come with a few examples of different components. There are a few different types of components included.
+While this project template is not intended to be a component library, it does come with a few examples of different components. There are a few different types of control components included.
 
 ### Read-write control components
 
@@ -29,10 +29,12 @@ Example: [`Textinput.vue`](https://github.com/Eiskis/vue-webpack/blob/master/src
 
 ### Write-only control components
 
-These components use 2-way data binding. These are components that **only mutate** values. This allows to abstract certain types of input behavior, such as toggling on and off, to only one component and avoid having to duplicate the same input handling logic elsewhere. This comes in handy in a couple of very common use cases:
+These components use 2-way data binding. These are components that **only mutate** values. This allows us to abstract certain input behavior (such as toggling a value between `true` and `false` on click), to only one component, and avoid duplicating the same input handling in many components.
 
-1. We're using more than one type of toggle or checkbox components in our UI that share the same behavior but not visual styling or template structure.
-2. We want to control the **hit area** of an input independent of the visual representation of the input. For example, the user should be able to press on a long text label next to a checkbox to toggle the checkbox, or anywhere on the table row to toggle a radio button.
+This comes in handy in a couple of very common use cases:
+
+1. We're using more than one component in our UI that look different but share the same input logic. A typical example would be checkboxes and toggle switches.
+2. We want to control the **hit area** of an input independently of the visual representation of the input. A typical example would be showing a checkbox in a table row and letting the user click anywhere on the row to toggle the checkbox.
 
 This pattern is similar to how the `<label>` and `<input>` tags work in standard HTML.
 
