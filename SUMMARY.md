@@ -7,7 +7,6 @@
 - [Project structure](overview/project-structure.md)
 - [Known issues](overview/known-issues.md)
 - [IDE integration](overview/ide.md)
-- [To do](overview/todo.md)
 
 ### Client app architecture
 
@@ -68,4 +67,5 @@
 
 ### Miscellaneous
 
-- [Miscellaneous notes](notes.md)
+- [Miscellaneous notes](./notes.md)
+- [To do](./todo.md)
