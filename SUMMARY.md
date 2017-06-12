@@ -8,7 +8,6 @@
 - [Known issues](overview/known-issues.md)
 - [IDE integration](overview/ide.md)
 - [To do](overview/todo.md)
-- [Misc. notes](overview/notes.md)
 
 ### Client app architecture
 
@@ -66,3 +65,7 @@
 - [SVG compilation](pipeline/svg-compilation.md)
 - [URL resolving and aliases](pipeline/urls.md)
 - [Generating docs](pipeline/docs.md)
+
+### Miscellaneous
+
+- [Miscellaneous notes](notes.md)
