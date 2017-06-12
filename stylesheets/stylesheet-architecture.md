@@ -27,7 +27,7 @@ Any practical modern web application will be built with a mix of stylesheet code
 
 `global.scss` and `utilities.scss` are imported by `App.vue`.
 
-**Known issue:** it is difficult to control the exact order that stylesheets are injected into `index.html` in Webpack. `utilities.scss` should be injected after all component styles, but they should really be injected after component styles to be more effective and reduce the need for overqualified selectors.
+**Known issue:** it is difficult to control the exact order that stylesheets are injected into `index.html` in Webpack. `utilities.scss` are _currently injected before_ component styles, but they _should be injected after_ component styles to be more effective and reduce the need for overqualified selectors.
 
 ## Component styles
 
