@@ -23,7 +23,7 @@ The pipeline compiles SVGs into sprites automatically. It's most convenient and 
 
 **Example:** [`<pic-svg>`](https://github.com/Eiskis/vue-webpack/blob/master/src/vue-components/snippets/PicSvg.vue)
 
-SVGs are XHTML and can be styled with CSS.
+_Any_ SVG is simply XML, and can be styled with CSS:
 
 ```scss
 .view-my-component {
@@ -32,6 +32,19 @@ SVGs are XHTML and can be styled with CSS.
 	}
 }
 ```
+
+_Some_ SVGs are designed to be dynamically colored with the current text color:
+
+```scss
+.view-my-component {
+	color: $color-red;
+	// no need to specify anything related to SVG
+}
+```
+
+The designer has chosen how and which parts of the icon to apply this `currentColor` to. It might color the entire fill of the icon, or one or two strokes. Different elements in the icon might have also different opacities even if they use `currentColor`, resulting in the final rendered icon appearing as multicolor.
+
+[Read more about SVG compilation](../pipeline/svg-compilation.md)
 
 ## Generated SVG
 
