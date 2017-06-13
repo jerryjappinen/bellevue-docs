@@ -3,6 +3,11 @@
 
 ## Pipeline
 
+- [ ] Inject services into Vue
+	- Better to have them consistently accessed via `this.$popovers` than locally renamed each time?
+- [ ] Implement component persistence as a mixin
+	- Root object serialized implementation can be replaced with this
+- Write article in docs about persistence
 - [ ] Support local Webpack config files outside of version control
 	- Need to be able to set different ports for development for example
 - [ ] Vuex features

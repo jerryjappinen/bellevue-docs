@@ -35,6 +35,7 @@
 - Form validation<!-- (ui/form-validation.md) -->
 - [Listing data](ui/lists.md)
 - [Localisation](ui/localisation.md)
+- Persistence
 - [Routing](ui/routing.md)
 - [Server-side rendering (not included)](ui/ssr.md)
 - [Transitions](ui/transitions.md)
