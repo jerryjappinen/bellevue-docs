@@ -20,6 +20,7 @@
 	- https://github.com/jantimon/html-webpack-plugin#third-party-addons
 - [ ] Enable app icon generation based on config rather than crudely commenting it out
 - [ ] Get tests to work as expected
+- [ ] Upgrade to node 8
 
 ## Application code
 
@@ -34,6 +35,8 @@
 - [ ] Try `vue-supply`, `vue-apollo` and GraphQL
 	- https://github.com/Akryum/vue-supply
 - [ ] Support lazy loading localisation files
+	- Docs: http://kazupon.github.io/vue-i18n/en/
+	- Simple example: https://kazupon.github.io/vue-i18n/en/migrations.html#features
 
 ## Components
 

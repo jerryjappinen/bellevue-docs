@@ -26,9 +26,10 @@
 - Global base styling<!-- (ui/global-styles.md) -->
 - Style utilities<!-- (ui/style-utilities.md) -->
 
-### UI code
+### UI features
 
 - [Assets](ui/assets.md)
+- Authentication
 - [Backend communication](ui/http.md)
 - [Controls and form elements](ui/controls.md)
 - Form validation<!-- (ui/form-validation.md) -->

@@ -42,6 +42,7 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 |Preconfigured VS Code|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/.vscode/settings.json)|-
 |Support for generated docs|[Yes](../pipeline/docs.md) (crude)|-
 |Server-side rendering|[No](../ui/ssr.md)|-
+|Authentication|-|-
 
 If you only need a subset of these features, the extra capabilities can easily be removed to stramline your app. Visit the corresponding section of the documentation for more information on how to remove specific features.
 
