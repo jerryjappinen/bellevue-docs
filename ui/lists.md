@@ -45,7 +45,7 @@ export default {
 }
 ```
 
-In your template, you can now easily react to both `isLoading` and `isEmpty`.
+In your template, you can now easily react to both `isLoading` and `isEmpty`, for example:
 
 ```html
 <div class="view-my-component">
