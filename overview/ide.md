@@ -16,7 +16,7 @@ Installing the following extensions for VS Code will make your life easier:
 
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) adds support for `.editorconfig` auto formatting rules.
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) integrate JavaScript linting direclty in the editor.
-- [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint) integrate (S)CSS linting directly in the editor.
+- [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint) integrate (S)CSS linting directly in the editor.
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) highlights TODO, FIXME and other similar comments in the editor.
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens) visualizes the installed versions of packages and easily update versions when editing `package.json`.
 - [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) supports common editor features in single-file components better (since `.vue` files use several different languages).
