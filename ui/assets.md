@@ -3,10 +3,10 @@
 
 ```
 src/
-  |_ assets/
-    |_ logo.png
-  |_ svg/
-    |_ some-asset.svg
+    |_ assets/
+        |_ logo.png
+    |_ svg/
+        |_ some-asset.svg
 ```
 
 ## Bitmap and static assets
