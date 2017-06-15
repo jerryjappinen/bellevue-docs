@@ -30,12 +30,13 @@
 
 - [Assets](ui/assets.md)
 - Authentication
+- Authorization
 - [Backend communication](ui/http.md)
 - [Controls and form elements](ui/controls.md)
 - Form validation<!-- (ui/form-validation.md) -->
 - [Listing data](ui/lists.md)
 - [Localisation](ui/localisation.md)
-- Persistence
+- [Persistence](ui/persistence.md)
 - [Routing](ui/routing.md)
 - [Server-side rendering (not included)](ui/ssr.md)
 - [Transitions](ui/transitions.md)

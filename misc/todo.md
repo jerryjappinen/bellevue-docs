@@ -7,7 +7,7 @@
 	- Better to have them consistently accessed via `this.$popovers` than locally renamed each time?
 - [ ] Implement component persistence as a mixin
 	- Root object serialized implementation can be replaced with this
-- Write article in docs about persistence
+- [ ] Write article in docs about persistence
 - [ ] Support local Webpack config files outside of version control
 	- Need to be able to set different ports for development for example
 - [ ] Vuex features
@@ -29,6 +29,10 @@
 
 ## Application code
 
+- [ ] Add `color` to click-button
+- [ ] Use `ClickButton` throughout instead of the utility
+- [ ] Write howto about wrapper components
+- [ ] Add `<spinner-small>`
 - [ ] Integrate client-side form/input validation
 	- https://github.com/vuejs/awesome-vue#validation
 - [ ] Some kind of env/device service
