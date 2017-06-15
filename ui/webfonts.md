@@ -21,7 +21,7 @@ Local web fonts are fairly easy to add to the app:
 
 1. Put your font files under `src/fonts/`
 2. Create a new SCSS file under `src/styles/webfonts/`
-3. Use the [`font-face`](https://github.com/Eiskis/vue-webpack/tree/master/src/styles/mixins/mixin-font.scss) SCSS mixin in this file to generate CSS font-face declarations for the corresponding files.
+3. Generate CSS `font-face` declarations for the font files with the [`font-face` SCSS mixin](https://github.com/Eiskis/vue-webpack/tree/master/src/styles/mixins/mixin-font.scss) like in [this example](https://github.com/Eiskis/vue-webpack/tree/master/src/styles/webfonts/webfont-source-sans.scss).
 4. `@import` the new webfont SCSS file in `global.scss`
 
 You can now refer to the included font family like any other font in your stylesheets, and expect users to have this font loaded when using the app.
