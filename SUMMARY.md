@@ -49,12 +49,13 @@
 - [SCSS](conventions/scss.md)
 - HTML
 
-### How-to guides
+### FAQ
 
-- [Creating a new component](howto/creating-components.md)
-- [Setting page meta information](howto/meta.md)
-- [Adding new assets](howto/new-assets.md)
-- [Using a new Vue plugin](howto/vue-plugin.md)
+- [Adding new assets](faq/new-assets.md)
+- [Creating a new component](faq/creating-components.md)
+- Wrapper components
+- [Setting page meta information](faq/meta.md)
+- [Using a new Vue plugin](faq/vue-plugin.md)
 
 ### Pipeline
 
