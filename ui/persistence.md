@@ -3,6 +3,10 @@
 
 Persistence refers to the app storing the state of an object as an instance of it is removed and recreated. In practice this means sharing
 
+## Persistence via routing
+
+URL is a good place to store some data, as it can be bookmarked, shared between users etc. Obviously this has many limitations, but in many cases this is the best place to store information such as current page, current tab or an ID of an object whose information you're showing on the page.
+
 ## Persistence in components
 
 [Components](./app/components.md) can easily store their state in Local Storage. This is implemented with a global mixin, which tracks a computed parameter `persist` and stores it whenever it changes. When the component is recreated, the mixin loads values from local storage and updates the newly created instance to use those values (as defined by the `persist` setter).
