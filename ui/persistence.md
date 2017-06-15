@@ -1,13 +1,17 @@
 
 # Persistence
 
+Persistence refers to the app storing the state of an object as an instance of it is removed and recreated. In practice this means sharing
+
 ## Persistence in components
 
-[Components](./app/components.md) can easily store their state in Local Storage. This is implemented with a global mixin, which tracks a computed parameter `persist` and stores it whenever it changes. When the component
+[Components](./app/components.md) can easily store their state in Local Storage. This is implemented with a global mixin, which tracks a computed parameter `persist` and stores it whenever it changes. When the component is recreated, the mixin loads values from local storage and updates the newly created instance to use those values (as defined by the `persist` setter).
 
-In order for peristence to work, we need to have a key to store the persistent values with. To make sure each component has one, you **must** define either the component's `name` property (which is a good practice) or a _computed_ property `persistKey` for your component in order for peristence to work.
+In order for persistence to work, we need to have a key to store the persistent values with. To make sure each component has one, you **must** define either the component's `name` property (which is a good practice) or a _computed_ property `persistKey` for your component in order for peristence to work.
 
 Any two Vue objects with the same `persistKey` (which defaults to the object's `name`) will **share the same persistent values**. This means that by default, persistence is shared across all instances of the same component. When authoring your code, be aware of this so that persistence works as expected for your users.
+
+Persistence in components is implemented via a global mixin. Here is a usage example:
 
 ```js
 	// MyPersistentComponent.vue
@@ -43,17 +47,18 @@ Any two Vue objects with the same `persistKey` (which defaults to the object's `
 	// ...
 ```
 
-If you are in a situation where you want to persist data per instance, you should probably store that data elsewhere (Vuex or services).
+You can view the source for the global mixin on [GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/vue/mixins/persist.js) to see what behavior it attaches to the components.
 
-[See source for global mixin](https://github.com/Eiskis/vue-webpack/tree/master/src/vue/mixins/persist.js)
+Note that persistent values **are not** synced real-time, i.e. persistent data is not updated in other instances of a component as it changes - only stored to local storage and used the next time a component instance with the same `persistKey` is created. If you want to share state, use [services](../app/services.md) or [Vuex](../app/vuex.md) instead.
+
+- [Read more about computed setters](https://vuejs.org/guide/computed.html#Computed-Setter)
+- [Read more about mixins](https://vuejs.org/v2/guide/mixins.html)
 
 ## Persistence in services
 
-[Services](./app/services.md) can also store their state. It works the same way as with components, i.e. through the `persist` computed value. This is handled by the root Vue instance, which inherits the mixin functionality and stores/loads the state of each service (this is because global mixins are not injected to services).
+[Services](../app/services.md) can also store their state in local storage. It works the same way as with components, i.e. through the `persist` computed value. This is handled by the root Vue instance, which inherits the mixin functionality and stores/loads the state of each service (this is because global mixins are not injected to services).
 
-See example: [Panels service](https://github.com/Eiskis/vue-webpack/tree/master/src/services/panels.js)
-
-**Note:** as services do not have access to the root Vue instance, they cannot check for things such as `this.$route` when setting persistent values from local storage.
+**Note:** as services do not have access to the root Vue instance, they cannot check for things such as `this.$route` when setting persistent values from local storage. If you're in a situation where you want to do this, it's probably better to use persistence in your `<App>` component, which can in turn use services as needed.
 
 ## Persistence in Vuex
 
