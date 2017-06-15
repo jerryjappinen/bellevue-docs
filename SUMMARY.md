@@ -40,7 +40,7 @@
 - [Routing](ui/routing.md)
 - [Server-side rendering (not included)](ui/ssr.md)
 - [Transitions](ui/transitions.md)
-- [Web fonts](ui/fonts.md)
+- [Web fonts](ui/webfonts.md)
 
 ### Coding guidelines
 
