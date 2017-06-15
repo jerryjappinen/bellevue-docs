@@ -3,8 +3,8 @@
 
 ```
 src/
-  |__ services/
-    |__ someService.js
+	|_ services/
+		|_ someService.js
 ```
 
 - [See included examples on GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/services)

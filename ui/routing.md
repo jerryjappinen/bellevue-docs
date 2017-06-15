@@ -3,11 +3,11 @@
 
 ```
 src/
-    |_ components/
-  	    |_ pages/
-  	        |_ PageSomething.vue
-    |_ config/
-  	    |_ config-routes.js
+	|_ components/
+		|_ pages/
+			|_ PageSomething.vue
+	|_ config/
+		|_ config-routes.js
 ```
 
 We use `vue-router` to handle the routing, so take a look at the docs if you're not familiar with the configuration format.

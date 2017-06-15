@@ -3,12 +3,12 @@
 
 ```
 src/
-  |_ components/
-    |_ my-component.js/
-  |_ vue/
-    |_ plugins/
-      |_ vue-plugin-foo.js/
-  main.js
+	|_ components/
+		|_ my-component.js/
+	|_ vue/
+		|_ plugins/
+			|_ vue-plugin-foo.js/
+	main.js
 ```
 
 ## 1. Add your plugin as dependency

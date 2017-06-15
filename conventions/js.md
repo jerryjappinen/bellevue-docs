@@ -5,7 +5,7 @@ The coding style of the application code is defined as closely as possible with 
 
 ```
 src/
-  |__ .eslintrc.js
+	|_ .eslintrc.js
 ```
 
 ## TL;DR

@@ -7,9 +7,9 @@ Add bitmap files anywhere under the `src/assets/` folder.
 
 ```
 src/
-  |_ assets/
-    |_ some-dir/
-      |_ some-bitmap.png
+	|_ assets/
+		|_ some-dir/
+			|_ some-bitmap.png
 ```
 
 Webpack will resolve any URLs you use to reference to these assets, but it's best to use aliases:
@@ -33,8 +33,8 @@ var someBitmapPath = require('@assets/some-dir/some-bitmap.png');
 
 ```
 src/
-  |_ svg/
-    |_ some-asset.svg
+	|_ svg/
+		|_ some-asset.svg
 ```
 
 Add your SVG in the `src/svg/`. Webpack pipeline will pick it up from here and [compile it into a sprite](../pipeline/svg-compilation.md). It can then be used with one of the `<pic>` components.

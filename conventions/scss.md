@@ -7,7 +7,7 @@ The coding style of the application code is defined as closely as possible with 
 
 ```
 src/
-  |_ stylelint.config.js
+	|_ stylelint.config.js
 ```
 
 ## TL;DR

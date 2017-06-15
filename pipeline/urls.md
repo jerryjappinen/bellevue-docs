@@ -9,8 +9,8 @@ Aliases are configured here:
 
 ```
 src/
-  |_ config/
-    |_ config-aliases.js
+	|_ config/
+		|_ config-aliases.js
 ```
 
 ## Using aliases

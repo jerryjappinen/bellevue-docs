@@ -3,8 +3,8 @@
 
 ```
 src/
-  |__ app-icon/
-    |__ app-icon.png
+	|_ app-icon/
+		|_ app-icon.png
 ```
 
 Webpack can generate app icons for multiple target platforms from a single source file. This can be quite slow however and enabling this can add significantly to the development environments startup time, although they won't be regenerated during normal development unless the source file changes.

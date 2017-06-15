@@ -3,8 +3,8 @@
 
 ```
 src/
-    |_ util/
-        |_ util-something.js
+	|_ util/
+		|_ util-something.js
 ```
 
 - [See included examples on GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/util)

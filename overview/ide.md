@@ -9,7 +9,7 @@ Workspace configuration is included in the project. The configuration instructs 
 
 ```
 .vscode/
-    |_ settings.json
+	|_ settings.json
 ```
 
 Installing the following extensions for VS Code will make your life easier:

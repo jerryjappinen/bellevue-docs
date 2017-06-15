@@ -3,8 +3,8 @@
 
 ```
 src/
-  |__ components/
-    |__ MyComponent.vue
+	|_ components/
+		|_ MyComponent.vue
 ```
 
 - [See included examples on GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/util)

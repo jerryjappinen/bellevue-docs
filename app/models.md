@@ -3,8 +3,8 @@
 
 ```
 src/
-  |__ models/
-    |__ MyModel.js
+	|_ models/
+		|_ MyModel.js
 ```
 
 - [See included examples on GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/models)
