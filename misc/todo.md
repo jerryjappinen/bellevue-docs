@@ -26,6 +26,7 @@
 - [ ] Enable app icon generation based on config rather than crudely commenting it out
 - [ ] Get tests to work as expected
 - [ ] Upgrade to node 8
+- [ ] Inject vendor script/style links to HTML based on configuration instead of manually adding them to `index.html.ejs`
 
 ## Application code
 
