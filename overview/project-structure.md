@@ -1,6 +1,10 @@
 
 # Project structure
 
+![App architecture diagram](../images/app-architecture.png)
+
+## Source code
+
 [Browse source on GitHub](https://github.com/Eiskis/vue-webpack)
 
 ```
