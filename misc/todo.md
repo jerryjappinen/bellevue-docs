@@ -29,6 +29,7 @@
 
 ## Application code
 
+- [ ] Move panel persistence to `<App>`
 - [ ] Add `color` to click-button
 - [ ] Use `ClickButton` throughout instead of the utility
 - [ ] Write howto about wrapper components
