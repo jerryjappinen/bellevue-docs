@@ -1,7 +1,7 @@
 
 # Bellevue
 
-**Bellevue** is a modern, full-featured SPA project template built on Vue.js and Webpack. It builds on the official Webpack template.
+**Bellevue** is a modern, full-featured SPA project template built on Vue.js and Webpack. Bellevue is bnased on the official Webpack template.
 
 - Demo: [vue.netlify.com](https://vue.netlify.com/)
 - Documentation: [eiskis.gitbooks.io/bellevue](https://eiskis.gitbooks.io/bellevue/)
