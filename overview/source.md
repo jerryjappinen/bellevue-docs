@@ -24,11 +24,12 @@ src/
 		|_ keyframes/
 		|_ mixins/
 		|_ normalize/
-		|_ plugin-overrides/
 		|_ toolchain/
 		|_ transitions/
 		|_ utilities-base/
 		|_ utilities-composed/
+		|_ vendor/
+		|_ vendor-overrides/
 		|_ webfonts/
 		|_ global.scss               // All global base styling
 		|_ shared.scss               // All SCSS constants and mixins
