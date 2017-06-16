@@ -3,7 +3,7 @@
 
 ## Pipeline
 
-- Desired source code order is hard to control
+- Source code order is sometimes hard to control
 	- Source code order matters in JS and in CSS
 	- Minor practical issue: utility styles should come after component styles, but injection order is magical
 	- Not currently an issue with JS or other parts of the code
@@ -13,7 +13,7 @@
 	- Complex SCSS pipeline after that (startup around 10 sec without app icons)
 	- Recompiling after saving changes to a file generally around 750-1500 ms
 	- Webpack is pretty good at only compiling what it needs during development, mostly it's just the startup time that is affected
-- The app icon generator Webpack plugin
+- App icon generator Webpack plugin
 	- Does not support passing all options to the plugin generating meta tags with color information etc.
 	- Does not compile a web favicon
 	- https://github.com/jantimon/favicons-webpack-plugin
