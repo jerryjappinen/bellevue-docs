@@ -1,6 +1,41 @@
 
 # Extending Vue
 
+This project template provides a framework for writing different parts of your app in a structured way powered by Vue:
+
+- [Components](components.md)
+- [Models](models.md)
+- [Services](services.md)
+- [Utilities](utilities.md) (plain JS, not Vue)
+
+The following topics will teach you mode about how and why these different building blocks work, and how to extend Vue for more advanced use cases.
+
+## Vue mixins
+
+[Official guide on Vue mixins](https://vuejs.org/v2/guide/mixins)
+
+Vue mixins can be added under `src/vue/mixins/`. Global mixins defined there will be registered automatically and will extend your components.
+
+## Vue directives
+
+[Official guide on Vue directives](https://vuejs.org/v2/guide/custom-directive)
+
+Vue mixins can be added under `src/vue/directives/`. Global mixins defined there will be registered automatically and will be available in your components.
+
+## Vue plugins
+
+[Official guide on Vue plugins](https://vuejs.org/v2/guide/plugins)
+
+Vue plugins can be added under `src/vue/plugins/`.
+
+What exactly is a "Vue plugin" is not strictly defined. Generally plugins are externally managed JS packages that add functionality as parameters, methods, directives and/or mixins to Vue either globally or on component level.
+
+Plugins usually need to be initialised in a certain way and some need to be injected into the root Vue object in `main.js`. When installing a new plugin, make sure you follow its documentation to set it up correctly. Remember that you can `import` custom options from `@config` in case the plugin accepts options.
+
+### Writing custom plugins
+
+Vue provides a way to install and use a plugin, but there is no strict and guided plugin architecture. It's up to the author to use the API of Vue to deliver the intended functionality in whatever format they wish. Because of this, it can take some time to learn the best practices about authoring Vue plugins, especially if you expect change detection to work reliably. Keep this in mind if you want to publish custom plugins.
+
 ## Initializing new Vue objects
 
 Anything can be written as a Vue object. You can always create a new Vue instance with `new Vue({ ... })` (this is how our [services](services.md) are written) and write an object that can take advantage of Vue's change detection, computed properties, lifecycle hooks and other goodies. Vue can deliver a lot of great functionality even if you never intend to render anything.
@@ -94,27 +129,3 @@ export default {
 ```
 
 After this, Axios is available as `this.$http` in your components.
-
-
-## Vue mixins
-
-- [Official guide on Vue mixins](https://vuejs.org/v2/guide/mixins)
-
-## Vue directives
-
-- [Official guide on Vue directives](https://vuejs.org/v2/guide/custom-directive)
-
-## Vue plugins
-
-- [Official guide on Vue plugins](https://vuejs.org/v2/guide/plugins)
-
-What exactly is a "Vue plugin" is not strictly defined. Generally plugins are externally managed JS packages that add functionality as parameters, methods, directives and/or mixins to Vue either globally or on component level.
-
-Vue provides a way to install and use a plugin, but there is no strict and guided plugin architecture. It's up to the author to use the API of Vue to deliver the intended functionality in whatever format they wish. Because of this, it can take some time to learn the best practices about authoring Vue plugins, especially if you expect change detection to work reliably.
-
-This project template provides a framework for writing different parts of your app in a structured way - all powered by Vue.
-
-- [Components](components.md)
-- [Models](models.md).
-- [Services](services.md)
-- [Utilities](utilities.md) (plain JS, not Vue)
