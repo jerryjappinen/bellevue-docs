@@ -29,16 +29,16 @@
 ### UI features
 
 - [Assets](ui/assets.md)
-- [Authentication and authorization](ui/auth.md)
+- [Authentication and authorization](ui/auth.md) *
 - [Backend communication](ui/http.md)
 - [Controls and form elements](ui/controls.md)
-- Form validation<!-- (ui/form-validation.md) -->
+- Form validation<!-- (ui/form-validation.md) --> *
 - [Listing data](ui/lists.md)
 - [Localisation](ui/localisation.md)
-- Offline handling
+- Offline handling *
 - [Persistence](ui/persistence.md)
 - [Routing](ui/routing.md)
-- [Server-side rendering (not included)](ui/ssr.md)
+- [Server-side rendering](ui/ssr.md) *
 - [Transitions](ui/transitions.md)
 - [Web fonts](ui/webfonts.md)
 
@@ -75,3 +75,5 @@
 - [IDE integration](misc/ide.md)
 - [To do](misc/todo.md)
 - [Known issues](misc/known-issues.md)
+
+_* Preconfiguration not included in Bellevue._
