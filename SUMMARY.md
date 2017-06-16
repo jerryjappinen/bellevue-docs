@@ -2,13 +2,13 @@
 ### Overview
 
 - [Intro](README.md)
-- [Setup and requirements](overview/setup.md)
 - [Feature comparison](overview/comparison.md)
-- [Project structure](overview/project-structure.md)
-- [IDE integration](overview/ide.md)
+- [Setup and requirements](overview/setup.md)
+- [Source code structure](overview/source.md)
 
-### Client app architecture
+### App architecture
 
+- [App architecture overview](app/overview.md)
 - [Components](app/components.md)
 - [Models](app/models.md)
 - [Services](app/services.md)
@@ -72,6 +72,7 @@
 
 ### Miscellaneous
 
+- [IDE integration](misc/ide.md)
 - [Miscellaneous notes](misc/notes.md)
 - [To do](misc/todo.md)
 - [Known issues](misc/known-issues.md)

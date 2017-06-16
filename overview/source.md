@@ -1,9 +1,5 @@
 
-# Project structure
-
-<img src="../images/app-architecture.png" alt="App architecture diagram" width="500px">
-
-## Source code
+# Source code structure
 
 [Browse source on GitHub](https://github.com/Eiskis/vue-webpack)
 
