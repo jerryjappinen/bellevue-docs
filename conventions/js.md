@@ -23,7 +23,9 @@ src/
 
 We use NPM for dependency management. As such, whenever you `import` an external dependency in your view component or JS file, the package has to be available locally. Your builds will fail until you have made the package available.
 
-To ensure this, it has to be declared as a dependency in `package.json`. It is easy to just `npm install` a dependency locally but not store it in the manifest, in which case your own builds will work but others' won't.
+To ensure this, it has to be declared as a dependency in `package.json`. It is easy to just `npm install` a dependency locally but not `--save` it, and thus not store it in the manifest. In this case your own builds will work but for other developers they won't.
+
+**Note:** When Node 8 was released, so was npm 5, which changed `--save` to be the default. There's no harm in using the parameter explicitly though.
 
 When cleaning up these dependencies, nothing will fail when you forget to remove an external dependency from the manifest. However the dependency will still be installed as part of the package unnecessarily.
 

@@ -14,7 +14,7 @@ src/
 ## 1. Add your plugin as dependency
 
 ```bash
-npm install vue-plugin-foo
+npm install vue-plugin-foo --save
 ```
 
 ## 2. Add a new plugin setup file
