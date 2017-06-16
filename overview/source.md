@@ -14,6 +14,7 @@ src/
 		|_ config-base.js
 		|_ config-routes.js
 	|_ fonts/                        // Web font assets
+	|_ locales/                      // Localisation files (per-language messages and formats)
 	|_ models/                       // JS business logic objects
 	|_ services/                     // JS custom (reactive) services
 	|_ store/                        // JS state management code
