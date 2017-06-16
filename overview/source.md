@@ -75,5 +75,5 @@ package.json                         // Dev and app dependencies, development sc
 ## Extras
 
 ```
-.vscode/           // Workspace settings for Visual Studio Code
+.vscode/                             // Workspace settings for Visual Studio Code
 ```
