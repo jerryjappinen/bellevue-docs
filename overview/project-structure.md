@@ -1,7 +1,7 @@
 
 # Project structure
 
-![App architecture diagram](../images/app-architecture.png)
+<img src="../images/app-architecture.png" alt="App architecture diagram" width="500px">
 
 ## Source code
 
