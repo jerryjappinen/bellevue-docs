@@ -21,10 +21,10 @@
 
 - [Stylesheet architecture](stylesheets/stylesheet-architecture.md)
 - Classnames and selectors<!-- (ui/style-selectors.md) -->
-- Constants<!-- (ui/style-constants.md) -->
-- Mixins<!-- (ui/scss-mixins.md) -->
+- SCSS Constants<!-- (ui/style-constants.md) -->
+- SCSS Mixins<!-- (ui/scss-mixins.md) -->
 - Global base styling<!-- (ui/global-styles.md) -->
-- Style utilities<!-- (ui/style-utilities.md) -->
+- Utility styles<!-- (ui/utility-styles.md) -->
 
 ### UI features
 
