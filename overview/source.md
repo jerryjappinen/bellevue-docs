@@ -68,8 +68,8 @@ test/
 		|_ nightwatch.conf.js        // End-to-end test runner configuration
 	|_ unit/
 		|_ karma.conf.js             // Unit test runner configuration
-package.json       // Dev and app dependencies, development scripts
-.nvmrc             // Node.js version
+package.json                         // Dev and app dependencies, development scripts
+.nvmrc                               // Node.js version
 ```
 
 ## Extras
