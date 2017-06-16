@@ -51,6 +51,7 @@ static/                              // Static files to host alongside product
 test/
 	|_ e2e/                          // End-to-end tests on Nightwatch
 		|_ custom-assertions/
+		|_ specs/
 	|_ unit/                         // Unit tests on Karma and Mocha
 		|_ specs/
 			|_ components/
