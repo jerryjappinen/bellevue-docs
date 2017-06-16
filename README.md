@@ -1,11 +1,11 @@
 
-# `Eiskis/vue-webpack`
+# Bellevue
 
-`Eiskis/vue-webpack` is an advanced, opinionated Webpack project template for complex Vue projects based on the official Vue Weback template.
+**Bellevue** is a modern, full-featured SPA project template built on Vue.js and Webpack. It builds on the official Webpack template.
 
 - Demo: [vue.netlify.com](https://vue.netlify.com/)
-- Documentation: [eiskis.gitbooks.io/bellevue-docs](https://eiskis.gitbooks.io/bellevue-docs/)
-- Source and issues: [github.com/Eiskis/vue-webpack](https://github.com/Eiskis/vue-webpack)
+- Documentation: [eiskis.gitbooks.io/bellevue](https://eiskis.gitbooks.io/bellevue/)
+- Source and issues: [github.com/Eiskis/bellevue](https://github.com/Eiskis/bellevue)
 
 ## Table of contents
 
@@ -13,7 +13,7 @@
 
 ## Other resources
 
-`Eiskis/vue-webpack` is **not** an official Vue project, but is based on the officially supported materials and commonly used plugins. The relevant docs for those are available here:
+Bellevue is **not** an official Vue project, but is based on the officially supported materials and commonly used plugins. The relevant docs for those are available here:
 
 - Vue
 	- [Read guide](https://vuejs.org/guide/)

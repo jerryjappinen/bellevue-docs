@@ -1,15 +1,15 @@
 
 # Feature comparison
 
-`Eiskis/vue-webpack` is built on top of the awesome, official [`vuejs-templates/webpack`](https://github.com/vuejs-templates/webpack) template. While it's a great template, it does lack a few features in the tooling, and provides very little in terms of architecture and patterns for writing application code on top of the tooling.
+Bellevue is built on top of the awesome, official [`vuejs-templates/webpack`](https://github.com/vuejs-templates/webpack) template. While it's a great template, it does lack a few features in the tooling, and provides very little in terms of architecture and patterns for writing application code on top of the tooling.
 
 This project aims to provide a more realistic representation of what a modern full-featured frontend project will have. It's important to remember that there are many different, valid ways of introducing the features listed below, and any project template like this will have to make opinionated decisions about how to architecture everything. If you are unhappy with the way this project is structured, you can still use this comparison as a reference.
 
-For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, check out the [annotated project structure](project-structure.md).
+For a quick overview of what the full feature set of Bellevue is, check out the [annotated project structure](project-structure.md).
 
 ## Tooling
 
-|Feature|`Eiskis/vue-webpack`|`vuejs-templates/webpack`
+|Feature|Bellevue|`vuejs-templates/webpack`
 | -- | -- | -- |
 |ES6|Yes|Yes
 |Webpack 2|Yes|Yes
@@ -41,7 +41,7 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 
 ## Application code
 
-|Feature|`Eiskis/vue-webpack`|`vuejs-templates/webpack`
+|Feature|Bellevue|`vuejs-templates/webpack`
 | -- | -- | -- |
 |Vue.js 2|Yes|Yes
 |Routing|[Yes, preconfigured](../ui/routing.md) (`vue-router`)|-

@@ -1,7 +1,7 @@
 
 # Source code structure
 
-[Browse source on GitHub](https://github.com/Eiskis/vue-webpack)
+[Browse source on GitHub](https://github.com/Eiskis/bellevue)
 
 ```
 docs/                                // Documentation generated from codebase

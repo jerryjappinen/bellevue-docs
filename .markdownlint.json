@@ -42,6 +42,7 @@
 	"no-empty-links": true,
 	"proper-names": {
 		"names": [
+			"Bellevue",
 			"EditorConfig",
 			"Webpack",
 			"Stylelint",

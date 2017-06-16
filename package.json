@@ -1,7 +1,7 @@
 {
   "name": "bellevue-docs",
   "version": "0.0.1",
-  "description": "This repo houses the documentation for my Eiskis/vue-webpack.",
+  "description": "Documentation for Eiskis/bellevue.",
   "private": true,
   "main": "",
   "scripts": {

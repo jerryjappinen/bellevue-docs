@@ -3,7 +3,7 @@
 
 Any practical modern web application will be built with a mix of stylesheet code, both global stylesheet code and component-specific style code.
 
-`Eiskis/vue-webpack` offers a full-featured, preconfigured architecture for architecturing (S)CSS code in a scalable way. This architecture is easy to streamline if you feel your project needs this, but it's probably better to leave it in place as it's still fairly easy to navigate.
+Bellevue offers a full-featured, preconfigured architecture for architecturing (S)CSS code in a scalable way. This architecture is easy to streamline if you feel your project needs this, but it's probably better to leave it in place as it's still fairly easy to navigate.
 
 ## Global styles
 
