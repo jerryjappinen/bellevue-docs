@@ -1,5 +1,5 @@
 {
-  "name": "vue-webpack-docs",
+  "name": "bellevue-docs",
   "version": "0.0.1",
   "description": "This repo houses the documentation for my Eiskis/vue-webpack.",
   "private": true,
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eiskis/vue-webpack-docs.git"
+    "url": "git+https://github.com/Eiskis/bellevue-docs.git"
   },
   "author": "Jerry Jäppinen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Eiskis/vue-webpack-docs/issues"
+    "url": "https://github.com/Eiskis/bellevue-docs/issues"
   },
-  "homepage": "https://github.com/Eiskis/vue-webpack-docs",
+  "homepage": "https://github.com/Eiskis/bellevue-docs",
   "devDependencies": {
     "gitbook-cli": "^2.3.0",
     "gitbook-plugin-edit-link": "^2.0.2",

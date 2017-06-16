@@ -4,7 +4,7 @@
 `Eiskis/vue-webpack` is an advanced, opinionated Webpack project template for complex Vue projects based on the official Vue Weback template.
 
 - Demo: [vue.netlify.com](https://vue.netlify.com/)
-- Documentation: [eiskis.gitbooks.io/vue-webpack-docs](https://eiskis.gitbooks.io/vue-webpack-docs/)
+- Documentation: [eiskis.gitbooks.io/bellevue-docs](https://eiskis.gitbooks.io/bellevue-docs/)
 - Source and issues: [github.com/Eiskis/vue-webpack](https://github.com/Eiskis/vue-webpack)
 
 ## Table of contents
@@ -41,6 +41,6 @@
 
 ## Contributing
 
-Do you want to contribute to the template? Please [file an issue](https://github.com/Eiskis/vue-webpack/issues) or a [pull request](https://github.com/Eiskis/vue-webpack/pulls) on GitHub.
+Do you want to contribute to the template? Please [file an issue](https://github.com/Eiskis/bellevue/issues) or a [pull request](https://github.com/Eiskis/bellevue/pulls) on GitHub.
 
-Do you want to contribute to this documentation? It's a Git repo in the [GitBook format](https://toolchain.gitbook.com/structure.html). You can [edit this documentation on GitHub](https://github.com/Eiskis/vue-webpack-docs).
+Do you want to contribute to this documentation? It's a Git repo in the [GitBook format](https://toolchain.gitbook.com/structure.html). You can [edit this documentation on GitHub](https://github.com/Eiskis/bellevue-docs).

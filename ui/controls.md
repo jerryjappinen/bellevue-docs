@@ -39,7 +39,7 @@ While this project template is not intended to be a component library, it does c
 
 These components use 2-way data binding. These are traditional form elements that both **visualize** and **mutate** values.
 
-Example: [`<Textinput>`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/controls/Textinput.vue)
+Example: [`<Textinput>`](https://github.com/Eiskis/bellevue/blob/master/src/components/controls/Textinput.vue)
 
 ### Write-only control components
 
@@ -50,8 +50,8 @@ This comes in handy in a couple of very common use cases:
 1. We're using more than one component in our UI that look different but share the same input logic. A typical example would be checkboxes and toggle switches.
 2. We want to control the **hit area** of an input independently of the visual representation of the input. A typical example would be showing a checkbox in a table row and letting the user click anywhere on the row to toggle the checkbox.
 
-- Example: [`<Toggle>`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/controls/Toggle.vue)
-- Example: [`<Click>`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/controls/Click.vue)
+- Example: [`<Toggle>`](https://github.com/Eiskis/bellevue/blob/master/src/components/controls/Toggle.vue)
+- Example: [`<Click>`](https://github.com/Eiskis/bellevue/blob/master/src/components/controls/Click.vue)
 
 ### Read-only form components
 
@@ -59,5 +59,5 @@ These components use 1-way data binding. These are components that represent use
 
 Sometimes you might also use a read-only form component to visualize state without allowing the user to directly change it with a _control_. A typical example would be using a checkbox component to visualize if some computed property is on or off.
 
-- Example: [`<Flipswitch>`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/forms/Flipswitch.vue)
-- Example: [`<Checkbox>`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/forms/Checkbox.vue)
+- Example: [`<Flipswitch>`](https://github.com/Eiskis/bellevue/blob/master/src/components/forms/Flipswitch.vue)
+- Example: [`<Checkbox>`](https://github.com/Eiskis/bellevue/blob/master/src/components/forms/Checkbox.vue)

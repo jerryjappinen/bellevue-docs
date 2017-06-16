@@ -7,7 +7,7 @@ src/
 		|_ MyComponent.vue
 ```
 
-- [See included examples on GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/util)
+- [See included examples on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/util)
 
 Components are **reusable** and **nestable** UI snippets that encapsulate view logic in one... component. In Vue, a component is authored as one HTML-like file with three elements: `template`, `script` and `style`. Vue's view components closely follow web standards and are built on HTML, JS and CSS respectively.
 

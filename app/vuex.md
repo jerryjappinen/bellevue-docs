@@ -1,7 +1,7 @@
 
 # Vuex
 
-- [See included example of single global store on GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/store)
+- [See included example of single global store on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/store)
 
 Global state is for things that user can directly control and would expect (explicitly or implicitly) the application to know, keep track of and ensure persistence of (latter is currently not included). Global state is shared between components.
 

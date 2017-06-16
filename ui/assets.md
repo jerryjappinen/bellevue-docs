@@ -21,7 +21,7 @@ You can use the assets under the asset folder normally in HTML, CSS and JS. Just
 
 This project template comes with tooling that compiles SVGs into sprites automatically. It's most convenient and robust to render SVG with a dedicated component so you don't need to worry about the details when using SVG assets in your views.
 
-**Example:** [`<pic-svg>`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/snippets/PicSvg.vue)
+**Example:** [`<pic-svg>`](https://github.com/Eiskis/bellevue/blob/master/src/components/snippets/PicSvg.vue)
 
 _Any_ SVG is simply XML, and can be styled with CSS:
 
@@ -50,4 +50,4 @@ The designer has chosen how and which parts of the icon to apply this `currentCo
 
 SVG code can be generated directly in a Vue component. This is not very convenient most of the time, but can be used to generate dynamic SVG graphics such as spinners and progress bars.
 
-**Example:** [`<spinner>`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/snippets/Spinner.vue)
+**Example:** [`<spinner>`](https://github.com/Eiskis/bellevue/blob/master/src/components/snippets/Spinner.vue)

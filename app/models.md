@@ -7,7 +7,7 @@ src/
 		|_ MyModel.js
 ```
 
-- [See included examples on GitHub](https://github.com/Eiskis/vue-webpack/tree/master/src/models)
+- [See included examples on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/models)
 
 Models are **viewless** Vue objects intended for encapsulating business logic in the classical object-oriented way. Viewless in this context means that they have no template, and are never rendered directly.
 

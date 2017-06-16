@@ -13,11 +13,11 @@
 			"showLevel": true
 		},
 		"edit-link": {
-			"base": "https://github.com/Eiskis/vue-webpack-docs/edit/master/",
+			"base": "https://github.com/Eiskis/bellevue-docs/edit/master/",
 			"label": "Edit this page"
 		},
 		"github": {
-			"url": "https://github.com/Eiskis/vue-webpack-docs/"
+			"url": "https://github.com/Eiskis/bellevue-docs/"
 		}
 	},
 	"links": {

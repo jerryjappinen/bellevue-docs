@@ -1,13 +1,13 @@
 
 # Listing data
 
-Example of a page listing dynamic data with pagination based on routes: [`PageList`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/pages/PageList.vue)
+Example of a page listing dynamic data with pagination based on routes: [`PageList`](https://github.com/Eiskis/bellevue/blob/master/src/components/pages/PageList.vue)
 
 ## Blank states
 
 Remember to cover cases when the list you're aiming to render is empty. Each blank state case is different depending on what type of data you're listing and what the business logic behind it is. If you expect the user to do something in order to see something in your list, you should explain this in your blank state visualisation and also provide a button to initiate the creation flow.
 
-Example: [`BlankState`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/snippets/BlankState.vue)
+Example: [`BlankState`](https://github.com/Eiskis/bellevue/blob/master/src/components/snippets/BlankState.vue)
 
 ## Using remote data
 

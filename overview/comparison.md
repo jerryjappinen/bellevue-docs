@@ -23,7 +23,7 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 |E2E tests|Yes|Yes
 |Excellent error reporting|Yes|Yes
 |Preconfigured aliases|More|Some
-|Centralised config for tooling and app code|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/config)|-
+|Centralised config for tooling and app code|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/config)|-
 |Autoprefixing for CSS|Yes|Yes
 |SCSS support in `.scss` files|Yes|-
 |SCSS support in `.vue` files|Yes|-
@@ -35,8 +35,8 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 |SVG tooling for setting currentColor|[Yes](../tooling/svg-compilation.md)|-
 |SVG sprite compilation (including sample components)|Yes|-
 |App icon (+ meta tag) generation|[Yes](../tooling/app-icons.md) (crude)|-
-|Preconfigured web font loading|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/styles/webfonts)|-
-|Workspace configuration for Visual Studio Code|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/.vscode/settings.json)|-
+|Preconfigured web font loading|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/styles/webfonts)|-
+|Workspace configuration for Visual Studio Code|[Yes](https://github.com/Eiskis/bellevue/tree/master/.vscode/settings.json)|-
 |Support for generated docs|[Yes](../tooling/docs.md) (crude)|-
 
 ## Application code
@@ -47,18 +47,18 @@ For a quick overview of what the full feature set of `Eiskis/vue-webpack` is, ch
 |Routing|[Yes, preconfigured](../ui/routing.md) (`vue-router`)|-
 |Handling for HTML meta|[Yes, preconfigured](../ui/routing.md) (`vue-router`)|-
 |Localisation capability|[Yes, preconfigured](../ui/localisation.md) (`vue-i18n`)|-
-|Centralised registration of Vue plugins|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/main.js)|-
-|Centralised registration of Vue components|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/main.js)|-
-|Centralised registration of Vue directives|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/main.js)|-
-|Centralised registration of Vue mixins|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/main.js)|-
+|Centralised registration of Vue plugins|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/main.js)|-
+|Centralised registration of Vue components|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/main.js)|-
+|Centralised registration of Vue directives|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/main.js)|-
+|Centralised registration of Vue mixins|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/main.js)|-
 |Global stylesheet architecture|[Yes](../stylesheets/stylesheet/architecture.md)|-
-|App code: services|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/services)|-
-|App code: business logic models|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/models)|-
-|App code: custom utilities|[Yes](https://github.com/Eiskis/vue-webpack/tree/master/src/utilities)|-
+|App code: services|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/services)|-
+|App code: business logic models|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/models)|-
+|App code: custom utilities|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/utilities)|-
 |Peristence|[Yes](../ui/persistence.md)|-
 |Vuex|[Yes, preconfigured](../app/vuex.md)|-
 |Server-side rendering|[Not preconfigured](../ui/ssr.md)|-
-|Offline handling|[Limited (no manifests)](https://github.com/Eiskis/vue-webpack/tree/master/src/services/network.js)|-
+|Offline handling|[Limited (no manifests)](https://github.com/Eiskis/bellevue/tree/master/src/services/network.js)|-
 |Authentication and authorization|[No](../ui/auth.md)|-
 |Preconfigured form input validation|-|-
 
