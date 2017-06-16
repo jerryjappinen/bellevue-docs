@@ -29,13 +29,13 @@
 ### UI features
 
 - [Assets](ui/assets.md)
-- Authentication
-- Authorization
+- [Authentication and authorization](ui/auth.md)
 - [Backend communication](ui/http.md)
 - [Controls and form elements](ui/controls.md)
 - Form validation<!-- (ui/form-validation.md) -->
 - [Listing data](ui/lists.md)
 - [Localisation](ui/localisation.md)
+- Offline handling
 - [Persistence](ui/persistence.md)
 - [Routing](ui/routing.md)
 - [Server-side rendering (not included)](ui/ssr.md)
@@ -57,22 +57,21 @@
 - [Setting page meta information](faq/meta.md)
 - [Using a new Vue plugin](faq/vue-plugin.md)
 
-### Pipeline
+### Tooling
 
-- [Stack summary](pipeline/stack.md)
-- [Dependency management](pipeline/dependencies.md)
-- [Development builds](pipeline/development.md)
-- [Production builds](pipeline/production.md)
-- [Testing](pipeline/testing.md)
-- [Styles processing](pipeline/styles.md)
-- [App icon generation](pipeline/app-icons.md)
-- [SVG compilation](pipeline/svg-compilation.md)
-- [URL resolving and aliases](pipeline/urls.md)
-- [Generating docs](pipeline/docs.md)
+- [Stack summary](tooling/stack.md)
+- [Dependency management](tooling/dependencies.md)
+- [Development builds](tooling/development.md)
+- [Production builds](tooling/production.md)
+- [Testing](tooling/testing.md)
+- [Styles processing](tooling/styles.md)
+- [App icon generation](tooling/app-icons.md)
+- [SVG compilation](tooling/svg-compilation.md)
+- [URL resolving and aliases](tooling/urls.md)
+- [Generating docs](tooling/docs.md)
 
 ### Miscellaneous
 
 - [IDE integration](misc/ide.md)
-- [Miscellaneous notes](misc/notes.md)
 - [To do](misc/todo.md)
 - [Known issues](misc/known-issues.md)

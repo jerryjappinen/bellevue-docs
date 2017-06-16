@@ -1,7 +1,7 @@
 
 # Known issues
 
-## Pipeline
+## Tooling
 
 - Source code order is sometimes hard to control
 	- Source code order matters in JS and in CSS
@@ -18,7 +18,7 @@
 	- Does not compile a web favicon
 	- https://github.com/jantimon/favicons-webpack-plugin
 
-## Testing
+## Unit testing
 
 Testing is a pain to set up. JS test runners and frameworks require a lot of delicate low-level setup work. Components that need to be mounted, update queues that need to be processed and asynchronous logic will also make testing more complicated.
 
@@ -33,6 +33,7 @@ Currently some tests pass, some don't, without very clear indication as to why. 
 
 ## Development and IDE support
 
+- `htmllint` is not integrated with Webpack 2 yet
 - VS Code: `.vue` files
 	- VS Code does not seem to support intellisense for JS that is embedded HTML, like in `.vue` files
 	- The Vetur extension provides a lot of functionality however

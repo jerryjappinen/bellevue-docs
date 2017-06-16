@@ -1,7 +1,7 @@
 
 # IDE integration
 
-All pipeline configuration (linters etc.) can be consumed by plugins of any editor.
+Linting and other parts of the tooling can be integrated to most common editors. Each editor generally has extensions that will read the same configuration that the Webpack and command line tools use, so you will get an IDE experience that's consistent with the other tools.
 
 ## Visual Studio Code
 

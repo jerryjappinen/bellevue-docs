@@ -6,7 +6,7 @@
 	- Dependencies are imported from npm and are configured in `package.json`
 - Webpack + Babel
 	- ES6 with imports, exports etc.
-	- Modern frontend pipeline built on auto loaders
+	- Modern frontend tooling built on auto loaders
 	- Infinitely configurable and extendable
 	- Highly customized per environment
 - Supports for three distinct environments:
@@ -25,7 +25,7 @@
 	- SCSS
 	- PostCSS
 	- Autoprefixer
-	- Pipeline for both global style builds and component styles in `.vue` files
+	- Tooling for both global style builds and component styles in `.vue` files
 	- CSS modules and `scoped` component styles available but currently not used
 	- Vendor styles can be included but currently not used
 - Tests

@@ -9,7 +9,7 @@ src/
 	|_ app-icon/                     // App icon assets
 	|_ assets/                       // Generic asset files such as images
 	|_ components/                   // Views, single-file .vue components
-	|_ config/                       // Custom pipeline and client-side configuration
+	|_ config/                       // Custom configuration for tooling and app code
 		|_ config-aliases.js
 		|_ config-base.js
 		|_ config-routes.js
@@ -60,8 +60,13 @@ test/
 ## Tooling
 
 ```
-build/             // Webpack build scripts
-config/            // Webpack environment configuration
+webpack/                             // Webpack build scripts
+	|_ env/                          // Environment configuration
+test/
+	|_ e2e/
+		|_ nightwatch.conf.js        // End-to-end test runner configuration
+	|_ unit/
+		|_ karma.conf.js             // Unit test runner configuration
 package.json       // Dev and app dependencies, development scripts
 .nvmrc             // Node.js version
 ```

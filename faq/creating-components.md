@@ -16,7 +16,7 @@ src/
 ```html
 <script>
 	export default {
-		name: 'new-component',
+		name: 'new-component'
 	}
 </script>
 <template>

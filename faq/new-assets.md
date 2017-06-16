@@ -37,7 +37,7 @@ src/
 		|_ some-asset.svg
 ```
 
-Add your SVG in the `src/svg/`. Webpack pipeline will pick it up from here and [compile it into a sprite](../pipeline/svg-compilation.md). It can then be used with one of the `<pic>` components.
+Add your SVG in the `src/svg/`. Webpack will automatically [include it in the combined SVG sprite](../tooling/svg-compilation.md), and it can then be used with one of the `<pic>` components.
 
 ```html
 <pic-svg :asset="some-asset"></pic-svg>

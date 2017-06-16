@@ -19,7 +19,7 @@ You can use the assets under the asset folder normally in HTML, CSS and JS. Just
 
 ## Using SVGs from SVG sprite
 
-The pipeline compiles SVGs into sprites automatically. It's most convenient and robust to render SVG with a dedicated component so you don't need to worry about the details when using SVG assets in your views.
+This project template comes with tooling that compiles SVGs into sprites automatically. It's most convenient and robust to render SVG with a dedicated component so you don't need to worry about the details when using SVG assets in your views.
 
 **Example:** [`<pic-svg>`](https://github.com/Eiskis/vue-webpack/blob/master/src/components/snippets/PicSvg.vue)
 
@@ -44,7 +44,7 @@ _Some_ SVGs are designed to be dynamically colored with the current text color:
 
 The designer has chosen how and which parts of the icon to apply this `currentColor` to. It might color the entire fill of the icon, or one or two strokes. Different elements in the icon might have also different opacities even if they use `currentColor`, resulting in the final rendered icon appearing as multicolor.
 
-[Read more about SVG compilation](../pipeline/svg-compilation.md)
+[Read more about SVG compilation](../tooling/svg-compilation.md)
 
 ## Generated SVG
 
