@@ -12,7 +12,7 @@ src/
 
 We use `vue-router` to handle the routing, so take a look at the docs if you're not familiar with the configuration format.
 
-- Official docs: [router.vuejs.org](https://router.vuejs.org/en/)
+Official docs: [router.vuejs.org](https://router.vuejs.org/en/)
 
 ## Creating pages
 
@@ -36,7 +36,7 @@ Routes are configured in `src/config/config-routes.js`.
 }
 ```
 
-### Best practices
+When configuring routes, follow these best practices:
 
 - Avoid unnecessary nesting. Remember that routes don't have to match any specific navigation element or menu 1:1.
 - Match the _route_ name with the _page component's_ name.
@@ -53,3 +53,9 @@ Routes are configured in `src/config/config-routes.js`.
 It's best to link to pages via the route name. That way, if we change any URLs in the frontend, your links will continue to work.
 
 You can use the `<router-link>` component, programmatic navigation or regular anchor elements to link to any page. It's generally desirable to avoid custom click handlers, and stick to something that eventually renders an anchor element, since secondary browser features like tab navigation, copy URL and cmd+click rely on this behavior.
+
+## Cleaner URLs without `#`
+
+By default, `vue-router` uses URLs with a `#` character. This can be slightly ugly and slightly confusing to end-users, but the benefit is that for the routing to work, no server-side configuration is needed.
+
+You can get cleaner URLs by setting the router's `mode` to `history` in `src/config/config-base.js`. If you do this, you must ensure that the server you use to serve your app has been configured with appropriate redirects. The docs on [Netlify's redirects for push state](https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps) and [`vue-router` HTML5 history mode](https://router.vuejs.org/en/essentials/history-mode.html) explain this in more detail.
