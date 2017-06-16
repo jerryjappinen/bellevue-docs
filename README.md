@@ -7,7 +7,7 @@
 - Documentation: [eiskis.gitbooks.io/bellevue](https://eiskis.gitbooks.io/bellevue/)
 - Source and issues: [github.com/Eiskis/bellevue](https://github.com/Eiskis/bellevue)
 
-Bellevue is based on the official Webpack template.
+Bellevue is based on the official `vuejs-templates/webpack` template.
 
 ## Table of contents
 
