@@ -54,6 +54,7 @@ test/
 		|_ specs/
 			|_ components/
 			|_ models/
+			|_ services/
 			|_ store/
 ```
 
