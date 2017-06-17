@@ -51,6 +51,16 @@ Persistence in components is implemented via a global mixin. Here is a usage exa
 	// ...
 ```
 
+If you want this kind of persistence to be instance specific when rendering lists, for example, you can use the internal `this._uid` property when generating the persistence key:
+
+```js
+	// ...
+	persistKey: function () {
+		return this.$options.name + '-' + this._uid;
+	}
+	// ...
+```
+
 You can view the source for the global mixin on [GitHub](https://github.com/Eiskis/bellevue/tree/master/src/vue/mixins/persist.js) to see what behavior it attaches to the components.
 
 Note that persistent values **are not** synced real-time, i.e. persistent data is not updated in other instances of a component as it changes - only stored to local storage and used the next time a component instance with the same `persistKey` is created. If you want to share state, use [services](../app/services.md) or [Vuex](../app/vuex.md) instead.
