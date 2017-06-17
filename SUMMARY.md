@@ -1,7 +1,7 @@
 
 ### Overview
 
-- [Intro](README.md)
+- [Home](README.md)
 - [Feature comparison](overview/comparison.md)
 - [Setup and requirements](overview/setup.md)
 - [Source code structure](overview/source.md)
