@@ -14,12 +14,16 @@ Workspace configuration is included in the project. The configuration instructs 
 
 Installing the following extensions for VS Code will make your life easier:
 
-- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) adds support for `.editorconfig` auto formatting rules.
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) integrate JavaScript linting direclty in the editor.
-- [Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint) integrate (S)CSS linting directly in the editor.
-- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) highlights TODO, FIXME and other similar comments in the editor.
-- [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens) visualizes the installed versions of packages and easily update versions when editing `package.json`.
-- [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) supports common editor features in single-file components better (since `.vue` files use several different languages).
+|Extension|Description
+|---|---
+|[EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)|Adds support for `.editorconfig` auto formatting rules.
+|[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)|Integrate JavaScript linting direclty in the editor.
+|[npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)|Adds support for running npm scripts and validating the installed modules against `package.json`.
+|[npm IntelliSense](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)|Autocompletes npm modules in import statements.
+|[Stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)|Integrate (S)CSS linting directly in the editor.
+|[TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)|Highlights TODO, FIXME and other similar comments in the editor.
+|[Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)|Visualizes the installed versions of packages and easily update versions when editing `package.json`.
+|[vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)|Supports common editor features in single-file components better (since `.vue` files use several different languages).
 
 There are many other good extensions in the Marketplace as well. Extensions can be installed directly from the editor.
 
