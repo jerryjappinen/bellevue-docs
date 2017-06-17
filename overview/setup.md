@@ -1,9 +1,11 @@
 
 # Setup and requirements
 
-This template is **not** a component library. Similar to the official templates, it is intended as a starting point that provides a good deal of patterns and architectures for writing a complex application with custom application code. You can of course import any component library you choose, or write everything yourself, just like with any ES6 or Vue project.
+Scaffolding a new project with Bellevue is very easy: clone the repository, remove everything you don't need and start writing your global styles, services, models and components.
 
-This template is **not** suitable for use as a dependency. Similar to the official templates, when starting a new project with this template, you should clone it as a new project, clean it up (removing any elements you do not wish to use), and then start writing your custom global styles, services, models and components. You can do the cleanup either conservatively or heavy-handedly; either way, you should not expect to be able to reliably pull updates from `bellevue` - it would not be practical to maintain a project that would support this.
+**Note:** This project template is **not** a component library. While many components are included out of the box, Bellevue is intended as a starting point for your custom application. You can choose to write your own components or import any component library you wish as [vendor code](../app/vendor.md).
+
+**Note:** This project template should **not** be used as a dependency. In any practical project, you will want to make minor adjustments to the tooling and your app code will deviate significantly from what's included in the template, so you should not expect to reliably pull updates from `bellevue` in the future.
 
 ## Requirements
 

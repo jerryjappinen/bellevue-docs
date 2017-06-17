@@ -1,6 +1,8 @@
 
 # Adding new assets
 
+**How do I use icons, bitmap graphics and other assets?**
+
 ## Bitmaps
 
 Add bitmap files anywhere under the `src/assets/` folder.

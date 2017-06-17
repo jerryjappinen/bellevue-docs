@@ -1,6 +1,8 @@
 
 # Creating a new component
 
+**How do I create a new component?**
+
 ```
 src/
 	|_ components/
@@ -27,7 +29,7 @@ src/
 </style>
 ```
 
-## 2. Add to components manifest
+## 2. Add new component to manifest
 
 `src/components/index.js`
 
@@ -57,6 +59,25 @@ export default {
 </template>
 ```
 
-## 3. Add tests
+## 4. Add tests
 
-...
+`test/unit/specs/components/NewComponent.spec.js`
+
+```js
+import Vue from 'vue';
+import NewComponent from '@vue-components/NewComponent';
+
+describe('NewComponent.vue', function () {
+	it('should do something', function () {
+
+		// Set up a new instance of the component
+		const Constructor = Vue.extend(NewComponent);
+		const vm = new Constructor().$mount();
+
+		// Expected results
+		expect(vm.$el.querySelector('h1').textContent)
+			.to.equal('Hello world!');
+
+	});
+});
+```

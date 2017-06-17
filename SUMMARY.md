@@ -51,11 +51,12 @@
 
 ### FAQ
 
+- [Getting started](faq/getting-started.md)
 - [Adding new assets](faq/new-assets.md)
 - [Creating a new component](faq/creating-components.md)
 - Wrapper components
 - [Setting page meta information](faq/meta.md)
-- [Using a new Vue plugin](faq/vue-plugin.md)
+- [Using a new Vue plugin](faq/vue-plugins.md)
 
 ### Tooling
 

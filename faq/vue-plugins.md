@@ -1,6 +1,8 @@
 
 # Using a new Vue plugin
 
+**How do I install a new Vue plugin?**
+
 ```
 src/
 	|_ components/
@@ -26,8 +28,11 @@ npm install vue-plugin-foo --save
 import Vue from 'vue';
 import VuePluginFoo from 'vue-plugin-foo';
 
+// Get your app configuration from `src/config/`
+import config from '@config';
+
 Vue.use(VuePluginFoo, {
-	somePluginOption: 'bar'
+	fooOptionName: config.fooOptions.fooOptionName
 });
 ```
 
