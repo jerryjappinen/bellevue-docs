@@ -15,7 +15,7 @@ The easiest way to manage node versions is using [nvm](https://github.com/creati
 
 ## Project setup
 
-``` bash
+```sh
 # Clone repo
 git clone git@github.com:Eiskis/bellevue.git my-app
 mkdir my-app
@@ -26,7 +26,7 @@ npm install
 
 ## Building and testing
 
-``` bash
+```sh
 # Serve with hot reload at localhost:8080
 npm run dev
 
