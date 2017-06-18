@@ -19,6 +19,7 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |Single-file components as `.vue` files|Yes|Yes
 |Hot reload|Per-module|Per-module
 |Asset minification and compilation|Yes|Yes
+|Source maps|Yes|Yes
 |Unit tests|Yes (crude and iffy)|Yes (crude and iffy)
 |E2E tests|Yes|Yes
 |Excellent error reporting|Yes|Yes
