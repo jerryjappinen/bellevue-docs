@@ -24,8 +24,6 @@ Components are **reusable** and **nestable** UI snippets that encapsulate view l
 - In `.vue` files, write the code in the following order:
 	- `<script>`
 		- vendor imports
-		- directive imports
-		- child component imports
 		- helpers
 		- view model (`export default { ... }`)
 	- `<template>`
