@@ -23,7 +23,7 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |E2E tests|Yes|Yes
 |Excellent error reporting|Yes|Yes
 |Preconfigured aliases|More|Some
-|Centralised config for tooling and app code|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/config)|-
+|Centralised config for tooling and app code|[Yes](../app/config.md)|-
 |Autoprefixing for CSS|Yes|Yes
 |SCSS support in `.scss` files|Yes|-
 |SCSS support in `.vue` files|Yes|-
