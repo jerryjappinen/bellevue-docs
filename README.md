@@ -45,6 +45,9 @@ Bellevue is **not** an official Vue project, but is based on the officially supp
 
 ## Contributing
 
-Do you want to contribute to the template? Please [file an issue](https://github.com/Eiskis/bellevue/issues) or a [pull request](https://github.com/Eiskis/bellevue/pulls) on GitHub.
+Do you want to contribute to the template?
 
-Do you want to contribute to this documentation? It's a Git repo in the [GitBook format](https://toolchain.gitbook.com/structure.html). You can [edit this documentation on GitHub](https://github.com/Eiskis/bellevue-docs).
+- Please [file an issue](https://github.com/Eiskis/bellevue/issues) if you have a suggestion, bug report or a question.
+- Send a [pull request](https://github.com/Eiskis/bellevue/pulls) to contribute code.
+
+You can also [help improve the documentation on GitHub](https://github.com/Eiskis/bellevue-docs).
