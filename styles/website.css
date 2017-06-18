@@ -48,8 +48,17 @@ body {
 }
 
 /* Sidebar */
+.book-summary {
+	padding-bottom: 4em;
+}
+
 .book-summary li {
 	margin-left: 1rem;
+}
+
+/*Hide custom link to github */
+.book-summary ul.summary > li:first-child {
+	display: none;
 }
 
 .book-summary ul.summary li a,
@@ -83,7 +92,7 @@ body {
 }
 
 .book-summary ul.summary li.divider {
-	background-color: rgba(52, 73, 94, 0.15);
+	display: none;
 }
 
 .book-summary ul.summary li.divider + li.header {
@@ -99,8 +108,11 @@ body {
 /* Bold numbers in sidebar */
 .book-summary ul.summary li b {
 	/*color: #7f8c8d;*/
-	color: #e3e3e3;
+	/*color: #e3e3e3;*/
+	color: #b1b8b9;
 	font-weight: inherit;
+	display: inline-block;
+	min-width: 2.2em;
 }
 
 /*Active sidebar item*/
