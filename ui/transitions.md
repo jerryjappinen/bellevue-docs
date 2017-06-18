@@ -8,11 +8,11 @@ src/
 			|_ transition-foo.scss
 ```
 
-- Vue guides for transitions: [vuejs.org/v2/guide/transitions](https://vuejs.org/v2/guide/transitions) (includes advanced topics)
+Vue guides for transitions: [vuejs.org/v2/guide/transitions](https://vuejs.org/v2/guide/transitions) (includes advanced topics)
+
+Vue has built-in `<transition>` components which trigger transition-oriented classes on elements that are removed or added to the DOM. This allows easily defining CSS transitions, including reusable named transitions.
 
 ![Vue transition classes](https://vuejs.org/images/transition.png)
-
-Vue has built-in `<transition>` components which trigger transition-oriented classnames on elements when they are removed or added to the DOM. This allows easily defining reusable named transitions, or simply adding the necessary CSS for each state class in your component code.
 
 The `mode` attribute defines the "playback" order of animations. If you're switching between two elements, usually `mode="out-in"` is what you want.
 

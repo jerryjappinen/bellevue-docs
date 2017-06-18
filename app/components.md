@@ -46,14 +46,15 @@ Components are **reusable** and **nestable** UI snippets that encapsulate view l
 
 ### Styles
 
-You can and should use SASS in component styles. You can `@import` the shared styles to use shared mixins and other tools.
+You can and should use SCSS in component styles. You can `@import` the shared styles to use shared mixins and other tools.
 
 One components can generally appear under multiple different parent components in the application. In order to make it easy to customize component styles in any given context, it's best to
 
 - Give your component a parent class that matches the component, prefixed with `.view-`.
 - Name other elements with component-specific class names matching the component nime.
-- Avoid nesting these specific classes under the parent, because this increases specificity and makes them harder to customize per context.
-- Do nest generic state classes such as '.is-active'
+- Provide prefixed state classes such as `.view-my-component-enabled` and `.view-my-component-disabled`
+- Avoid unnecessary nesting these prefixed classes, because this increases specificity and makes them harder to customize per context.
+- Generic classes such as `.is-active` should be nested under the prefixed ones however.
 - If you're writing a lot of code targeting elements by tag name, it's probably better to add a class name.
 
 ## Component blueprint
@@ -99,9 +100,9 @@ One components can generally appear under multiple different parent components i
 <style lang="scss">
 	@import '~@shared-styles';
 
-	.view-my-view {}
+	.view-my-component {}
 
-	.view-my-view-something {
+	.view-my-component-something {
 		&.is-active {}
 	}
 
