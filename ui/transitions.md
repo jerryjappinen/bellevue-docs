@@ -61,7 +61,7 @@ Vue also exposes JavaScript hooks for advanced transition code.
 This is similar to any other conditional rendering case. Simply use `<transition>` with like you would with, for example, `v-if`, and you're good.
 
 ```html
-<transition name="transition-fade">
+<transition name="transition-fade" mode="out-in">
 	<router-view></router-view>
 </transition>
 ```
