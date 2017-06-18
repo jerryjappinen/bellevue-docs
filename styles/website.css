@@ -56,14 +56,14 @@ body {
 	margin-left: 1rem;
 }
 
-/*Hide custom link to github */
+/*Hide custom link to Gitbook project page */
 .book-summary ul.summary > li:first-child {
 	display: none;
 }
 
 .book-summary ul.summary li a,
 .book-summary ul.summary li span,
-.book-summary li.header {
+.book-summary ul.summary li.header {
     padding: 0.25rem 1rem 0.25rem 3rem;
 }
 
