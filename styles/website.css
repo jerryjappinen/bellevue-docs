@@ -72,7 +72,8 @@ body {
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.book-summary ul.summary li a {
+.book-summary ul.summary li a,
+.book-summary ul.summary li span {
 	color: #7f8c8d;
 }
 
