@@ -1,7 +1,7 @@
 
 # Backend communication
 
-Projects can be very different in terms of what kind communication they have with different backends. There are countless alternatives for various use cases, and what works best will vary on a project-to-project basis. Some of the alternatives recommended for Vue are listed on [Awesome Vue](https://github.com/vuejs/awesome-vue#http-requests)
+Projects can be very different in terms of what kind communication they have with different backends. There are countless alternatives for various use cases, and what works best will vary on a project-to-project basis. Some of the alternatives recommended for Vue are listed on [Awesome Vue](https://github.com/vuejs/awesome-vue#http-requests).
 
 ## Axios
 
