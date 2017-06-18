@@ -7,7 +7,7 @@ src/
 		|_ util-something.js
 ```
 
-- [See included examples on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/util)
+[See included examples on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/util)
 
 Utils are custom libraries of common functions that could just as well be external libraries.
 
