@@ -36,13 +36,17 @@ body {
 #book-search-input {
 	background-color: transparent;
     border-width: 0;
+	padding: 3rem 2rem 1rem 3rem;
 }
 
 #book-search-input input {
 	border-radius: 3px;
 	background-color: rgba(52, 73, 94, 0.05);
+	transition-duration: 300ms;
+	transition-property: background-color;
 }
 
+#book-search-input input:hover,
 #book-search-input input:focus {
 	background-color: rgba(52, 73, 94, 0.08);
 }
@@ -64,7 +68,7 @@ body {
 .book-summary ul.summary li a,
 .book-summary ul.summary li span,
 .book-summary ul.summary li.header {
-    padding: 0.25rem 1rem 0.25rem 3rem;
+    padding: 0.35rem 1rem 0.35rem 3rem;
 }
 
 .book-summary ul.summary li a,
@@ -88,7 +92,8 @@ body {
 	color: #2c3e50;
 	font-weight: 600;
 	font-size: 1.17em;
-	margin-top: 1em;
+	margin-top: 2em;
+	margin-bottom: 1em;
 	border-top-width: 0;
 }
 
