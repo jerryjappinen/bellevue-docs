@@ -70,10 +70,6 @@ body {
 	padding-bottom: 8em;
 }
 
-.book-summary li {
-	margin-left: 1rem;
-}
-
 /*Hide custom link to Gitbook project page */
 .book-summary ul.summary > li:first-child,
 .book-summary ul.summary > li:last-child {
@@ -83,8 +79,6 @@ body {
 .book-summary ul.summary li a,
 .book-summary ul.summary li span,
 .book-summary ul.summary li.header {
-	margin-left: 1.5rem;
-    padding: 0.35rem 0 0.35rem 0.5rem;
 	transition-duration: 150ms;
 	transition-property: background-color;
 	border-radius: 3px;
@@ -92,6 +86,8 @@ body {
 
 .book-summary ul.summary li a,
 .book-summary ul.summary li span {
+	margin-left: 2.5rem;
+    padding: 0.35rem 0 0.35rem 0.5rem;
 	color: #7f8c8d;
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -109,6 +105,8 @@ body {
 	font-size: 1.17em;
 	margin-top: 2em;
 	margin-bottom: 0.5em;
+	margin-left: 3rem;
+    padding: 0;
 	border-top-width: 0;
 }
 
