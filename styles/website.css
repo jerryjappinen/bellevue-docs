@@ -5,7 +5,7 @@
 
 body {
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.6;
 	letter-spacing: normal;
 
@@ -27,35 +27,59 @@ body {
 }
 
 .book-summary {
-	font-size: 14px;
-	background-color: #fafafa;
-    border-color: rgba(52, 73, 94, 0.15);
+	font-size: 15px;
+	line-height: 1.5em;
+	background-color: transparent;
+	border-width: 0;
 }
 
 #book-search-input {
-	background-color: #fff;
-    border-color: rgba(52, 73, 94, 0.15);
+	background-color: transparent;
+    border-width: 0;
+}
+
+#book-search-input input {
+	border-radius: 3px;
+	background-color: rgba(52, 73, 94, 0.05);
+}
+
+#book-search-input input:focus {
+	background-color: rgba(52, 73, 94, 0.08);
 }
 
 /* Sidebar */
+.book-summary li {
+	margin-left: 1rem;
+}
+
+.book-summary ul.summary li a,
+.book-summary ul.summary li span,
+.book-summary li.header {
+    padding: 0.25rem 1rem 0.25rem 3rem;
+}
+
 .book-summary ul.summary li a,
 .book-summary ul.summary li span {
-    padding: 0.5em 1em;
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.book-summary ul.summary li a {
+	color: #7f8c8d;
 }
 
 .book-summary ul.summary li a:hover {
 	text-decoration: none;
-	background-color: rgba(52, 73, 94, 0.07);
+	background-color: rgba(52, 73, 94, 0.05);
 }
 
 /*Section headers*/
 .book-summary ul.summary li.header {
 	text-transform: none;
-	color: #7f8c8d;
+	color: #2c3e50;
 	font-weight: 600;
+	font-size: 1.17em;
 	margin-top: 1em;
-	border-top: 1px solid rgba(52, 73, 94, 0.15);
+	border-top-width: 0;
 }
 
 .book-summary ul.summary li.divider {
