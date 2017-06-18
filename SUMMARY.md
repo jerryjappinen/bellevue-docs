@@ -8,9 +8,9 @@
 
 ### App architecture
 
-- [App architecture overview](app/overview.md)
-- [Components](app/components.md)
+- [Overview](app/overview.md)
 - [Configuration](app/config.md)
+- [Components](app/components.md)
 - [Models](app/models.md)
 - [Services](app/services.md)
 - [Vuex](app/vuex.md)
