@@ -32,4 +32,8 @@ npm run dev
 
 Webpack is now running, listening for any changes you make to the app source and will do any and all recompilation needed to push an up-to-date version of your code and assets to the browser via hot module replacement and other tricks.
 
-You generally only have to restart the development server if you either change Webpack configuration (under `webpack/`) or make changes to either dependencies (i.e. editing `package.json` or otherwise messing with `node_modules`)
+During normal application development you won't have to restart the development server. However if you do any of the following it might be required:
+
+- When you change Webpack configuration under `webpack/`.
+- When you want changes under `src/config/` to be reflected in `src/index.html.js`.
+- When you edit dependencies in `package.json` or otherwise mess with `node_modules`.
