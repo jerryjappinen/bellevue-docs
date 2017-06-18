@@ -9,7 +9,7 @@ src/
 
 - [See included examples on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/services)
 
-Services are viewless, "global" Vue objects that can be shared across components. They can expose values, computed values and helpers like any other Vue object. Change detection is enabled, and you can use any data, computed valuers and methods of a service in your components or other parts of the application code as you would expect.
+Services are viewless, "global" Vue objects that can be shared across components. They can expose values, computed values and helpers like any other Vue object. Change detection is enabled, and you can use any data, computed values and methods of a service in your components or other parts of the application code as you would expect.
 
 Services are used for things such as storing and providing access to state of shared UI elements (like "is a popup visible?") and other UI-related things (like "what is the current time?").
 
