@@ -3,9 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600');
 
+html,
+body {
+	font-size: 15px;
+}
+
 body {
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-	font-size: 15px;
 	line-height: 1.6;
 	letter-spacing: normal;
 
@@ -53,6 +57,12 @@ body {
 #book-search-input input:hover,
 #book-search-input input:focus {
 	background-color: rgba(52, 73, 94, 0.08);
+}
+
+/*Top bar*/
+.book-header h1 {
+	font-size: 1.17rem;
+	font-weight: inherit;
 }
 
 /* Sidebar */
