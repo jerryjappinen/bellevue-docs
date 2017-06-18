@@ -12,17 +12,15 @@ The following development tools have been configured for development aids:
 
 ![Debugging](../images/debugging.png)
 
-- [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en): Chrome extension for Vue development
-- You will see errors and linting issues
-	- In the CLI
-	- Overlayed in the browser when hot reloading
-	- In browser's console.
-- Any issues detected by the development version of Vue will be reported with detailed messaging in the browser's console.
-- Client-side issues will be reported by the browser's console as expected.
+It's recommended to use the [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en) Chrome extension for Vue development. This extension can visualize the component tree and expose the state of each component. It also integrates with Vuex.
 
-During development, Webpack will automatically recompile any of the assets needed and only the components that have changed will be rerendered in the browser. This is called "hot reload" or "module hot swapping". Browser extensions or other setup is required for this.
+You will see compilation errors (including linting issues) on on the command line, browser console and overlayed in the browser.
 
-## When to restard dev server
+Any issues detected by the development version of Vue will be reported with detailed messaging in the browser's console. Any other client-side issues will be reported by the browser's console as well, of course.
+
+During development, Webpack will automatically recompile any of the assets needed and only the components that have changed will be rerendered in the browser. This is called "hot reload" or "module hot swapping". No browser extensions or other setup is required for this.
+
+## When to restart dev server
 
 To start the local development server, you use this comand:
 
