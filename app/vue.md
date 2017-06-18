@@ -59,7 +59,9 @@ export default new Vue({
 		}
 	}
 });
+```
 
+```js
 // anotherfile.js
 import thing from 'somefile.js';
 console.log(thing.someNumber, thing.someNumberTimesTen); // 1, 10
@@ -87,7 +89,9 @@ var Foo = Vue.extend({
 	}
 });
 export default Foo;
+```
 
+```js
 // anotherfile.js
 import Foo from 'somefile.js';
 
@@ -115,7 +119,9 @@ import Vue from 'vue';
 import Axios from 'axios';
 Vue.prototype.$http = Axios;
 export default Axios;
+```
 
+```js
 // src/vue/plugins/index.js
 import VueHttp from './vue-http';
 export {
