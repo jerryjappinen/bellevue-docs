@@ -67,7 +67,7 @@ body {
 
 /* Sidebar */
 .book-summary {
-	padding-bottom: 6em;
+	padding-bottom: 8em;
 }
 
 .book-summary li {
@@ -127,8 +127,6 @@ body {
 /* Bold numbers in sidebar */
 .book-summary ul.summary li b {
 	font-weight: normal;
-	/*color: #7f8c8d;*/
-	/*color: #e3e3e3;*/
 	color: #b1b8b9;
 	display: inline-block;
 	min-width: 2.2em;
