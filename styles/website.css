@@ -16,6 +16,10 @@ body {
 }
 
 /*More breathing room at the end of an article*/
+.page-inner {
+	padding-top: 6%;
+}
+
 .body-inner {
 	padding-bottom: 20%;
 }
@@ -42,7 +46,7 @@ body {
 #book-search-input input {
 	border-radius: 3px;
 	background-color: rgba(52, 73, 94, 0.05);
-	transition-duration: 300ms;
+	transition-duration: 150ms;
 	transition-property: background-color;
 }
 
@@ -69,6 +73,8 @@ body {
 .book-summary ul.summary li span,
 .book-summary ul.summary li.header {
     padding: 0.35rem 1rem 0.35rem 3rem;
+	transition-duration: 150ms;
+	transition-property: background-color;
 }
 
 .book-summary ul.summary li a,
