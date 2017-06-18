@@ -57,7 +57,7 @@ body {
 
 /* Sidebar */
 .book-summary {
-	padding-bottom: 4em;
+	padding-bottom: 6em;
 }
 
 .book-summary li {
@@ -65,7 +65,8 @@ body {
 }
 
 /*Hide custom link to Gitbook project page */
-.book-summary ul.summary > li:first-child {
+.book-summary ul.summary > li:first-child,
+.book-summary ul.summary > li:last-child {
 	display: none;
 }
 
