@@ -90,12 +90,8 @@ body {
 
 .book-summary ul.summary li a,
 .book-summary ul.summary li span {
-	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-}
-
-.book-summary ul.summary li a,
-.book-summary ul.summary li span {
 	color: #7f8c8d;
+	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .book-summary ul.summary li a:hover {
@@ -130,10 +126,10 @@ body {
 
 /* Bold numbers in sidebar */
 .book-summary ul.summary li b {
+	font-weight: normal;
 	/*color: #7f8c8d;*/
 	/*color: #e3e3e3;*/
 	color: #b1b8b9;
-	font-weight: inherit;
 	display: inline-block;
 	min-width: 2.2em;
 }
