@@ -14,13 +14,7 @@ This template has carefully been set up so that various parts of the tooling as 
 
 Configuration is spread accross multiple files. `config-base.js` and `config-routes.js` are the ones most commonly edited. `config-styles.js` will pull variables from `.scss` automatically and allow you to access them in JavaScript without duplicating the values.
 
-## Configuration format
-
-Here are the default values for the base configuration.
-
-```js
-{% include "git+https://github.com/Eiskis/bellevue.git/config/config-base.js" %}
-```
+[See default base config on GitHub](https://github.com/Eiskis/bellevue/blob/master/src/config/config-base.js)
 
 ## Accessing config in application code
 
