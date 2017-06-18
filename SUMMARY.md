@@ -10,6 +10,7 @@
 
 - [App architecture overview](app/overview.md)
 - [Components](app/components.md)
+- [Configuration](app/config.md)
 - [Models](app/models.md)
 - [Services](app/services.md)
 - [Vuex](app/vuex.md)
@@ -21,8 +22,9 @@
 
 - [Stylesheet architecture](stylesheets/stylesheet-architecture.md)
 - Classnames and selectors<!-- (ui/style-selectors.md) -->
-- SCSS Constants<!-- (ui/style-constants.md) -->
-- SCSS Mixins<!-- (ui/scss-mixins.md) -->
+- SCSS constants<!-- (ui/style-constants.md) -->
+- SCSS mixins<!-- (ui/scss-mixins.md) -->
+- SCSS functions<!-- (ui/scss-functions.md) -->
 - Global base styling<!-- (ui/global-styles.md) -->
 - Utility styles<!-- (ui/utility-styles.md) -->
 
@@ -77,4 +79,4 @@
 - [To do](misc/todo.md)
 - [Known issues](misc/known-issues.md)
 
-_* Preconfiguration not included in Bellevue._
+_* Not preconfigured in Bellevue yet._
