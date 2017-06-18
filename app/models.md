@@ -7,17 +7,15 @@ src/
 		|_ MyModel.js
 ```
 
-- [See included examples on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/models)
-
 Models are **viewless** Vue objects intended for encapsulating business logic in the classical object-oriented way. Viewless in this context means that they have no template, and are never rendered directly.
 
 We use models to encapsulate reusable logic and take advantage of the reactivity and structure provided by Vue. In any practical application, the information architecture should be designed in a way that the same type of data objects are often rendered in multiple different ways.
 
-For example, a user profile typically consists of things like an email, profile picture, full name and a bio, but in the application a profile might be rendered as a list item, thumbnail or a profile page header. In this case, we would write one viewless model for a user profile, and use that in three different components, which do not have to worry about how to combine `firstName` and `lastName` into a computed `fullName`, for example.
+For example, a user profile typically consists of things like an email, profile picture, full name and a bio, but in the application a profile might be rendered as a list item, thumbnail or a profile page header. In this case, we would write one viewless model for a user profile, and use that in three different components, which do not have to worry about how to combine `firstName` and `lastName` into a computed `fullName`, for example (this example is not included in the template).
 
 If you are fetching data from an API, it's probably a good idea to author roughly equivalent models to the API objects. You can however use models for many other things as well, and also "enhance" the API objects with computed properties and other Vue features as stated in the previous example.
 
-(Note: This example code is not included in the template.)
+[See included examples on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/models)
 
 ## Best practices
 
