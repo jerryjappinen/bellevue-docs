@@ -7,7 +7,8 @@ src/
 		|_ someService.js
 ```
 
-[See included examples on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/services)
+- [See included services on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/services)
+- [See example of using services in <Titlebar>](https://github.com/Eiskis/bellevue/blob/master/src/components/layout/Titlebar.vue)
 
 Services are viewless, "global" Vue objects that can be shared across components. They can expose values, computed values and helpers like any other Vue object. Change detection is enabled, and you can use any data, computed values and methods of a service in your components or other parts of the application code as you would expect.
 
