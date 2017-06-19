@@ -5,8 +5,8 @@
 
 ```
 src/
-	└── components/
-		└── MyVomponent.vue
+	├── components/
+	.	└── MyVomponent.vue
 	└── vue/
 		└── plugins/
 			└── vue-plugin-foo.js/

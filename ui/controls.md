@@ -4,11 +4,11 @@
 ```
 src/
 	└── components/
-  		└── controls/
-  			├── Click.vue
-  			├── Set.vue
-  			├── Textinput.vue
-  			└── Toggle.vue
+  		├── controls/
+  		.	├── Click.vue
+  		.	├── Set.vue
+  		.	├── Textinput.vue
+  		.	└── Toggle.vue
 		└── forms/
   			├── Checkbox.vue
   			├── Flipswitch.vue

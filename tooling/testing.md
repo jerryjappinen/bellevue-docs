@@ -6,9 +6,9 @@
 ```
 test/
 	└── unit/
-		└── coverage/
-			└── lcov-report/
-				└── index.html
+		├── coverage/
+		.	└── lcov-report/
+		.		└── index.html
 		└── specs/
 			├──  components/
 			├──  models/

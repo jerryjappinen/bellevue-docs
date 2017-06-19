@@ -3,8 +3,8 @@
 
 ```
 src/
-	└── assets/
-		└── logo.png
+	├── assets/
+	.	└── logo.png
 	└── svg/
 		└── some-asset.svg
 ```

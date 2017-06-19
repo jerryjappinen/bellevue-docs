@@ -3,15 +3,15 @@
 
 ```
 src/
-	└── fonts/
-		└── some-font/
-			├── some-font-regular.ttf
-			├── some-font-regular.woff
-			├── some-font-bold.ttf
-			└── some-font-bold.woff
+	├── fonts/
+	.	└── some-font/
+	.		├── some-font-regular.ttf
+	.		├── some-font-regular.woff
+	.		├── some-font-bold.ttf
+	.		└── some-font-bold.woff
 	└── styles/
-		└── webfonts
-			└── webfont-some-font.scss
+		├── webfonts
+		.	└── webfont-some-font.scss
 		└── global.scss
 ```
 
