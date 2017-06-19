@@ -10,9 +10,9 @@ src/
 	|_ assets/                       // Generic asset files such as images
 	|_ components/                   // Views, single-file .vue components
 	|_ config/                       // Custom configuration for tooling and app code
-		|_ config-aliases.js
-		|_ config-base.js
-		|_ config-routes.js
+		|_ config.aliases.js
+		|_ config.base.js
+		|_ config.routes.js
 	|_ fonts/                        // Web font assets
 	|_ locales/                      // Localisation files (per-language messages and formats)
 	|_ models/                       // JS business logic objects

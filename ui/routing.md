@@ -7,7 +7,7 @@ src/
 		|_ pages/
 			|_ PageSomething.vue
 	|_ config/
-		|_ config-routes.js
+		|_ config.routes.js
 ```
 
 We use `vue-router` to handle the routing, so take a look at the docs if you're not familiar with the configuration format.
@@ -26,7 +26,7 @@ Page components don't have to be nested in the project structure, and their stru
 
 ## Configuring a route
 
-Routes are configured in `src/config/config-routes.js`.
+Routes are configured in `src/config/config.routes.js`.
 
 ```
 {
@@ -58,4 +58,4 @@ You can use the `<router-link>` component, programmatic navigation or regular an
 
 By default, `vue-router` uses URLs with a `#` character. This can be slightly ugly and slightly confusing to end-users, but the benefit is that for the routing to work, no server-side configuration is needed.
 
-You can get cleaner URLs by setting the router's `mode` to `history` in `src/config/config-base.js`. If you do this, you must ensure that the server you use to serve your app has been configured with appropriate redirects. The docs on [Netlify's redirects for push state](https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps) and [`vue-router` HTML5 history mode](https://router.vuejs.org/en/essentials/history-mode.html) explain this in more detail.
+You can get cleaner URLs by setting the router's `mode` to `history` in `src/config/config.base.js`. If you do this, you must ensure that the server you use to serve your app has been configured with appropriate redirects. The docs on [Netlify's redirects for push state](https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps) and [`vue-router` HTML5 history mode](https://router.vuejs.org/en/essentials/history-mode.html) explain this in more detail.

@@ -28,7 +28,7 @@ If you don't need Vuex, it might be better to just get rid of the extra complexi
 1. Remove the `vuex` dependency from `package.json`
 2. Remove or comment the parts in `src/vue/plugins/index.js` where `Vuex` is imported and exported.
 3. Remove or comment the part in `src/main.js` where `plugins.vuex` is passed to Vue.
-4. Remove the alias `@store` from `src/config/config-aliases.js`.
+4. Remove the alias `@store` from `src/config/config.aliases.js`.
 5. Remove `src/vue/plugins/vuex.js`.
 6. Remove Vuex code from under `src/store/`.
 7. Remove Vuex tests from under `test/unit/specs/store/`.
