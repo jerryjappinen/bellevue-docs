@@ -68,6 +68,7 @@ webpack/                             // Webpack build scripts
 test/
 	|_ e2e/
 		|_ nightwatch.conf.js        // End-to-end test runner configuration
+		|_ nightwatch.chrome.conf.js
 	|_ unit/
 		|_ karma.conf.js             // Unit test runner configuration
 package.json                         // Dev and app dependencies, development scripts

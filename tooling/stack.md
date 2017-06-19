@@ -31,7 +31,7 @@
 	- Vendor styles can be included but currently not used
 - Tests
 	- Unit tests on Karma
-	- End-to-end tests on Nightwatch (running Selenium requires Java)
+	- End-to-end tests on Nightwatch (Standalonw Chrome or Selenium)
 
 ## Build scripts
 
