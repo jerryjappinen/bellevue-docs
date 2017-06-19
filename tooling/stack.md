@@ -34,9 +34,9 @@
 
 ## Build scripts
 
-You can find environment-specific build/serve/run scripts under `build/`. To add more automation or support for new languages in the pipeline, you can inlude Webpack plugins and loaders in these files.
+You can find environment-specific build scripts under `webpack/`. To add more automation or support for new languages in the pipeline, you can include Webpack plugins and loaders in these files.
 
-You should generally **not** have to touch these files during application development, as there is utility code included that reads values from custom configuration from simpler configuration files.
+You should generally **not** have to touch these files during application development, as there is utility code included that reads values from [centralised configuration](../app/configuration.md) from simpler configuration files.
 
 ## Webpack plugins
 

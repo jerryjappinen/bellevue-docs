@@ -6,7 +6,7 @@
 ```
 src/
 	|_ components/
-		|_ my-component.js/
+		|_ MyVomponent.vue
 	|_ vue/
 		|_ plugins/
 			|_ vue-plugin-foo.js/
@@ -46,7 +46,7 @@ import '@plugins/vue-plugin-foo';
 
 ## 4. Use plugin as intended in components
 
-`src/components/my-component.js`
+`src/components/MyVomponent.vue
 
 ```js
 computed: {

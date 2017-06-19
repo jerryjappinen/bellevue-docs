@@ -62,7 +62,7 @@
 
 ### Tooling
 
-- [Stack summary](tooling/stack.md)
+- [Stack overview](tooling/stack.md)
 - [Dependency management](tooling/dependencies.md)
 - [Development builds](tooling/development.md)
 - [Production builds](tooling/production.md)
