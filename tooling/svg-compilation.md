@@ -15,7 +15,7 @@ In the codebase, you refer to the original individual SVG assets like any other 
 
 ## Optimization
 
-SVG icons are passed through [SVGO](https://github.com/svg/svgo) during compilation. SVGO parameters can be adjusted in [`src/config/config.base.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.base.js).
+SVG icons are passed through [SVGO](https://github.com/svg/svgo) during compilation. SVGO parameters can be adjusted in [`config.base.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.base.js).
 
 ## Colored icons with currentColor
 
