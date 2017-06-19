@@ -58,4 +58,4 @@ npm run test
 npm run docs
 ```
 
-See all scripts in [`package.json`](https://github.com/Eiskis/bellevue/tree/master/src/package.json).
+See all scripts in [`package.json`](https://github.com/Eiskis/bellevue/tree/master/package.json).
