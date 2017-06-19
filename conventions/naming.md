@@ -7,8 +7,8 @@ SCSS files:
 
 ```
 src/
-	|_ styles/
-		|_ shared.scss
+	└── styles/
+		└── shared.scss
 ```
 
 SCSS variable names and mixins:
@@ -66,8 +66,8 @@ Component names and files:
 
 ```
 src/
-	|_ components/
-		|_ MyComponent.vue
+	└── components/
+		└── MyComponent.vue
 ```
 
 Models, constructor classes and component names in JS.

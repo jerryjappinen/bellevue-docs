@@ -3,8 +3,8 @@
 
 ```
 src/
-	|_ store/
-		|_ index.js
+	└── store/
+		└── index.js
 ```
 
 [See included example of single global store on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/store)

@@ -5,14 +5,14 @@
 
 ```
 test/
-	|_ unit/
-		|_ coverage/
-			|_ lcov-report/
-				|_ index.html
-		|_ specs/
-			|_ components/
-			|_ models/
-			|_ store/
+	└── unit/
+		└── coverage/
+			└── lcov-report/
+				└── index.html
+		└── specs/
+			├──  components/
+			├──  models/
+			└── store/
 ```
 
 Automated unit tests run on [Karma](https://karma-runner.github.io/1.0/index.html) and [Mocha](https://mochajs.org/), and are written using [Chai](http://chaijs.com/). Unit tests can be written for all the elements of application code, meaning services, models, components and utilities as well as Vuex code.
@@ -31,9 +31,9 @@ The HTML report will be available under  `/test/unit/coverage/lcov-report/`. You
 
 ```
 test/
-	|_ e2e/
-		|_ custom-assertions/
-		|_ specs/
+	└── e2e/
+		├──  custom-assertions/
+		└── specs/
 ```
 
 Automated end-to-end tests are written using [Nightwatch.js](http://nightwatchjs.org/). By default they are run on Chrome, which has a [standalone driver](https://sites.google.com/a/chromium.org/chromedriver/) that doesn't have dependencies.

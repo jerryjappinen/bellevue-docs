@@ -3,8 +3,8 @@
 
 ```
 src/
-	|_ models/
-		|_ MyModel.js
+	└── models/
+		└── MyModel.js
 ```
 
 Models are **viewless** Vue objects intended for encapsulating business logic in the classical object-oriented way. Viewless in this context means that they have no template, and are never rendered directly.

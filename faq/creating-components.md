@@ -5,10 +5,10 @@
 
 ```
 src/
-	|_ components/
-		|_ NewComponent.vue/
-		|_ OldComponent.vue/
-		|_ index.js
+	└── components/
+		├── NewComponent.vue/
+		├── OldComponent.vue/
+		└── index.js
 ```
 
 ## 1. Create a new `.vue` file

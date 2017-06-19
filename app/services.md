@@ -3,8 +3,8 @@
 
 ```
 src/
-	|_ services/
-		|_ someService.js
+	└── services/
+		└── someService.js
 ```
 
 - [See included services on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/services)

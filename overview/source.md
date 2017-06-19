@@ -6,56 +6,56 @@
 ```
 docs/                                // Documentation generated from codebase
 src/
-	|_ app-icon/                     // App icon assets
-	|_ assets/                       // Generic asset files such as images
-	|_ components/                   // Views, single-file .vue components
-	|_ config/                       // Custom configuration for tooling and app code
-		|_ config.aliases.js
-		|_ config.base.js
-		|_ config.routes.js
-	|_ fonts/                        // Web font assets
-	|_ locales/                      // Localisation files (per-language messages and formats)
-	|_ models/                       // JS business logic objects
-	|_ services/                     // JS custom (reactive) services
-	|_ store/                        // JS state management code
-	|_ styles/                       // Global base styling and style utilities
-		|_ base/
-		|_ definitions/
-		|_ keyframes/
-		|_ mixins/
-		|_ normalize/
-		|_ toolchain/
-		|_ transitions/
-		|_ utilities-base/
-		|_ utilities-composed/
-		|_ vendor/
-		|_ vendor-overrides/
-		|_ webfonts/
-		|_ global.scss               // All global base styling
-		|_ shared.scss               // All SCSS constants and mixins
-		|_ utilities.scss            // All global CSS utilities
-	|_ svg/                          // SVG assets that will be compiled into a sprite
-	|_ util/                         // JS custom misc. utilities
-	|_ vue/
-		|_ directives/               // Vue directives
-		|_ mixins/                   // Vue mixins
-		|_ plugins/                  // Vue plugins
-	|_ index.html.ejs                // Main HTML template
-	|_ main.js                       // Vue setup and main entry point for client app
-	|_ stylelint.config.js           // Linter configuration
-	|_ .htmllintrc                   // Linter configuration
-	|_ .eslintrc.js                  // Linter configuration
+	├── app-icon/                     // App icon assets
+	├── assets/                       // Generic asset files such as images
+	├── components/                   // Views, single-file .vue components
+	└── config/                       // Custom configuration for tooling and app code
+		├── config.aliases.js
+		├── config.base.js
+		└── config.routes.js
+	├── fonts/                        // Web font assets
+	├── locales/                      // Localisation files (per-language messages and formats)
+	├── models/                       // JS business logic objects
+	├── services/                     // JS custom (reactive) services
+	├── store/                        // JS state management code
+	└── styles/                       // Global base styling and style utilities
+		├── base/
+		├── definitions/
+		├── keyframes/
+		├── mixins/
+		├── normalize/
+		├── toolchain/
+		├── transitions/
+		├── utilities-base/
+		├── utilities-composed/
+		├── vendor/
+		├── vendor-overrides/
+		├── webfonts/
+		├── global.scss               // All global base styling
+		├── shared.scss               // All SCSS constants and mixins
+		├── utilities.scss            // All global CSS utilities
+	├── svg/                          // SVG assets that will be compiled into a sprite
+	├── util/                         // JS custom misc. utilities
+	└── vue/
+		├── directives/               // Vue directives
+		├── mixins/                   // Vue mixins
+		└── plugins/                  // Vue plugins
+	├── index.html.ejs                // Main HTML template
+	├── main.js                       // Vue setup and main entry point for client app
+	├── stylelint.config.js           // Linter configuration
+	├── .htmllintrc                   // Linter configuration
+	└── .eslintrc.js                  // Linter configuration
 static/                              // Static files to host alongside product
 test/
-	|_ e2e/                          // End-to-end tests on Nightwatch
-		|_ custom-assertions/
-		|_ specs/
-	|_ unit/                         // Unit tests on Karma and Mocha
-		|_ specs/
-			|_ components/
-			|_ models/
-			|_ services/
-			|_ store/
+	└── e2e/                          // End-to-end tests on Nightwatch
+		├── custom-assertions/
+		└── specs/
+	└── unit/                         // Unit tests on Karma and Mocha
+		└── specs/
+			├── components/
+			├── models/
+			├── services/
+			└── store/
 ```
 
 
@@ -64,13 +64,13 @@ test/
 
 ```
 webpack/                             // Webpack build scripts
-	|_ env/                          // Environment configuration
+	└── env/                          // Environment configuration
 test/
-	|_ e2e/
-		|_ nightwatch.conf.js        // End-to-end test runner configuration
-		|_ nightwatch.chrome.conf.js
-	|_ unit/
-		|_ karma.conf.js             // Unit test runner configuration
+	└── e2e/
+		├── nightwatch.conf.js        // End-to-end test runner configuration
+		└── nightwatch.chrome.conf.js
+	└── unit/
+		└── karma.conf.js             // Unit test runner configuration
 package.json                         // Dev and app dependencies, development scripts
 .nvmrc                               // Node.js version
 ```

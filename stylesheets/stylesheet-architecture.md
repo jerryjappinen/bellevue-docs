@@ -8,21 +8,23 @@ Bellevue offers a full-featured, preconfigured architecture for architecturing (
 ## Global styles
 
 ```
-|_ src/
-	|_ styles/                       // Global base styling and style utilities
-		|_ base/
-		|_ definitions/
-		|_ keyframes/
-		|_ mixins/
-		|_ normalize/
-		|_ plugin-overrides/
-		|_ toolchain/
-		|_ transitions/
-		|_ utilities-base/
-		|_ utilities-composed/
-		|_ global.scss               // All global base styling
-		|_ shared.scss               // All SCSS constants and mixins
-		|_ utilities.scss            // All global CSS utilities
+└── src/
+	└── styles/                       // Global base styling and style utilities
+		├── base/
+		├── definitions/
+		├── keyframes/
+		├── mixins/
+		├── normalize/
+		├── toolchain/
+		├── transitions/
+		├── utilities-base/
+		├── utilities-composed/
+		├── vendor/
+		├── vendor-overrides/
+		├── webfonts/
+		├── global.scss               // All global base styling
+		├── shared.scss               // All SCSS constants and mixins
+		└── utilities.scss            // All global CSS utilities
 ```
 
 `global.scss` and `utilities.scss` are imported by `App.vue`.

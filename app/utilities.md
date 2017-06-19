@@ -3,8 +3,8 @@
 
 ```
 src/
-	|_ util/
-		|_ util-something.js
+	└── util/
+		└── util-something.js
 ```
 
 [See included examples on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/util)

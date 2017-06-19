@@ -3,8 +3,8 @@
 
 ```
 src/
-	|_ svg/
-		|_ some-asset.svg
+	└── svg/
+		└── some-asset.svg
 ```
 
 SVG assets are compiled into an SVG sprite with [external-svg-sprite-loader](https://www.npmjs.com/package/external-svg-sprite-loader).

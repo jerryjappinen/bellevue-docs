@@ -3,16 +3,16 @@
 
 ```
 src/
-	|_ fonts/
-		|_ some-font/
-			|_ some-font-regular.ttf
-			|_ some-font-regular.woff
-			|_ some-font-bold.ttf
-			|_ some-font-bold.woff
-	|_ styles/
-		|_ webfonts
-			|_ webfont-some-font.scss
-		|_ global.scss
+	└── fonts/
+		└── some-font/
+			├── some-font-regular.ttf
+			├── some-font-regular.woff
+			├── some-font-bold.ttf
+			└── some-font-bold.woff
+	└── styles/
+		└── webfonts
+			└── webfont-some-font.scss
+		└── global.scss
 ```
 
 ## Local web fonts

@@ -3,9 +3,9 @@
 
 ```
 src/
-	|_ styles/
-		|_ transitions/
-			|_ transition-foo.scss
+	└── styles/
+		└── transitions/
+			└── transition-foo.scss
 ```
 
 Vue guides for transitions: [vuejs.org/v2/guide/transitions](https://vuejs.org/v2/guide/transitions) (includes advanced topics)

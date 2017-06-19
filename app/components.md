@@ -3,8 +3,8 @@
 
 ```
 src/
-	|_ components/
-		|_ MyComponent.vue
+	└── components/
+		└── MyComponent.vue
 ```
 
 [See included components on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/components)
