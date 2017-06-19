@@ -4,6 +4,7 @@
 - Fully running on Node
 	- Version configured in `.nvmrc`
 	- Dependencies are imported from npm and are configured in `package.json`
+	- Production builds are static (can be served with any file server)
 - Webpack + Babel
 	- ES6 with imports, exports etc.
 	- Modern frontend tooling built on auto loaders
