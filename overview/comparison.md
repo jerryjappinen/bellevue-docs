@@ -5,7 +5,7 @@ Bellevue is built on top of the awesome, official [`vuejs-templates/webpack`](ht
 
 This project aims to provide a more realistic representation of what a modern full-featured frontend project will have. It's important to remember that there are many different, valid ways of introducing the features listed below, and any project template like this will have to make opinionated decisions about how to architecture everything. If you are unhappy with the way this project is structured, you can still use this comparison as a reference.
 
-For a quick overview of what the full feature set of Bellevue is, check out the [annotated project structure](project-structure.md).
+For a quick overview of what the full feature set of Bellevue is, check out the [annotated project structure](../overview/source.md).
 
 ## Tooling
 
