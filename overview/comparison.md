@@ -45,7 +45,7 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |Feature|Bellevue|`vuejs-templates/webpack`
 | -- | -- | -- |
 |Vue.js 2|Yes|Yes
-|Routing|[Yes, preconfigured](../ui/routing.md) (`vue-router`)|-
+|Routing with (`vue-router`)|[Yes](../ui/routing.md)|Yes
 |Handling for HTML meta tags|[Yes, preconfigured](../ui/routing.md) (`vue-meta`)|-
 |Localisation capability|[Yes, preconfigured](../ui/localisation.md) (`vue-i18n`)|-
 |Centralised registration of Vue plugins|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/main.js)|-
