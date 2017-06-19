@@ -80,7 +80,7 @@ body {
 .book-summary ul.summary li span,
 .book-summary ul.summary li.header {
 	transition-duration: 150ms;
-	transition-property: background-color;
+	transition-property: background-color, color;
 	border-radius: 3px;
 }
 
