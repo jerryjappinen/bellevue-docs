@@ -19,7 +19,7 @@ Running unit tests on the command line gives you a report like this:
 
 ![Unit test results on command line](../images/unit-test-report-cli.png)
 
-The test pipeline will also generate an HTML report, which looks like this:
+The test pipeline will also generate an HTML report about the coverage, which looks like this:
 
 ![Unit test results in HTML](../images/unit-test-report-html.png)
 
