@@ -28,6 +28,7 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |Autoprefixing for CSS|Yes|Yes
 |SCSS support in `.scss` files|Yes|-
 |SCSS support in `.vue` files|Yes|-
+|SCSS variables exposed to JS|Yes|-
 |JavaScript linting for `.js` and `.vue` files|Yes|Yes
 |(S)CSS linting for `.css`, `.scss` and `.vue` files|Yes|-
 |HTML linting for `.html` and `.vue` files|Yes|-
