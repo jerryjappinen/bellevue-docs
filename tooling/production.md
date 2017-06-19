@@ -9,6 +9,7 @@ Among other things,
 - CSS will be minified, and comments will be removed.
 - JS will be minified and uglified, and comments will be removed.
 - All static assets will be copied ofer to a the assets directory, and all related URLs resolved.
+- Source maps will be generated for debugging production.
 
 As server-side rendering is not yet included in this template, the result of the production build is simply a collection of static assets, i.e. files that you can serve over any simple server, be it on Node, Apache, Nginx or other.
 
