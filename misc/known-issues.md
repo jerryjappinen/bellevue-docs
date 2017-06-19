@@ -21,8 +21,6 @@ Concrete issues are [tracked on GitHub](https://github.com/Eiskis/bellevue/issue
 
 ## Unit testing
 
-Testing is a pain to set up. JS test runners and frameworks require a lot of delicate low-level setup work. Components that need to be mounted, update queues that need to be processed and asynchronous logic will also make testing more complicated.
-
 Currently some tests pass, some don't, without very clear indication as to why. The current test setup is almost untouched from what the original Vue template provides. It still has problems when making assertions about computed properties of Vue objects.
 
 ## Client-side features

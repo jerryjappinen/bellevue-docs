@@ -61,7 +61,8 @@
 - [Production builds](tooling/production.md)
 - [Styles processing](tooling/styles.md)
 - [SVG compilation](tooling/svg-compilation.md)
-- [Testing](tooling/testing.md)
+- [End-to-end tests](tooling/e2e-tests.md)
+- [Unit tests](tooling/unit-tests.md)
 - [URL resolving and aliases](tooling/urls.md)
 
 ### FAQ
