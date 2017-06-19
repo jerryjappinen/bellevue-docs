@@ -92,6 +92,10 @@ body {
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 }
 
+.book-summary:hover ul.summary li a {
+	color: #34495e;
+}
+
 .book-summary ul.summary li a:hover {
 	text-decoration: none;
 	background-color: rgba(52, 73, 94, 0.05);
