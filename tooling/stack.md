@@ -34,17 +34,6 @@
 
 ## Build scripts
 
-You can find environment-specific build scripts under `webpack/`. To add more automation or support for new languages in the pipeline, you can include Webpack plugins and loaders in these files.
+You can find environment-specific build scripts under [`webpack/`](https://github.com/Eiskis/bellevue/tree/master/webpack). To add more automation or support for new languages in the pipeline, you can include Webpack plugins and loaders in these files.
 
 You should generally **not** have to touch these files during application development, as there is utility code included that reads values from [centralised configuration](../app/configuration.md) from simpler configuration files.
-
-## Webpack plugins
-
-- [`favicons-webpack-plugin`](https://github.com/jantimon/favicons-webpack-plugin) generates app icons for multiple platforms from one source file
-
-## Webpack loaders
-
-- [`vue-loader`](http://vue-loader.vuejs.org/en/) loads `.vue` files
-- [`sass-loader`](https://github.com/webpack-contrib/sass-loader) loads `.scss` files
-- [`postcss-loader`](https://github.com/postcss/postcss-loader) loads CSS files
-- [`external-svg-sprite-loader`](https://www.npmjs.com/package/external-svg-sprite-loader) loads SVGs and compiles them into sprites
