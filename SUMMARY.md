@@ -54,15 +54,15 @@
 ### Tooling
 
 - [Stack overview](tooling/stack.md)
+- [App icon generation](tooling/app-icons.md)
 - [Dependency management](tooling/dependencies.md)
 - [Development builds](tooling/development.md)
+- [Generated docs](tooling/docs.md)
 - [Production builds](tooling/production.md)
-- [Testing](tooling/testing.md)
 - [Styles processing](tooling/styles.md)
-- [App icon generation](tooling/app-icons.md)
 - [SVG compilation](tooling/svg-compilation.md)
+- [Testing](tooling/testing.md)
 - [URL resolving and aliases](tooling/urls.md)
-- [Generating docs](tooling/docs.md)
 
 ### FAQ
 
