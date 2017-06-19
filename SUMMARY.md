@@ -22,10 +22,10 @@
 
 - [Stylesheet architecture](stylesheets/stylesheet-architecture.md)
 - Classnames and selectors<!-- (ui/style-selectors.md) -->
+- Global base styling<!-- (ui/global-styles.md) -->
 - SCSS constants<!-- (ui/style-constants.md) -->
 - SCSS mixins<!-- (ui/scss-mixins.md) -->
 - SCSS functions<!-- (ui/scss-functions.md) -->
-- Global base styling<!-- (ui/global-styles.md) -->
 - Utility styles<!-- (ui/utility-styles.md) -->
 
 ### UI features
@@ -47,9 +47,9 @@
 ### Coding guidelines
 
 - [Naming conventions](conventions/naming.md)
+- HTML
 - [JS](conventions/js.md)
 - [SCSS](conventions/scss.md)
-- HTML
 
 ### Tooling
 
