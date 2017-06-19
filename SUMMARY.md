@@ -51,15 +51,6 @@
 - [SCSS](conventions/scss.md)
 - HTML
 
-### FAQ
-
-- [Getting started](faq/getting-started.md)
-- [Adding new assets](faq/new-assets.md)
-- [Creating a new component](faq/creating-components.md)
-- Wrapper components
-- [Setting page meta information](faq/meta.md)
-- [Using a new Vue plugin](faq/vue-plugins.md)
-
 ### Tooling
 
 - [Stack overview](tooling/stack.md)
@@ -72,6 +63,15 @@
 - [SVG compilation](tooling/svg-compilation.md)
 - [URL resolving and aliases](tooling/urls.md)
 - [Generating docs](tooling/docs.md)
+
+### FAQ
+
+- [Getting started](faq/getting-started.md)
+- [Adding new assets](faq/new-assets.md)
+- [Creating a new component](faq/creating-components.md)
+- Wrapper components
+- [Setting page meta information](faq/meta.md)
+- [Using a new Vue plugin](faq/vue-plugins.md)
 
 ### Miscellaneous
 
