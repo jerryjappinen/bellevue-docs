@@ -12,6 +12,9 @@ Bellevue offers a full-featured, preconfigured architecture for architecturing (
 	└── styles/                       // Global base styling and style utilities
 		├── base/
 		├── definitions/
+			├── constants.scss
+			├── functions.scss
+			└── palette.scss
 		├── keyframes/
 		├── mixins/
 		├── normalize/
@@ -47,3 +50,7 @@ In both global and component styles, you can import any SCSS mixins and constant
 ```
 
 Notice that this does not result in any new CSS output. `shared.scss` only imports mixins and constants.
+
+## SCSS constants
+
+Commonly accessed variables in SCSS are set in `constants.scss` and `palette.scss`. These are also automatically exposed to JS when [`@config` is imported](../app/config.md).
