@@ -25,3 +25,7 @@ import config from '@config';
 console.log(Object.keys(config));
 // [ 'defaultLocale', 'fallbackLocale', 'meta', 'mobile', 'aliases', 'routes', 'styles', ... ]
 ```
+
+## Environment variables for build scripts
+
+Some of the build scripts accept environment variables for setting things like the development server port or test driver. The supported variables and examples of how to set them are [listed on the setup page](../overview/setup.md).
