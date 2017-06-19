@@ -16,7 +16,7 @@
 	- `test`
 - Command line
 	- Linters, build and other scripts are also available on CLI
-	- Configured in `package.json`
+	- Scripts are configured in `package.json`
 - Vue
 	- Modern, fast reactive UI framework
 	- View components and generic Vue objects supported
@@ -31,7 +31,7 @@
 	- Vendor styles can be included but currently not used
 - Tests
 	- Unit tests on Karma
-	- End-to-end tests on Nightwatch
+	- End-to-end tests on Nightwatch (running Selenium requires Java)
 
 ## Build scripts
 
