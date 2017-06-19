@@ -20,8 +20,8 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |Hot reload|Per-module|Per-module
 |Asset minification and compilation|Yes|Yes
 |Source maps|Yes|Yes
-|Unit tests|Yes (crude and iffy)|Yes (crude and iffy)
-|E2E tests|Yes|Yes
+|Unit tests|[Yes](../tooling/testing.md) (crude and iffy)|Yes (crude and iffy)
+|E2E tests|[Selenium or standalone Chrome](../tooling/testing.md)|Selenium
 |Excellent error reporting|Yes|Yes
 |Preconfigured aliases|More|Some
 |Centralised config for tooling and app code|[Yes](../app/config.md)|-
