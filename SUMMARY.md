@@ -13,6 +13,7 @@
 - [Components](app/components.md)
 - [Models](app/models.md)
 - [Services](app/services.md)
+- Service workers
 - [Utilities](app/utilities.md)
 - [Vendor code](app/vendor.md)
 - [Vuex](app/vuex.md)
