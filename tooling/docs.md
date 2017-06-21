@@ -5,16 +5,21 @@ There is a preconfigured way of generating code docs with [Docco](https://jashke
 
 To generate docs, use one of these `npm` scripts on the command line:
 
-```json
-{
-    "docs": "npm run docs:components && npm run docs:directives && npm run docs:models && npm run docs:plugins && npm run docs:styles",
-    "docs:components": "docco -o docs/components --languages docco.json src/components/**/*.vue",
-    "docs:directives": "docco -o docs/directives src/vue/directives/*.js",
-    "docs:mixins": "docco -o docs/mixins src/vue/mixins/*.js",
-    "docs:models": "docco -o docs/models src/models/*.js",
-    "docs:plugins": "docco -o docs/plugins src/vue/plugins/*.js",
-    "docs:styles": "docco -o docs/styles src/styles/**/*.scss"
-}
+```sh
+# All docs
+npm run docs
+
+# Docs for individual JS code dirs
+npm run docs:components
+npm run docs:directives
+npm run docs:mixins
+npm run docs:models
+npm run docs:plugins
+npm run docs:services
+npm run docs:util
+
+# Global styles
+npm run docs:styles
 ```
 
 **Known issue:** Docco does not generate menus or index pages, only the HTML files corresponding to each source file.
