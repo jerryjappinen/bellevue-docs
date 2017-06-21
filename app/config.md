@@ -26,7 +26,7 @@ Anywhere in your application, you can import the extended configuration and use 
 ```js
 import config from '@config';
 console.log(Object.keys(config));
-// [ 'defaultLocale', 'fallbackLocale', 'meta', 'mobile', 'aliases', 'routes', 'styles', ... ]
+// [ 'defaultLocale', 'fallbackLocale', 'meta', 'mobile', 'routes', 'styles', ... ]
 ```
 
 ## Environment variables for build scripts

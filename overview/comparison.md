@@ -61,7 +61,7 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |Peristence|[Yes](../ui/persistence.md)|-
 |Vuex|[Yes, preconfigured](../app/vuex.md)|-
 |Server-side rendering|[Not preconfigured](../ui/ssr.md)|-
-|Offline handling|[Limited (no manifests)](https://github.com/Eiskis/bellevue/tree/master/src/services/network.js)|-
+|Offline support|[Yes](../ui/offline.md)|-
 |Authentication and authorization|[No](../ui/auth.md)|-
 |Preconfigured form input validation|-|-
 

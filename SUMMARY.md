@@ -13,7 +13,6 @@
 - [Components](app/components.md)
 - [Models](app/models.md)
 - [Services](app/services.md)
-- Service workers *
 - [Utilities](app/utilities.md)
 - [Vendor code](app/vendor.md)
 - [Vuex](app/vuex.md)
@@ -38,7 +37,7 @@
 - Form validation<!-- (ui/form-validation.md) --> *
 - [Listing data](ui/lists.md)
 - [Localisation](ui/localisation.md)
-- Offline handling *
+- [Offline support](ui/offline.md)
 - [Persistence](ui/persistence.md)
 - [Routing](ui/routing.md)
 - [Server-side rendering](ui/ssr.md) *
