@@ -20,7 +20,7 @@ When running the tests, you will see test report in your CLI that looks like thi
 
 ![End-to-end test results on command line](../images/e2e-test-report-cli.png)
 
-The test pipeline will also generate an HTML report, which looks like this:
+An HTML version will also be generated:
 
 ![End-to-end test results in browser](../images/e2e-test-report-html.png)
 
