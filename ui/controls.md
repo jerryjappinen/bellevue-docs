@@ -4,15 +4,15 @@
 ```
 src/
 	└── components/
-  		├── controls/
-  		.	├── Click.vue
-  		.	├── Set.vue
-  		.	├── Textinput.vue
-  		.	└── Toggle.vue
+		├── controls/
+		.	├── Click.vue
+		.	├── Set.vue
+		.	├── Textinput.vue
+		.	└── Toggle.vue
 		└── forms/
-  			├── Checkbox.vue
-  			├── Flipswitch.vue
-  			└── Radio.vue
+			├── Checkbox.vue
+			├── Flipswitch.vue
+			└── Radio.vue
 ```
 
 Before we talk about form elements, let's summarize the difference between **1-way** and **2-way** data binding. If you're not familiar with this topic, it might also be a good idea to read through the [official documentation on form input bindings](https://vuejs.org/v2/guide/forms.html) before proceeding.

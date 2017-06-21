@@ -14,7 +14,6 @@ Bellevue offers a full-featured, preconfigured architecture for architecturing (
 		├── definitions/
 			├── constants.scss
 			├── functions.scss
-			└── palette.scss
 		├── keyframes/
 		├── mixins/
 		├── normalize/
@@ -53,4 +52,4 @@ Notice that this does not result in any new CSS output. `shared.scss` only impor
 
 ## SCSS constants
 
-Commonly accessed variables in SCSS are set in `constants.scss` and `palette.scss`. These are also automatically exposed to JS when [`@config` is imported](../app/config.md).
+Commonly accessed variables in SCSS are set in `constants.scss`. These are also automatically exposed to JS when [`@config` is imported](../app/config.md).

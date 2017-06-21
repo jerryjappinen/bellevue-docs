@@ -43,7 +43,7 @@ body {
 
 #book-search-input {
 	background-color: transparent;
-    border-width: 0;
+	border-width: 0;
 	padding: 3rem 2rem 1rem 2.5rem;
 }
 
@@ -87,7 +87,7 @@ body {
 .book-summary ul.summary li a,
 .book-summary ul.summary li span {
 	margin-left: 2.5rem;
-    padding: 0.35rem 0 0.35rem 0.5rem;
+	padding: 0.35rem 0 0.35rem 0.5rem;
 	color: #7f8c8d;
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -110,7 +110,7 @@ body {
 	margin-top: 2em;
 	margin-bottom: 0.5em;
 	margin-left: 3rem;
-    padding: 0;
+	padding: 0;
 	border-top-width: 0;
 }
 
