@@ -17,7 +17,7 @@ Configuration is spread accross multiple files:
 - [`config.base.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.base.js) is the general-purpose config file which is most commonly edited.
 - [`config.routes.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.routes.js) includes all route configuration.
 - [`config.aliases.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.aliases.js) defines Webpack aliases that can be used for [URL resolution](../tooling/urls.md).
-- [`config.styles.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.styles.js) will pull variables from `constants.scss` and `palette.scss` automatically and so you can access them in JavaScript.
+- [`config.styles.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.styles.js) will pull variables from `constants.scss` automatically and so you can access them in JavaScript.
 
 ## Accessing config in application code
 
