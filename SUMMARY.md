@@ -45,6 +45,11 @@
 - [Transitions](ui/transitions.md)
 - [Web fonts](ui/webfonts.md)
 
+### Testing
+
+- [End-to-end tests](testing/e2e.md)
+- [Unit tests](testsingunit.md)
+
 ### Coding guidelines
 
 - [Naming conventions](conventions/naming.md)
@@ -62,8 +67,6 @@
 - [Production builds](tooling/production.md)
 - [Styles processing](tooling/styles.md)
 - [SVG compilation](tooling/svg-compilation.md)
-- [End-to-end tests](tooling/e2e-tests.md)
-- [Unit tests](tooling/unit-tests.md)
 - [URL resolving and aliases](tooling/urls.md)
 
 ### FAQ
