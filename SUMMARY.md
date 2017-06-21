@@ -47,8 +47,8 @@
 
 ### Testing
 
-- [End-to-end tests](testing/e2e.md)
-- [Unit tests](testsingunit.md)
+- [End-to-end tests](tests/e2e.md)
+- [Unit tests](tests/unit.md)
 
 ### Coding guidelines
 
