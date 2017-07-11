@@ -29,6 +29,8 @@ To ensure this, it has to be declared as a dependency in `package.json`. It is e
 
 When cleaning up these dependencies, nothing will fail when you forget to remove an external dependency from the manifest. However the dependency will still be installed as part of the package unnecessarily.
 
+**Quick tip:** to search for all non-internal imports in Visual Code Studio, use the search with the regular expression `from '[^\.~@]`. This will find all JavaScript imports that don't use one of the aliases or a relative path.
+
 ### `export`/`import`
 
 ES6 export/import syntax is sometimes a little bit weird. It's not always easy to tell what variable name is being imported into the current scope, and what assumption is made about the export names used by the dependency.
