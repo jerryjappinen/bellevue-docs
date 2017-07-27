@@ -21,6 +21,7 @@ Components are **reusable** and **nestable** UI snippets that encapsulate view l
 - Keep components small. If a component bloats, split it. It's better to have many small components than small number of bloated ones.
 - Create dedicated components for **pages** which users navigate to and which have routes associated with them.
 	- These page components should not do a lot more than define meta information and include other components and `<route-views>`.
+	- Page can be wrapped in shared components such as `<page>`, which is preconfigured
 - In `.vue` files, write the code in the following order:
 	- `<script>`
 		- vendor imports
@@ -56,6 +57,32 @@ One components can generally appear under multiple different parent components i
 - Avoid unnecessary nesting these prefixed classes, because this increases specificity and makes them harder to customize per context.
 - Generic classes such as `.is-active` should be nested under the prefixed ones however.
 - If you're writing a lot of code targeting elements by tag name, it's probably better to add a class name.
+
+## External dependencies
+
+You can import externally authored components anywhere you need them:
+
+```html
+<script>
+	import VueSliderComponent from 'vue-slider-component';
+
+	export default {
+		name: 'my-component',
+
+		components: {
+			VueSliderComponent
+		},
+
+		...
+	}
+</script>
+
+<template>
+	<div class="view-my-component">
+		<vue-slider-component></vue-slider-component>
+	</div>
+</template>
+```
 
 ## Component blueprint
 

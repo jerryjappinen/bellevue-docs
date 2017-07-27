@@ -54,6 +54,46 @@ It's best to link to pages via the route name. That way, if we change any URLs i
 
 You can use the `<router-link>` component, programmatic navigation or regular anchor elements to link to any page. It's generally desirable to avoid custom click handlers, and stick to something that eventually renders an anchor element, since secondary browser features like tab navigation, copy URL and cmd+click rely on this behavior.
 
+## Route permissions
+
+If you are tracking a current user object in your app, and you want only some pages to be visible to that user, Bellevue becomes preconfigured with simple role-based route guards.
+
+You can define an arbitrary set of roles that works for you, and set the required access level for each route. Any route that's omitted or marked with `0` is accessible by anyone.
+
+```js
+// config.base.js
+{
+
+	...
+
+	routePermissionRoles: [
+		'loggedUser' // 1
+	],
+
+	routePermissions: {
+
+		// Root forwards to home, so make sure these two match
+		'root': 0,
+		'home': 0,
+
+		// Sample pages
+		'list': 0,
+		'item': 0,
+
+		// Sample page to demo route guards
+		'secret': 1
+
+	},
+
+	...
+
+}
+```
+
+You need to define how you want to map your backend to these client-side roles in `@models/User.js` and `@services/api/apiAuth.js`.
+
+**Note!** Client-side permission checking is never secure.
+
 ## Cleaner URLs without `#`
 
 By default, `vue-router` uses URLs with a `#` character. This can be slightly ugly and slightly confusing to end-users, but the benefit is that for the routing to work, no server-side configuration is needed.

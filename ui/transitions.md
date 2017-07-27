@@ -3,10 +3,20 @@
 
 ```
 src/
+	└── components/
+		└── transitions/
+			└── CustomTransition.vue
+			└── Fade.vue
 	└── styles/
 		└── transitions/
-			└── transition-foo.scss
+			└── transition-fade.scss
 ```
+
+## Preconfigured transition
+
+This template becomes preconfigured with custom transition components that make it very easy to add transitions for conditional rendering. Each transition is first defined as a named transition under `styles/`, and then added as a preconfigured component. Each of the components uses the higher-level [`CustomTransition`](https://github.com/Eiskis/bellevue/blob/master/src/components/transitions/CustomTransition.vue) component, which provides sensible defaults for writing more transitions.
+
+## Custom Vue transitions
 
 Vue guides for transitions: [vuejs.org/v2/guide/transitions](https://vuejs.org/v2/guide/transitions) (includes advanced topics)
 

@@ -3,7 +3,7 @@
 
 Providing a good offline experience for your users requires great design and careful consideration of what feature set can and should be available to your users in any given connection status.
 
-What this means varies from project to project. That said, this template comes with the basic tools you need to implement at least basic offline handlign for your users.
+What this means varies from project to project. That said, this template comes with the basic tools you need to implement at least basic offline handling for your users. You can easily see this in, as the app will give you offline messaging in the titlebar out of the box. You can also prevent all offline usage by enabling a placeholder page to be shown in `App.vue`.
 
 ## Caching app assets
 
