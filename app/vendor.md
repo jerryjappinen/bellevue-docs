@@ -23,3 +23,34 @@ After this, you can use what you installed in your application code.
 import _ from 'lodash';
 var foo = _.trim(' Foo     ');
 ```
+
+## Initial setup for vendor code
+
+```
+src/
+	└── vendor/
+		└── Chart.js
+```
+
+Sometimes you want to do some common setup work when using a vendor library throughout your application. In this case, add an intermediate wrapper file under `@vendor` and import the vendor code from there.
+
+`src/vendor/Chart.js`
+
+```js
+// Import library from NPM
+import Chart from 'chart.js'
+
+// One-time setup work
+Chart.defaults.global.defaultFontColor = '#000000'
+
+// Export the modified vendor library
+export default Chart
+```
+
+Use vendor library in your code:
+
+`src/components/MyComponent.vue`
+
+```js
+import Chart from '@vendor/Chart';
+```
