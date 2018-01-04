@@ -7,10 +7,10 @@
 src/
 	├── components/
 	.	└── MyVomponent.vue
-	└── vue/
-		└── plugins/
-			└── vue-plugin-foo.js/
-	main.js
+	└── plugins/
+	.	└── vue-plugin-foo.js/
+	└── vendor/
+		└── vue.js/                // Main Vue instance setup
 ```
 
 ## 1. Add your plugin as dependency
@@ -21,7 +21,7 @@ npm install vue-plugin-foo --save
 
 ## 2. Add a new plugin setup file
 
-`src/vue/plugins/vue-plugin-foo.js`
+`src/plugins/vue-plugin-foo.js`
 ``
 
 ```js
@@ -36,9 +36,9 @@ Vue.use(VuePluginFoo, {
 });
 ```
 
-## 3. Import plugin setup in main.js
+## 3. Import plugin setup in the main Vue setup file
 
-`src/main.js`
+`src/vendor/vue.js`
 
 ```js
 import '@plugins/vue-plugin-foo';

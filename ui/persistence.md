@@ -18,9 +18,12 @@ Any two Vue objects with the same `persistKey` (which defaults to the object's `
 Persistence in components is implemented via a global mixin. Here is a usage example:
 
 ```js
-	// MyPersistentComponent.vue
-	// ...
+// MyPersistentComponent.vue
+import persist from '@mixins/persist'
+
+export default {
 	name: 'foo-component',
+	mixins: [persist],
 	data: function () {
 		return {
 			someValue: 'Foo'
@@ -48,10 +51,10 @@ Persistence in components is implemented via a global mixin. Here is a usage exa
 
 		}
 	}
-	// ...
+}
 ```
 
-You can view the source for the global mixin on [GitHub](https://github.com/Eiskis/bellevue/tree/master/src/vue/mixins/persist.js) to see what behavior it attaches to the components.
+You can view the source for the global mixin on [GitHub](https://github.com/Eiskis/bellevue/tree/master/src/mixins/persist.js) to see what behavior it attaches to the components.
 
 Note that persistent values **are not** synced real-time, i.e. persistent data is not updated in other instances of a component as it changes - only stored to local storage and used the next time a component instance with the same `persistKey` is created. If you want to share state, use [services](../app/services.md) or [Vuex](../app/vuex.md) instead.
 

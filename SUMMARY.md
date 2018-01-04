@@ -15,7 +15,7 @@
 - [Services](app/services.md)
 - [Utilities](app/utilities.md)
 - [Vendor code](app/vendor.md)
-- [Vuex](app/vuex.md)
+- [Vuex](app/vuex.md) *
 - [Extending Vue](app/vue.md)
 
 ### Stylesheets
@@ -32,11 +32,10 @@
 
 - [Assets](ui/assets.md)
 - [Authentication and authorization](ui/auth.md) *
-- [Backend communication](ui/http.md)
+- [Backend communication](ui/http.md) *
 - [Controls and form elements](ui/controls.md)
 - Form validation<!-- (ui/form-validation.md) --> *
-- [Listing data](ui/lists.md)
-- [Localisation](ui/localisation.md)
+- [Localisation](ui/localisation.md) *
 - [Offline support](ui/offline.md)
 - [Persistence](ui/persistence.md)
 - [Routing](ui/routing.md)
@@ -72,7 +71,6 @@
 - [Getting started](faq/getting-started.md)
 - [Adding new assets](faq/new-assets.md)
 - [Creating a new component](faq/creating-components.md)
-- Wrapper components
 - [Setting page meta information](faq/meta.md)
 - [Using a new Vue plugin](faq/vue-plugins.md)
 
@@ -80,6 +78,5 @@
 
 - [IDE integration](misc/ide.md)
 - [To do](misc/todo.md)
-- [Known issues](misc/known-issues.md)
 
-_* Not preconfigured in Bellevue yet._
+_* Not preconfigured._

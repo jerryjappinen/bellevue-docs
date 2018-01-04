@@ -7,7 +7,8 @@ src/
 		└── pages/
 			└── PageSomething.vue
 	└── config/
-		└── config.routes.js
+		└── tooling/
+			└── config.routes.js
 ```
 
 We use `vue-router` to handle the routing, so take a look at the docs if you're not familiar with the configuration format.
@@ -26,7 +27,7 @@ Page components don't have to be nested in the project structure, and their stru
 
 ## Configuring a route
 
-Routes are configured in `src/config/config.routes.js`.
+Routes are configured in `src/config/tooling/config.routes.js`.
 
 ```
 {

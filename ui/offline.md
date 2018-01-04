@@ -1,4 +1,3 @@
-
 # Offline support
 
 Providing a good offline experience for your users requires great design and careful consideration of what feature set can and should be available to your users in any given connection status.

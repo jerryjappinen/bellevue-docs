@@ -51,10 +51,10 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |HTML meta tags: site-wide, prerendered|[Yes, preconfigured](../faq/meta.md)|-
 |HTML meta tags: per route, run-time|[Yes, preconfigured](../faq/meta.md) (`vue-meta`)|-
 |Localisation capability|[Yes, preconfigured](../ui/localisation.md) (`vue-i18n`)|-
-|Centralised registration of Vue plugins|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/main.js)|-
-|Centralised registration of Vue components|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/main.js)|-
-|Centralised registration of Vue directives|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/main.js)|-
-|Centralised registration of Vue mixins|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/main.js)|-
+|Centralised registration of Vue plugins|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)|-
+|Centralised registration of Vue components|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)|-
+|Centralised registration of Vue directives|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)|-
+|Centralised registration of Vue mixins|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)|-
 |Global stylesheet architecture|[Yes](../stylesheets/stylesheet/architecture.md)|-
 |App code: services|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/services)|-
 |App code: business logic models|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/models)|-

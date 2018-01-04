@@ -46,11 +46,9 @@ src/
 	├── svg/                          // SVG assets to optimize and compile
 	├── util/                         // JS custom utilities
 	├── vendor/                       // Vendor libraries setup
+	.	└── vue.js                    // Main Vue instance setup
 	├── index.html.ejs                // Main HTML template
-	├── main.js                       // Vue setup and main entry point for client app
-	├── stylelint.config.js           // Linter configuration
-	├── .htmllintrc                   // Linter configuration
-	└── .eslintrc.js                  // Linter configuration
+	├── main.js                       // Entry point for client app
 static/                               // Static files to host alongside product, including app icons
 	├── _redirects
 	├── favicon.png
@@ -69,8 +67,13 @@ unit/                                 // Unit tests (on Jest)
 ## Tooling
 
 ```
+.vscode/                              // Workspace settings for Visual Studio Code
 build/                                // Webpack build scripts
 config/                               // Environment configuration
+src/
+	├── .editorconfig                 // Code style settings
+	├── stylelintrc.js                // Linter configuration
+	└── .eslintrc.js                  // Linter configuration
 test/
 	├── e2e/                          // Nightwatch configuration
 	.	└── custom-assertions/
@@ -78,11 +81,7 @@ test/
 		├── stubs/
 		└── jest.conf.js
 package.json                          // Dev and app dependencies, development scripts
-.nvmrc                                // Node.js version
+.nvmrc                                // Node.js version definition
 ```
 
-## Extras
-
-```
-.vscode/                              // Workspace settings for Visual Studio Code
-```
+There are more manifest and config files in the root, but you should leave these unchanged.
