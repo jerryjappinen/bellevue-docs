@@ -1,6 +1,6 @@
 {
   "name": "bellevue-docs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Documentation for Eiskis/bellevue.",
   "private": true,
   "main": "",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Eiskis/bellevue-docs",
   "devDependencies": {
-    "gitbook-cli": "^2.3.0",
+    "gitbook-cli": "^2.3.2",
     "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-github": "^3.0.0",
     "gitbook-plugin-mermaid": "0.0.9",

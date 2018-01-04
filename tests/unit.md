@@ -2,19 +2,17 @@
 # Unit tests
 
 ```
-reports/
-	└── lcov-report/
-spec/
+unit/
 	├── components/
 	├── models/
 	├── services/
 	├── store/
 	└── util/
-tooling/
+test/
 	└── unit/
 ```
 
-Unit tests run on [Karma](https://karma-runner.github.io/1.0/index.html) and [Mocha](https://mochajs.org/), and are written using [Chai](http://chaijs.com/). Unit tests can be written for all the elements of application code, meaning services, models, components and utilities as well as Vuex code.
+Unit tests run on [Jest](https://facebook.github.io/jest/). Unit tests can be written for all the elements of application code, meaning services, models, components and utilities as well as Vuex code.
 
 You can use the scripts listed in [setup instructions](../overview/setup.md) to run tests.
 

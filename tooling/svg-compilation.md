@@ -4,20 +4,17 @@
 ```
 src/
 	└── svg/
-		└── some-asset.svg
+		└── MyAsset.svg
+		└── index.js
 ```
 
-SVG assets are compiled into an SVG sprite with [external-svg-sprite-loader](https://www.npmjs.com/package/external-svg-sprite-loader).
+SVG assets are compiled into Vue components with [`vue-svg-loader`](https://www.npmjs.com/package/vue-svg-loader). SVGs are already a lightweight way to deliver image assets to the browser, but this pipeline will also optimize them with [SVGO](https://github.com/svg/svgo). SVGO parameters can be adjusted in [`config.svgo.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.svgo.js).
 
-SVGs are already a lightweight way to deliver image assets to the browser, but serving them in a sprite means they are all loaded with one HTTP request.
+Any SVG exported in `src/svg/index.js` will be registered as a Vue component. You can organize your files into directories freely, but when exported each asset should have a unique name.
 
-In the codebase, you refer to the original individual SVG assets like any other image. When you `require()` an SVG, the loader will return an object containing information needed to render an SVG element from the sprite.
+You can use each SVG in your components either directly (`<svg-my-asset />`) or with the included `Vector` (`<vector src="my-asset" />`).
 
-## Optimization
-
-SVG icons are passed through [SVGO](https://github.com/svg/svgo) during compilation. SVGO parameters can be adjusted in [`config.base.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.base.js).
-
-## Colored icons with currentColor
+## Colored icons with `currentColor`
 
 SVG elements can be dynamically colored like any other HTML element by setting a color attribute to `currentColor`. This makes it easy to reuse the same assets when using icons in the app.
 

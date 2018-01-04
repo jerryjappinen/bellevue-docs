@@ -48,7 +48,7 @@ export default {
 In your template, you can now easily react to both `isLoading` and `isEmpty`, for example:
 
 ```html
-<div class="view-my-component">
+<div class="c-my-component">
 	<transition name="transition-fade" mode="out-in">
 		<spinner v-if="isLoading"></spinner>
 		<template v-else>

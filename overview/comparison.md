@@ -20,10 +20,10 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |Hot reload|Per-module|Per-module
 |Asset minification and compilation|Yes|Yes
 |Source maps|Yes|Yes
-|Unit tests|[Yes](../tests/unit.md)|Yes
-|E2E tests|[Selenium or standalone Chrome](../tests/e2e.md)|Selenium
+|Unit tests|[Jest](../tests/unit.md)|Jest
+|E2E tests|[Selenium](../tests/e2e.md)|Selenium
 |Excellent error reporting|Yes|Yes
-|Preconfigured aliases|More|Some
+|Preconfigured aliases|Many|Some
 |Centralised config for tooling and app code|[Yes](../app/config.md)|-
 |Autoprefixing for CSS|Yes|Yes
 |SCSS support in `.scss` files|Yes|-
@@ -34,12 +34,10 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |HTML linting for `.html` and `.vue` files|Yes|-
 |Preconfigured linter rules with common plugins|Yes|-
 |SVGO optimisation|Yes|-
-|SVG tooling for setting currentColor|[Yes](../tooling/svg-compilation.md)|-
-|SVG sprite compilation (including sample components)|Yes|-
+|SVG compilation|[Yes (with dynamic coloring)](../tooling/svg-compilation.md)|-
 |App icon (+ meta tag) generation|[Yes](../tooling/app-icons.md) (crude)|-
 |Preconfigured web font loading|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/styles/webfonts)|-
 |Workspace configuration for Visual Studio Code|[Yes](https://github.com/Eiskis/bellevue/tree/master/.vscode/settings.json)|-
-|Support for generated docs|[Yes](../tooling/docs.md) (crude)|-
 
 ## Application code
 
@@ -47,6 +45,9 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 | -- | -- | -- |
 |Vue.js 2|Yes|Yes
 |Routing with (`vue-router`)|[Yes](../ui/routing.md)|Yes
+|Sitemap generation|Yes|-
+|Robots.txt generation|Yes|-
+|WebApp manifest generation|Yes|-
 |HTML meta tags: site-wide, prerendered|[Yes, preconfigured](../faq/meta.md)|-
 |HTML meta tags: per route, run-time|[Yes, preconfigured](../faq/meta.md) (`vue-meta`)|-
 |Localisation capability|[Yes, preconfigured](../ui/localisation.md) (`vue-i18n`)|-

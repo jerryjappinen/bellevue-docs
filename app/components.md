@@ -51,9 +51,9 @@ You can and should use SCSS in component styles. You can `@import` the shared st
 
 One components can generally appear under multiple different parent components in the application. In order to make it easy to customize component styles in any given context, it's best to
 
-- Give your component a parent class that matches the component, prefixed with `.view-`.
+- Give your component a parent class that matches the component, prefixed with `.c-`.
 - Name other elements with component-specific class names matching the component nime.
-- Provide prefixed state classes such as `.view-my-component-enabled` and `.view-my-component-disabled`
+- Provide prefixed state classes such as `.c-my-component-enabled` and `.c-my-component-disabled`
 - Avoid unnecessary nesting these prefixed classes, because this increases specificity and makes them harder to customize per context.
 - Generic classes such as `.is-active` should be nested under the prefixed ones however.
 - If you're writing a lot of code targeting elements by tag name, it's probably better to add a class name.
@@ -78,7 +78,7 @@ You can import externally authored components anywhere you need them:
 </script>
 
 <template>
-	<div class="view-my-component">
+	<div class="c-my-component">
 		<vue-slider-component></vue-slider-component>
 	</div>
 </template>
@@ -117,8 +117,8 @@ You can import externally authored components anywhere you need them:
 </script>
 
 <template>
-	<div class="view-my-component">
-		<div class="view-my-component-something">
+	<div class="c-my-component">
+		<div class="c-my-component-something">
 			<spinner></spinner>
 		</div>
 	</div>
@@ -127,9 +127,9 @@ You can import externally authored components anywhere you need them:
 <style lang="scss">
 	@import '~@shared-styles';
 
-	.view-my-component {}
+	.c-my-component {}
 
-	.view-my-component-something {
+	.c-my-component-something {
 		&.is-active {}
 	}
 
@@ -206,7 +206,7 @@ You can import externally authored components anywhere you need them:
 
 <template>
 
-	<div class="view-my-component">
+	<div class="c-my-component">
 
 		<!-- HTML element with dynamic bindings -->
 		<h1 :data-title="titleToRender"
@@ -224,7 +224,7 @@ You can import externally authored components anywhere you need them:
 <style lang="scss">
 	@import '~@shared-styles';
 
-	.view-my-component {
+	.c-my-component {
 		color: blue;
 	}
 

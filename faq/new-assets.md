@@ -36,11 +36,13 @@ var someBitmapPath = require('@assets/some-dir/some-bitmap.png');
 ```
 src/
 	└── svg/
-		└── some-asset.svg
+		└── MyAsset.svg
+		└── index.js
 ```
 
-Add your SVG in the `src/svg/`. Webpack will automatically [include it in the combined SVG sprite](../tooling/svg-compilation.md), and it can then be used with one of the `<pic>` components.
+Add your SVG in the `src/svg/` and `src/svg/index.js`. Webpack will read the SVG and turn it into a Vue component you can use in your code:
 
 ```html
-<pic-svg :asset="some-asset"></pic-svg>
+<svg-my-asset />
+<vector src="my-asset" />
 ```

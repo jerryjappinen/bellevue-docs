@@ -54,48 +54,13 @@ It's best to link to pages via the route name. That way, if we change any URLs i
 
 You can use the `<router-link>` component, programmatic navigation or regular anchor elements to link to any page. It's generally desirable to avoid custom click handlers, and stick to something that eventually renders an anchor element, since secondary browser features like tab navigation, copy URL and cmd+click rely on this behavior.
 
-## Route permissions
+## Deploying with clean URLs
 
-If you are tracking a current user object in your app, and you want only some pages to be visible to that user, Bellevue becomes preconfigured with simple role-based route guards.
+By default, Bellevue uses `vue-router` in the HTML5 history mode. This way, you get clearn URLs without a prefixing `#` character. However, in order for the routing to work on your production server, the server you use to serve your app has to be configured with appropriate redirects.
 
-You can define an arbitrary set of roles that works for you, and set the required access level for each route. Any route that's omitted or marked with `0` is accessible by anyone.
+The docs on [Netlify's redirects for push state](https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps) and [`vue-router` HTML5 history mode](https://router.vuejs.org/en/essentials/history-mode.html) explain this in more detail and provide examples for several environments.
 
-```js
-// config.base.js
-{
+If you deploy to Netlify, the appropriate redirects are already included under `static/_redirects` and your app will work on Netlify without additional configuration.
 
-	...
+If you'd rather use the prefix in your URLs, you can change this setting in `src/config/config.router.js`.
 
-	routePermissionRoles: [
-		'loggedUser' // 1
-	],
-
-	routePermissions: {
-
-		// Root forwards to home, so make sure these two match
-		'root': 0,
-		'home': 0,
-
-		// Sample pages
-		'list': 0,
-		'item': 0,
-
-		// Sample page to demo route guards
-		'secret': 1
-
-	},
-
-	...
-
-}
-```
-
-You need to define how you want to map your backend to these client-side roles in `@models/User.js` and `@services/api/apiAuth.js`.
-
-**Note!** Client-side permission checking is never secure.
-
-## Cleaner URLs without `#`
-
-By default, `vue-router` uses URLs with a `#` character. This can be slightly ugly and slightly confusing to end-users, but the benefit is that for the routing to work, no server-side configuration is needed.
-
-You can get cleaner URLs by setting the router's `mode` to `history` in `src/config/config.base.js`. If you do this, you must ensure that the server you use to serve your app has been configured with appropriate redirects. The docs on [Netlify's redirects for push state](https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps) and [`vue-router` HTML5 history mode](https://router.vuejs.org/en/essentials/history-mode.html) explain this in more detail.

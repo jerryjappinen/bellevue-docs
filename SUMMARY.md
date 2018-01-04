@@ -62,7 +62,6 @@
 - [App icon generation](tooling/app-icons.md)
 - [Dependency management](tooling/dependencies.md)
 - [Development builds](tooling/development.md)
-- [Generated docs](tooling/docs.md)
 - [Production builds](tooling/production.md)
 - [Styles processing](tooling/styles.md)
 - [SVG compilation](tooling/svg-compilation.md)

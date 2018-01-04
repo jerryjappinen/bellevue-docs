@@ -1,17 +1,17 @@
 
 # Setup and requirements
 
-Scaffolding a new project with Bellevue is very easy: clone the repository, remove everything you don't need and start writing your global styles, services, models and components.
+Scaffolding a new project with Bellevue is very easy: clone the repository, install dependencies, remove everything you don't need and start writing your global styles, services, models and components.
 
-**Note:** This project template is **not** a component library. While many components are included out of the box, Bellevue is intended as a starting point for your custom application. You can choose to write your own components or import any component library you wish as [vendor code](../app/vendor.md).
+**Note:** This project template is **not** a component library. While some components are included out of the box, Bellevue is intended as a starting point for your custom application. You can choose to write your own components, or import any of the many component libraries you wish as [vendor code](../app/vendor.md).
 
-**Note:** This project template should **not** be used as a dependency. In any practical project, you will want to make minor adjustments to the tooling and your app code will deviate significantly from what's included in the template, so you should not expect to reliably pull updates from `bellevue` in the future.
+**Note:** This project template should **not** be used as a dependency. In any practical project, you will want to make minor adjustments to the tooling and your app code will deviate significantly from what's included in the template, so you should not expect to reliably pull updates indefinitely from `bellevue` in the future.
 
 ## Requirements
 
-1. The Node version defined in [`.nvmrc`](./.nvmrc)
+1. The Node version defined in [.nvmrc](./nvmrc)
 
-The easiest way to manage node versions is using [nvm](https://github.com/creationix/nvm).
+**Protip:** manage node versions easily with [nvm](https://github.com/creationix/nvm).
 
 ## Project setup
 
@@ -26,39 +26,39 @@ npm install
 
 ## Building and testing
 
-```sh
-# Serve with hot reload
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
 npm run dev
 
-# Serve with hot reload on a specific port
+# serve with hot reload at custom port
 PORT=1234 npm run dev
 
-# Build for production with minification
+# build for production with minification
 npm run build
 
-# Build for production and view the bundle analyzer report
+# build for production and view the bundle analyzer report
 npm run build --report
 
-# Run all linters
-npm run lint
-
-# Start unit tests and watch for changes in tests
+# run unit tests
 npm run unit
 
-# Run all unit tests once
-npm run unit:once
+# run unit tests and show coverage report
+npm run unit:coverage
 
-# Run e2e tests on standalone Chrome
+# run unit tests and with hot reload (`jest --watch`)
+# NOTE: You have more options in the terminal after you run this command
+# NOTE: You can change this to `--watchAll` in `package.json` in case of issues
+# NOTE: See https://github.com/facebook/jest/issues/4883
+npm run unit:watch
+
+# run e2e tests
 npm run e2e
 
-# Run e2e tests on Selenium (requires Java)
-DRIVER=selenium npm run e2e
-
-# Run all tests
-npm run test
-
-# Generate all docs
-npm run docs
+# run all tests
+npm test
 ```
 
 See all scripts in [`package.json`](https://github.com/Eiskis/bellevue/tree/master/package.json).
