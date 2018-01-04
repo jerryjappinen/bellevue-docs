@@ -2,7 +2,7 @@
 
 ## Hosted web fonts
 
-To load fonts from Google Fonts or other providers, you need to simply get your app to load the provider's `.css` files that will in turn reference the web font files located on their servers. This is straight-forward to add in `config.paths.js`:
+To load fonts from Google Fonts or other providers, you need to simply get your app to load the provider's `.css` files that will in turn reference the web font files located on their servers. This is straight-forward to define in `config.paths.js`:
 
 `src/config/config.paths.js`
 
@@ -22,58 +22,48 @@ To load fonts from Google Fonts or other providers, you need to simply get your 
 
 ## Local web fonts
 
-Local web fonts are **not** preconfigured. Local font files are however easy to add to your project:
-
 ```
 src/
-	├── config/
-	.	└── tooling/
-	.		└── config.aliases.js
 	├── fonts/
-	.	└── my-font/
-	.		├── myfont-extralightitalic.eot
-	.		├── myfont-extralightitalic.ttf
-	.		├── myfont-extralightitalic.woff
-	.		├── myfont-extralightitalic.woff2
-	.		├── myfont-light.eot
-	.		├── myfont-light.ttf
-	.		├── myfont-light.woff
-	.		└── myfont-light.woff2
+	.	├── myfont-regular.eot
+	.	├── myfont-regular.ttf
+	.	├── myfont-regular.woff
+	.	├── myfont-regular.woff2
+	.	├── myfont-regular-italic.eot
+	.	├── myfont-regular-italic.ttf
+	.	├── myfont-regular-italic.woff
+	.	├── myfont-regular-italic.woff2
+	.	├── myfont-bold.eot
+	.	├── myfont-bold.ttf
+	.	├── myfont-bold.woff
+	.	├── myfont-bold.woff2
 	└── styles/
-		├── webfonts
-		.	└── webfont-my-font.scss
-		└── global.scss
+		└── constants.scss
 ```
 
-To set up basic support:
-
-1. Put your font files under `src/fonts/`
-2. Add an alias `'@fonts': 'src/fonts'` in `src/config/tooling/config.aliases.js`
-
-For each new font family:
-
-1. Create a new SCSS file under `src/styles/fonts/`
-2. Generate CSS the `font-face` declarations you need using the [`font-face` SCSS mixin](https://github.com/Eiskis/bellevue/tree/master/src/styles/mixins/mixin-font-face.scss)
-3. `@import` the new SCSS file you created in `global.scss`
-
-Example:
-
-`src/styles/font-face/source-sans.scss`
+Bellevue can generate `@font-face` definitions for any web fonts that you wish to deliver in your application package. This is crucial for offline apps, for example. You only need to define which fonts you want to use in `constants.scss`:
 
 ```scss
-@include font-face (
-	'My Font',
-	200,
-	italic,
-	'~@fonts/source-sans/myfont-extralightitalic'
-);
-
-@include font-face (
-	'My Font',
-	300,
-	normal,
-	'~@fonts/source-sans/myfont-light'
+$local-web-fonts: (
+	(
+		font-family: 'My Font Family',
+		font-weight: 400,
+		font-style: normal,
+		filename: 'myfont-regular',
+	),
+	(
+		font-family: 'My Font Family',
+		font-weight: 400,
+		font-style: italic,
+		filename: 'myfont-regular-italic',
+	),
+	(
+		font-family: 'My Font Family',
+		font-weight: 700,
+		font-style: normal,
+		filename: 'myfont-bold',
+	),
 );
 ```
 
-You can now refer to the included font family like any other font in your stylesheets, and expect users to have this font loaded when using the app.
+The [global styling pipeline](https://github.com/Eiskis/bellevue/tree/master/src/styles/global.scss) will use a mixin to generate the `@font-face` rules based on your definition here. You can thus expect users to have this font loaded when using the app and use the font family in your stylesheets.
