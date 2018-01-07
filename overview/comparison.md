@@ -7,7 +7,7 @@ This project aims to provide a more realistic representation of what a modern fu
 
 For a quick overview of what the full feature set of Bellevue is, check out the [annotated project structure](../overview/source.md).
 
-## Tooling
+## Shared with `vuejs-templates/webpack`
 
 |Feature|Bellevue|`vuejs-templates/webpack`
 | -- | -- | -- |
@@ -18,54 +18,121 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |Completely static assets|Yes|Yes
 |Single-file components as `.vue` files|Yes|Yes
 |Hot reload|Per-module|Per-module
-|Asset minification and compilation|Yes|Yes
+|Minify and compile JS and CSS|Yes|Yes
+|Autoprefixing for CSS|Yes|Yes
 |Source maps|Yes|Yes
 |Unit tests|[Jest](../tests/unit.md)|Jest
 |E2E tests|[Selenium](../tests/e2e.md)|Selenium
+|Routing with `vue-router`|[Yes](../ui/routing.md)|Yes
 |Excellent error reporting|Yes|Yes
-|Preconfigured aliases|Many|Some
-|Centralised config for tooling and app code|[Yes](../app/config.md)|-
-|Autoprefixing for CSS|Yes|Yes
-|SCSS support in `.scss` files|Yes|-
-|SCSS support in `.vue` files|Yes|-
-|SCSS variables exposed to JS|Yes|-
-|JavaScript linting for `.js` and `.vue` files|Yes|Yes
-|(S)CSS linting for `.css`, `.scss` and `.vue` files|Yes|-
-|HTML linting for `.html` and `.vue` files|Yes|-
-|Preconfigured linter rules with common plugins|Yes|-
-|SVGO optimisation|Yes|-
-|SVG compilation|[Yes (with dynamic coloring)](../tooling/svg-compilation.md)|-
-|App icon (+ meta tag) generation|[Yes](../tooling/app-icons.md) (crude)|-
-|Preconfigured web font loading|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/styles/webfonts)|-
-|Workspace configuration for Visual Studio Code|[Yes](https://github.com/Eiskis/bellevue/tree/master/.vscode/settings.json)|-
+
+
+## Additional tooling features
+
+### Preconfigured aliases
+
+All relevant parts of your source code are preconfigured in Webpack, allowing you to avoid relative paths in your files.
+
+### Centralised config for tooling and app code
+
+[Yes](../app/config.md)
+
+### SCSS
+
+Supported in `.scss` files (global styles), `.vue` files (component styles). Sass variables are also exposed to JavaScript, avoiding duplication.
+
+Includes many commonly used mixins, and separation between shared Sass tooling and global CSS.
+
+### Linting for `.js` and `.vue` files
+
+Supported for `.js`, `.vue`, `.css` and `.scss` files. Additional linting configuration for JS imports, Vue-specific code styling (template, script and style) and Jest spec files.
+
+### Workspace configuration
+
+Preconfigured settings for VS Code, common plugins, all linting tools, Babel etc.
+
+### SVG optimisation
+
+Optimized with SVGO, and compiled to Vue components. Supports outputting SVGs with `currentColor` for CSS-based coloring.
+
+[Read more)](../tooling/svg-compilation.md)
+
+### Preconfigured web font loading
+
+[Yes](https://github.com/Eiskis/bellevue/tree/master/src/styles/webfonts)
+
 
 ## Application code
 
-|Feature|Bellevue|`vuejs-templates/webpack`
-| -- | -- | -- |
-|Vue.js 2|Yes|Yes
-|Routing with (`vue-router`)|[Yes](../ui/routing.md)|Yes
-|Sitemap generation|Yes|-
-|Robots.txt generation|Yes|-
-|WebApp manifest generation|Yes|-
-|HTML meta tags: site-wide, prerendered|[Yes, preconfigured](../faq/meta.md)|-
-|HTML meta tags: per route, run-time|[Yes, preconfigured](../faq/meta.md) (`vue-meta`)|-
-|Localisation capability|[Yes, preconfigured](../ui/localisation.md) (`vue-i18n`)|-
-|Centralised registration of Vue plugins|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)|-
-|Centralised registration of Vue components|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)|-
-|Centralised registration of Vue directives|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)|-
-|Centralised registration of Vue mixins|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)|-
-|Global stylesheet architecture|[Yes](../stylesheets/stylesheet/architecture.md)|-
-|App code: services|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/services)|-
-|App code: business logic models|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/models)|-
-|App code: custom utilities|[Yes](https://github.com/Eiskis/bellevue/tree/master/src/utilities)|-
-|Peristence|[Yes](../ui/persistence.md)|-
-|Vuex|[Yes, preconfigured](../app/vuex.md)|-
-|Server-side rendering|[Not preconfigured](../ui/ssr.md)|-
-|Offline support|[Yes](../ui/offline.md)|-
-|Authentication and authorization|[No](../ui/auth.md)|-
-|Preconfigured form input validation|-|-
+If you only need a subset of these features, the extra capabilities can easily be removed to stramline your app.
 
-If you only need a subset of these features, the extra capabilities can easily be removed to stramline your app. Visit the corresponding section of the documentation for more information on how to remove specific features.
+### Manifest files and meta tags
 
-**Note:** this project is still early in development, and some features are implemented in a more mature form than others. If you choose to start from the official basic template, you will have to implement the missing features from scratch however.
+- Sitemap generation (`sitemap.xml`)
+- `robots.txt` and robots meta tags
+- WebApp `manifest.json` generation
+- HTML meta tags: site-wide, prerendered
+
+See [FAQ/meta](../faq/meta.md) for more information.
+
+### HTML meta tags: per route, run-time
+
+[Yes, preconfigured](../faq/meta.md) (`vue-meta`)
+
+### Localisation capability
+
+[Yes, preconfigured](../ui/localisation.md) (`vue-i18n`)
+
+### Centralised registration of Vue plugins
+
+[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
+
+### Centralised registration of Vue components
+
+[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
+
+### Centralised registration of Vue directives
+
+[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
+
+### Centralised registration of Vue mixins
+
+[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
+
+### Global stylesheet architecture
+
+[Yes](../stylesheets/stylesheet/architecture.md)
+
+### App code: services
+
+[Yes](https://github.com/Eiskis/bellevue/tree/master/src/services)
+
+### App code: business logic models
+
+[Yes](https://github.com/Eiskis/bellevue/tree/master/src/models)
+
+### App code: custom utilities
+
+[Yes](https://github.com/Eiskis/bellevue/tree/master/src/utilities)
+
+### Peristence
+
+[Yes](../ui/persistence.md)
+
+### Vuex
+
+[Yes, preconfigured](../app/vuex.md)
+
+### Server-side rendering
+
+[Not preconfigured](../ui/ssr.md)
+
+### Offline support
+
+Webpack's offline plugin `comes preconfigured`.
+
+[Read more about offline](../ui/offline.md)
+
+### Google Analytics
+
+Preconfigured (disabled by default)

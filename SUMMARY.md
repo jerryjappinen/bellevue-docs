@@ -30,6 +30,7 @@
 
 ### UI features
 
+- [Analytics](ui/analytics.md)
 - [Assets](ui/assets.md)
 - [Authentication and authorization](ui/auth.md) *
 - [Backend communication](ui/http.md) *

@@ -26,7 +26,7 @@ Vue mixins can be added under `src/directives/`. Global mixins defined there wil
 
 [Official guide on Vue plugins](https://vuejs.org/v2/guide/plugins)
 
-Vue plugins can be added under `src/plugins/`.
+Vue plugins can be added under `src/vendor/` like any other library, and then `imported` in the main Vue setup file.
 
 There's no strict definition for what exactly is a "Vue plugin". Generally plugins are externally managed JS packages that add functionality as parameters, methods, directives and/or mixins to Vue either globally or on component level.
 

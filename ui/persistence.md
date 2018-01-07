@@ -1,4 +1,3 @@
-
 # Persistence
 
 Persistence refers to the app storing the state of an object as an instance of it is removed and recreated. In practice this means sharing
@@ -9,9 +8,9 @@ URL is a good place to store some data, as it can be bookmarked, shared between 
 
 ## Persistence in components
 
-[Components](./app/components.md) can easily store their state in Local Storage. This is implemented with a global mixin, which tracks a computed parameter `persist` and stores it whenever it changes. When the component is recreated, the mixin loads values from local storage and updates the newly created instance to use those values (as defined by the `persist` setter).
+[Components](./app/components.md) can easily store their state in local storage. This is implemented with a mixin, which tracks a computed parameter `persist` and stores it whenever it changes. When the component is recreated, the mixin loads values from local storage and updates the newly created instance to use those values (as defined by the `persist` setter).
 
-In order for persistence to work, we need to have a key to store the persistent values with. To make sure each component has one, you **must** define either the component's `name` property (which is a good practice) or a _computed_ property `persistKey` for your component in order for peristence to work.
+In order for persistence to work, we need to have a key to store the persistent values with. To make sure each component has one, you **must** define either the component's `name` property (which you should always do anyway) or a _computed_ property `persistKey` for your component in order for peristence to work.
 
 Any two Vue objects with the same `persistKey` (which defaults to the object's `name`) will **share the same persistent values**. This means that by default, persistence is shared across all instances of the same component. When authoring your code, be aware of this so that persistence works as expected for your users.
 
@@ -23,12 +22,15 @@ import persist from '@mixins/persist'
 
 export default {
 	name: 'foo-component',
+
 	mixins: [persist],
+
 	data: function () {
 		return {
 			someValue: 'Foo'
 		};
 	},
+
 	computed: {
 		persist: {
 
@@ -63,12 +65,6 @@ Note that persistent values **are not** synced real-time, i.e. persistent data i
 
 ## Persistence in services
 
-[Services](../app/services.md) can also store their state in local storage. It works the same way as with components, i.e. through the `persist` computed value. This is handled by the root Vue instance, which inherits the mixin functionality and stores/loads the state of each service (this is because global mixins are not injected to services).
+[Services](../app/services.md) can also store their state in local storage in the same way. However, as services do not have access to the root Vue instance, they do not have access to plugins (e.g. `this.$route`).
 
-**Note:** as services do not have access to the root Vue instance, they cannot check for things such as `this.$route` when setting persistent values from local storage. If you're in a situation where you want to do this, it's probably better to use persistence in your `<App>` component, which can in turn use services as needed.
-
-## Persistence in Vuex
-
-Persistence in Vuex is not currently implemented, but is easy to add with plugins.
-
-[See Vuex plugins on Awesome Vue](https://github.com/vuejs/awesome-vue#vuex-utilities)
+If you're in a situation where you want to do this, you can persist values in the `<App>` component, which can then call logic you have in services.

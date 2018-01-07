@@ -1,4 +1,3 @@
-
 # SVG and bitmap assets
 
 ```
