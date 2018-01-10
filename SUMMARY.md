@@ -28,14 +28,13 @@
 - SCSS functions<!-- (ui/scss-functions.md) -->
 - Utility styles<!-- (ui/utility-styles.md) -->
 
-### UI features
+### App features
 
 - [Analytics](ui/analytics.md)
 - [Assets](ui/assets.md)
 - [Authentication and authorization](ui/auth.md) *
 - [Backend communication](ui/http.md) *
 - [Controls and form elements](ui/controls.md)
-- Form validation<!-- (ui/form-validation.md) --> *
 - [Localisation](ui/localisation.md) *
 - [Offline support](ui/offline.md)
 - [Persistence](ui/persistence.md)

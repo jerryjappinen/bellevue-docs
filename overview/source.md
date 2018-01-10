@@ -11,22 +11,27 @@ src/
 	├── components/                   // Views, single-file .vue components
 	├── config/                       // All custom configuration for tooling and app code
 	.	├── dev/                      // Config overrides for development mode
-	.	.	├── config.dev.build.js
-	.	.	├── config.dev.meta.js
-	.	.	└── config.dev.paths.js
+	.	.	├── analytics.js
+	.	.	├── build.js
+	.	.	├── meta.js
+	.	.	├── paths.js
+	.	.	├── router.js
+	.	.	└── styles.js
 	.	├── tooling/                  // Configuration that won't be available runtime
-	.	.	├── config.aliases.js     // Webpack aliases
-	.	.	├── config.robotsTxt.js
-	.	.	├── config.routes.js      // Routes
-	.	.	└── config.sitemap.js
-	.	├── config.build.js
-	.	├── config.manifest.js
-	.	├── config.meta.js            // Meta information (app title, description etc.)
-	.	├── config.paths.js
-	.	├── config.router.js
-	.	├── config.styles.js
-	.	├── config.svgo.js
+	.	.	├── aliases.js            // Webpack aliases
+	.	.	├── manifest.js
+	.	.	├── robotsTxt.js
+	.	.	├── routes.js             // Routes
+	.	.	├── sitemap.js
+	.	.	└── svgo.js
+	.	├── analytics.js
+	.	├── build.js
+	.	├── meta.js                   // Meta information (app title, description etc.)
+	.	├── paths.js
+	.	├── router.js
+	.	├── styles.js
 	.	└── index.js
+	.
 	├── directives/                   // Vue directives
 	├── mixins/                       // Vue mixins (NOT Sass mixins)
 	├── models/                       // JS business logic objects
@@ -39,10 +44,13 @@ src/
 	.	├── mixins/
 	.	├── transitions/
 	.	├── utilities/
-	.	├── constants.scss            // SCSS variable sheet (also exported to JS)
-	.	├── global.scss               // All global base styling
-	.	├── normalize.scss
-	.	└── shared.scss               // All SCSS constants and mixins (won't output CSS)
+	.	|
+	.	├── constants.scss            // Global SCSS variables and defaults
+	.	├── font-face.scss            // Generates @font-face rules for local web fonts
+	.	├── functions.scss            // All SCSS functions
+	.	├── mixins.scss               // All SCSS mixins
+	.	└── normalize.scss            // Global resets
+	.
 	├── svg/                          // SVG assets to optimize and compile
 	├── util/                         // JS custom utilities
 	├── vendor/                       // Vendor libraries setup

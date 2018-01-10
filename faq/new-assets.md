@@ -39,7 +39,7 @@ var someBitmapPath = require('@assets/some-dir/some-bitmap.png');
 ```
 src/
 	└── svg/
-		└── MyAsset.svg
+		├── MyAsset.svg
 		└── index.js
 ```
 

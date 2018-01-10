@@ -1,10 +1,9 @@
-
 # SVG compilation
 
 ```
 src/
 	└── svg/
-		└── MyAsset.svg
+		├── MyAsset.svg
 		└── index.js
 ```
 
