@@ -65,6 +65,7 @@
 - [Styles processing](tooling/styles.md)
 - [SVG compilation](tooling/svg-compilation.md)
 - [URL resolving and aliases](tooling/urls.md)
+- [IDE integration](misc/ide.md)
 
 ### FAQ
 
@@ -73,10 +74,5 @@
 - [Creating a new component](faq/creating-components.md)
 - [Setting page meta information](faq/meta.md)
 - [Using a new Vue plugin](faq/vue-plugins.md)
-
-### Miscellaneous
-
-- [IDE integration](misc/ide.md)
-- [To do](misc/todo.md)
 
 _* Not preconfigured._
