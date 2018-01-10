@@ -14,19 +14,19 @@ The following topics will teach you mode about how and why these different build
 
 [Official guide on Vue mixins](https://vuejs.org/v2/guide/mixins)
 
-Vue mixins can be added under `src/vue/mixins/`. Global mixins defined there will be registered automatically and will extend your components.
+Vue mixins can be added under `src/mixins/`. Global mixins defined there will be registered automatically and will extend your components.
 
 ## Vue directives
 
 [Official guide on Vue directives](https://vuejs.org/v2/guide/custom-directive)
 
-Vue mixins can be added under `src/vue/directives/`. Global mixins defined there will be registered automatically and will be available in your components.
+Vue mixins can be added under `src/directives/`. Global mixins defined there will be registered automatically and will be available in your components.
 
 ## Vue plugins
 
 [Official guide on Vue plugins](https://vuejs.org/v2/guide/plugins)
 
-Vue plugins can be added under `src/vue/plugins/`.
+Vue plugins can be added under `src/vendor/` like any other library, and then `imported` in the main Vue setup file.
 
 There's no strict definition for what exactly is a "Vue plugin". Generally plugins are externally managed JS packages that add functionality as parameters, methods, directives and/or mixins to Vue either globally or on component level.
 
@@ -114,7 +114,7 @@ If you prefer to write component code with plugins available in `this` (such as 
 For example, to inject [Axios](../ui/http.md) into Vue instead of using it like any other vendor code, you can load it up like other plugins like this:
 
 ```js
-// src/vue/plugins/vue-http.js
+// src/plugins/vue-http.js
 import Vue from 'vue';
 import Axios from 'axios';
 Vue.prototype.$http = Axios;
@@ -122,7 +122,7 @@ export default Axios;
 ```
 
 ```js
-// src/vue/plugins/index.js
+// src/plugins/index.js
 import VueHttp from './vue-http';
 export {
 	VueHttp,

@@ -1,5 +1,4 @@
-
-# Creating transitions and animations
+# Transitions and animations
 
 ```
 src/
@@ -80,6 +79,14 @@ This is similar to any other conditional rendering case. Simply use `<transition
 
 **The preferred way** is to add reusable `@keyframes` definitions under `src/styles/keyframes/` (remember to also import new files in `global.scss`).
 
-If that doesn't make sense, declare a `@keyframes` animation in your component code. If you do this, just prefix your animation name with `view-<viewname>-`.
+You can use the reusable animations in your SCSS (`mixin-animations.scss` will help) or use the included `Animation` component in components:
+
+```html
+<animation :name="spin" :disabled="myAnimationIsDisabled">
+	<some-component-to-spin />
+</animation>
+```
+
+If that doesn't make sense, declare a `@keyframes` animation in your component code. If you do this, just prefix your animation name with `c-my-component-`.
 
 In either case, once your keyframe animation is declared, it can be used as the `animation-name` in your either global styles or component styles.

@@ -1,55 +1,40 @@
-
 # Stylesheet architecture
 
-Any practical modern web application will be built with a mix of stylesheet code, both global stylesheet code and component-specific style code.
+Any practical modern web application will be built with a mix of **global** and **component-specific** styling. CSS's cascade makes this easy, so long as you keep things organised and use a sensible naming convention. Bellevue offers a full-featured, preconfigured architecture for architecturing (S)CSS code in a scalable way.
 
-Bellevue offers a full-featured, preconfigured architecture for architecturing (S)CSS code in a scalable way. This architecture is easy to streamline if you feel your project needs this, but it's probably better to leave it in place as it's still fairly easy to navigate.
-
-## Global styles
+## Global styles structure
 
 ```
 └── src/
-	└── styles/                       // Global base styling and style utilities
-		├── base/
-		├── definitions/
-			├── constants.scss
-			├── functions.scss
-		├── keyframes/
-		├── mixins/
-		├── normalize/
-		├── toolchain/
-		├── transitions/
-		├── utilities-base/
-		├── utilities-composed/
-		├── vendor/
-		├── vendor-overrides/
-		├── webfonts/
-		├── global.scss               // All global base styling
-		├── shared.scss               // All SCSS constants and mixins
-		└── utilities.scss            // All global CSS utilities
+	└── styles/
+		├── defaults/          // BAse styling for <body> and other elements
+		├── functions/         // SCSS functions
+		├── keyframes/         // CSS animation definitions
+		├── mixins/            // SCSS mixins
+		├── transitions/       // Named transition definitions
+		├── utilities/         // CSS utilities
+		|
+		├── constants.scss     // Global SCSS variables and defaults
+		├── font-face.scss     // Generates @font-face rules for local web fonts
+		├── functions.scss     // All SCSS functions
+		├── mixins.scss        // All SCSS mixins
+		├── normalize.scss     // Global resets
+		|
+		└── global.scss        // All global base styling
 ```
 
-`global.scss` and `utilities.scss` are imported by `App.vue`.
+All global CSS is output by importing `global.scss` in  `App.vue`. All mixins, functions and global variables are imported by `mixins.scss` and `functions.scss` respectively, and then .
 
-**Known issue:** it is difficult to control the exact order that stylesheets are injected into `index.html` in Webpack. `utilities.scss` are _currently injected before_ component styles, but they _should be injected after_ component styles to be more effective and reduce the need for overqualified selectors.
+In your final output, global stylesheets component styles come after global styles.
 
 ## Component styles
 
-Components are written as `.vue` files, which include a `<style>` tag for writing component styles.
+Components are written as `.vue` files, which include a `<style>` tag for writing component styles. All functions, mixins and global variables are also injected into your components.
 
-Vue's `<style scoped>` is **not** used, as this will break the cascade. If you've traditionally had troubles with the cascade though, and are not interested in overwriting child component styles per context, you might want to use `scoped` in your components.
+Vue's `<style scoped>` is **not** used, as this will make it difficult to override child component styles in a parent component.
 
-## Sharing SCSS tools
+If you've traditionally had troubles with the cascade though, and are not interested in overwriting child component styles per context, you might want to use `scoped` in your components.
 
-In both global and component styles, you can import any SCSS mixins and constants you need. The easiest way to do this is to simply import the shared styles like this:
+## SCSS variables in JS
 
-```scss
-// `@shared-styles` is an aliased defined in src/config/config.aliases.js
-@import '~@shared-styles';
-```
-
-Notice that this does not result in any new CSS output. `shared.scss` only imports mixins and constants.
-
-## SCSS constants
-
-Commonly accessed variables in SCSS are set in `constants.scss`. These are also automatically exposed to JS when [`@config` is imported](../app/config.md).
+Commonly accessed variables in SCSS are set in `constants.scss`. You can also access these in JS by importing [`@config/styles`](../app/config.md).

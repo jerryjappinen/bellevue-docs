@@ -1,4 +1,3 @@
-
 # SVG and bitmap assets
 
 ```
@@ -6,7 +5,7 @@ src/
 	├── assets/
 	.	└── logo.png
 	└── svg/
-		└── some-asset.svg
+		└── MyAsset.svg
 ```
 
 ## Bitmap and static assets
@@ -17,17 +16,17 @@ You can use the assets under the asset folder normally in HTML, CSS and JS. Just
 <img src="~@assets/logo.png">
 ```
 
-## Using SVGs from SVG sprite
+## Using SVGs
 
-This project template comes with tooling that compiles SVGs into sprites automatically. It's most convenient and robust to render SVG with a dedicated component so you don't need to worry about the details when using SVG assets in your views.
+This project template comes with tooling that optimizes compiles SVGs automatically. It's most convenient and robust to render SVG with a dedicated component so you don't need to worry about the details when using SVG assets in your views.
 
-**Example:** [`<pic-svg>`](https://github.com/Eiskis/bellevue/blob/master/src/components/snippets/PicSvg.vue)
+**Example:** [`<vector :src="my-asset" />`](https://github.com/Eiskis/bellevue/blob/master/src/components/snippets/Vector.vue)
 
 _Any_ SVG is simply XML, and can be styled with CSS:
 
 ```scss
-.view-my-component {
-	.view-pic-svg {
+.c-my-component {
+	.c-vector-my-asset {
 		fill: $color-red;
 	}
 }
@@ -36,7 +35,7 @@ _Any_ SVG is simply XML, and can be styled with CSS:
 _Some_ SVGs are designed to be dynamically colored with the current text color:
 
 ```scss
-.view-my-component {
+.c-my-component {
 	color: $color-red;
 	// no need to specify any SVG parameters
 }

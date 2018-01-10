@@ -4,58 +4,70 @@
 [Browse source on GitHub](https://github.com/Eiskis/bellevue)
 
 ```
-docs/                                // Documentation generated from codebase
+e2e/                                  // End-to-end tests (on Nightwatch)
+	└── myTest.e2e.js
 src/
-	├── app-icon/                     // App icon assets
 	├── assets/                       // Generic asset files such as images
 	├── components/                   // Views, single-file .vue components
-	├── config/                       // Custom configuration for tooling and app code
-	.	├── config.aliases.js
-	.	├── config.base.js
-	.	└── config.routes.js
-	├── fonts/                        // Web font assets
-	├── locales/                      // Localisation files (per-language messages and formats)
+	├── config/                       // All custom configuration for tooling and app code
+	.	├── dev/                      // Config overrides for development mode
+	.	.	├── analytics.js
+	.	.	├── build.js
+	.	.	├── meta.js
+	.	.	├── paths.js
+	.	.	├── router.js
+	.	.	└── styles.js
+	.	├── tooling/                  // Configuration that won't be available runtime
+	.	.	├── aliases.js            // Webpack aliases
+	.	.	├── manifest.js
+	.	.	├── robotsTxt.js
+	.	.	├── routes.js             // Routes
+	.	.	├── sitemap.js
+	.	.	└── svgo.js
+	.	├── analytics.js
+	.	├── build.js
+	.	├── meta.js                   // Meta information (app title, description etc.)
+	.	├── paths.js
+	.	├── router.js
+	.	├── styles.js
+	.	└── index.js
+	.
+	├── directives/                   // Vue directives
+	├── mixins/                       // Vue mixins (NOT Sass mixins)
 	├── models/                       // JS business logic objects
+	├── plugins/                      // Vue plugins
 	├── services/                     // JS custom (reactive) services
-	├── store/                        // JS state management code
 	└── styles/                       // Global base styling and style utilities
-	.	├── base/
-	.	├── definitions/
+	.	├── defaults/
+	.	├── functions/
 	.	├── keyframes/
 	.	├── mixins/
-	.	├── normalize/
-	.	├── toolchain/
 	.	├── transitions/
-	.	├── utilities-base/
-	.	├── utilities-composed/
-	.	├── vendor/
-	.	├── vendor-overrides/
-	.	├── webfonts/
-	.	├── global.scss               // All global base styling
-	.	├── shared.scss               // All SCSS constants and mixins
-	.	├── utilities.scss            // All global CSS utilities
-	├── svg/                          // SVG assets that will be compiled into a sprite
-	├── util/                         // JS custom misc. utilities
-	├── vue/
-	.	├── directives/               // Vue directives
-	.	├── mixins/                   // Vue mixins
-	.	└── plugins/                  // Vue plugins
+	.	├── utilities/
+	.	|
+	.	├── constants.scss            // Global SCSS variables and defaults
+	.	├── font-face.scss            // Generates @font-face rules for local web fonts
+	.	├── functions.scss            // All SCSS functions
+	.	├── mixins.scss               // All SCSS mixins
+	.	└── normalize.scss            // Global resets
+	.
+	├── svg/                          // SVG assets to optimize and compile
+	├── util/                         // JS custom utilities
+	├── vendor/                       // Vendor libraries setup
+	.	└── vue.js                    // Main Vue instance setup
 	├── index.html.ejs                // Main HTML template
-	├── main.js                       // Vue setup and main entry point for client app
-	├── stylelint.config.js           // Linter configuration
-	├── .htmllintrc                   // Linter configuration
-	└── .eslintrc.js                  // Linter configuration
-static/                              // Static files to host alongside product
-test/
-	├── e2e/                          // End-to-end tests on Nightwatch
-	.	├── custom-assertions/
-	.	└── specs/
-	└── unit/                         // Unit tests on Karma and Mocha
-		└── specs/
-			├── components/
-			├── models/
-			├── services/
-			└── store/
+	├── main.js                       // Entry point for client app
+static/                               // Static files to host alongside product, including app icons
+	├── _redirects
+	├── favicon.png
+	├── icon-48.png
+	└── ...
+unit/                                 // Unit tests (on Jest)
+	├── components/
+	├── models/
+	├── services/
+	└── util/
+		└── myUtilName.spec.js
 ```
 
 
@@ -63,20 +75,21 @@ test/
 ## Tooling
 
 ```
-webpack/                             // Webpack build scripts
-	└── env/                          // Environment configuration
+.vscode/                              // Workspace settings for Visual Studio Code
+build/                                // Webpack build scripts
+config/                               // Environment configuration
+src/
+	├── .editorconfig                 // Code style settings
+	├── stylelintrc.js                // Linter configuration
+	└── .eslintrc.js                  // Linter configuration
 test/
-	├── e2e/
-	.	├── nightwatch.conf.js        // End-to-end test runner configuration
-	.	└── nightwatch.chrome.conf.js
-	└── unit/
-		└── karma.conf.js             // Unit test runner configuration
-package.json                         // Dev and app dependencies, development scripts
-.nvmrc                               // Node.js version
+	├── e2e/                          // Nightwatch configuration
+	.	└── custom-assertions/
+	└── unit/                         // Jest configuration
+		├── stubs/
+		└── jest.conf.js
+package.json                          // Dev and app dependencies, development scripts
+.nvmrc                                // Node.js version definition
 ```
 
-## Extras
-
-```
-.vscode/                             // Workspace settings for Visual Studio Code
-```
+There are more manifest and config files in the root, but you should leave these unchanged.

@@ -22,10 +22,10 @@ src/
 	}
 </script>
 <template>
-	<div class="view-new-component">Foo</div>
+	<div class="c-new-component">Foo</div>
 </template>
 <style lang="scss">
-	.view-new-component {}
+	.c-new-component {}
 </style>
 ```
 
@@ -53,7 +53,7 @@ export default {
 
 ```html
 <template>
-	<div class="view-old-component">
+	<div class="c-old-component">
 		<new-component></new-component>
 	</div>
 </template>

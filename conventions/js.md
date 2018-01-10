@@ -21,7 +21,7 @@ src/
 
 ### External dependencies
 
-We use NPM for dependency management. As such, whenever you `import` an external dependency in your view component or JS file, the package has to be available locally. Your builds will fail until you have made the package available.
+We use NPM for dependency management. As such, whenever you `import` an external dependency in your component or JS file, the package has to be available locally. Your builds will fail until you have made the package available.
 
 To ensure this, it has to be declared as a dependency in `package.json`. It is easy to just `npm install` a dependency locally but not `--save` it, and thus not store it in the manifest. In this case your own builds will work but for other developers they won't.
 

@@ -26,11 +26,11 @@ $some-breakpoint: 800px;
 CSS classes and HTML tags and attributes:
 
 ```scss
-.view-my-component {}
+.c-my-component {}
 ```
 
 ```html
-<div class="view-my-component" data-some-attr="Some value"></div>
+<div class="c-my-component" data-some-attr="Some value"></div>
 ```
 
 By extension, declared component names:
@@ -68,6 +68,8 @@ Component names and files:
 src/
 	└── components/
 		└── MyComponent.vue
+	└── svg/
+		└── MyVectorAsset.svg
 ```
 
 Models, constructor classes and component names in JS.
