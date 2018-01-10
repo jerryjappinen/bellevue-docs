@@ -58,8 +58,8 @@
 
 ### Tooling
 
-- [Stack overview](tooling/stack.md)
-- [App icon generation](tooling/app-icons.md)
+- [App icons](tooling/app-icons.md)
+- [App meta data](tooling/meta.md)
 - [Dependency management](tooling/dependencies.md)
 - [Development builds](tooling/development.md)
 - [Production builds](tooling/production.md)
@@ -73,5 +73,4 @@
 - [Getting started](faq/getting-started.md)
 - [Adding new assets](faq/new-assets.md)
 - [Creating a new component](faq/creating-components.md)
-- [Setting page meta information](faq/meta.md)
 - [Using a new Vue plugin](faq/vue-plugins.md)

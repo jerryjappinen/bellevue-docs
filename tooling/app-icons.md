@@ -1,12 +1,15 @@
-
-# App icon generation
+# App icons
 
 ```
-src/
-	└── app-icon/
-		└── app-icon.png
+└── static/
+	├── favicon.png
+	└── icon-48.png
 ```
 
-Webpack can generate app icons for multiple target platforms from a single source file. This can be quite slow however and enabling this can add significantly to the development environments startup time, although they won't be regenerated during normal development unless the source file changes.
+App icons should be placed under `static/`. App icons are used by various browsers and operating systems in different ways, so you should make sure you have at least `favicon.png` available there. Furthermore it's a good idea to include some icons for your [web app manifest](../tooling/meta.md).
 
-**Note:** This feature is implemented in a crude form but is still lacking. To enable this feature, uncomment the part where `FaviconsWebpackPlugin` is used in `webpack.base.conf.js`.
+## Download Sketch template
+
+We have created a Sketch file that you can use to export all the different versions of your app icon and other assets to your Bellevue project.
+
+[Download here](../downloads/bellevue-assets.sketch)

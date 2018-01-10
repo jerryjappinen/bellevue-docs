@@ -1,11 +1,6 @@
+# App meta data
 
-# Setting page meta information
-
-**How do I control page title and meta tags in the single-page applicatiom?**
-
-## Auto-injected meta tags
-
-Some Webpack plugins print the meta tags needed for the functionality they want to deliver. For example, there is a plugin that resizes app icons and also generates the meta tags required by iOS to use them.
+All meta data of your application comes from the [centralised configuration](../app/config.md).
 
 ## Site-wide meta tags
 
@@ -19,3 +14,16 @@ Use the `metaInfo` property in your page component.The `vue-meta` plugin is incl
 
 - [Read more about creating routed pages](../ui/routing.md)
 - [Read more about `vue-meta`](https://github.com/declandewet/vue-meta)
+
+## Web app manifest
+
+- [`config/meta.json`](https://github.com/Eiskis/bellevue/tree/master/src/config/meta.js)
+- [`config/tooling/manifest.json`](https://github.com/Eiskis/bellevue/tree/master/src/config/tooling/manifest.js)
+
+## Robots
+
+You can control your robot meta tags and `robots.txt` easily with [`config/meta.json`](https://github.com/Eiskis/bellevue/tree/master/src/config/meta.js) and [`config/tooling/robots.json`](https://github.com/Eiskis/bellevue/tree/master/src/config/tooling/robots.js).
+
+## Sitemap
+
+A `sitemap.xml` is automatically generated for your app based on your routes. If you want more control over how the sitemap should look like, see [`config/tooling/sitemap.json`](https://github.com/Eiskis/bellevue/tree/master/src/config/tooling/sitemap.js)

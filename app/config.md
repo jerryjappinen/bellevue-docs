@@ -4,10 +4,10 @@
 ```
 src/
 	└── config/
-		├── config.aliases.js
-		├── config.base.js
-		├── config.routes.js
-		└── config.styles.js
+		├── aliases.js
+		├── base.js
+		├── routes.js
+		└── styles.js
 ```
 
 This template has carefully been set up so that various parts of the tooling as well as app code pull configurable values from one place. Generally speaking the developer doesn't have to edit Webpack script files while setting up a new project, or doing regular application development (like defining routes).
