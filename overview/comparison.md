@@ -7,7 +7,7 @@ This project aims to provide a more realistic representation of what a modern fu
 
 For a quick overview of what the full feature set of Bellevue is, check out the [annotated project structure](../overview/source.md).
 
-## Shared with `vuejs-templates/webpack`
+## From `vuejs-templates/webpack`
 
 |Feature|Bellevue|`vuejs-templates/webpack`
 | -- | -- | -- |
@@ -27,7 +27,8 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 |Excellent error reporting|Yes|Yes
 
 
-## Additional tooling features
+
+## New and improved
 
 ### Preconfigured aliases
 
@@ -60,11 +61,6 @@ Optimized with SVGO, and compiled to Vue components. Supports outputting SVGs wi
 ### Preconfigured web font loading
 
 [Yes](https://github.com/Eiskis/bellevue/tree/master/src/styles/webfonts)
-
-
-## Application code
-
-If you only need a subset of these features, the extra capabilities can easily be removed to stramline your app.
 
 ### Manifest files and meta tags
 
