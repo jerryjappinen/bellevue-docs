@@ -5,6 +5,7 @@
 - [Feature comparison](overview/comparison.md)
 - [Setup and requirements](overview/setup.md)
 - [Source code structure](overview/source.md)
+- [Other resources](overview/resources.md)
 
 ### App architecture
 
