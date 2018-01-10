@@ -15,6 +15,8 @@ But while the official template is only a _Hello world_, Bellevue's goal is to s
 
 {% include "./SUMMARY.md" %}
 
+_* Not preconfigured._
+
 ## Contributing
 
 Do you want to contribute to the template?

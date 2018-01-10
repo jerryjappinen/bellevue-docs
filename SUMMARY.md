@@ -75,5 +75,3 @@
 - [Creating a new component](faq/creating-components.md)
 - [Setting page meta information](faq/meta.md)
 - [Using a new Vue plugin](faq/vue-plugins.md)
-
-_* Not preconfigured._
