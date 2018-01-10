@@ -79,56 +79,42 @@ See [FAQ/meta](../faq/meta.md) for more information.
 
 [Yes, preconfigured](../ui/localisation.md) (`vue-i18n`)
 
-#### Centralised registration of Vue plugins
+#### Centralised registration of Vue
 
-[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
+Plugins, components, directives and mixins are preconfigured and can easily be extended.
 
-#### Centralised registration of Vue components
-
-[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
-
-#### Centralised registration of Vue directives
-
-[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
-
-#### Centralised registration of Vue mixins
-
-[Yes](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
+[Read more](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
 
 #### Global stylesheet architecture
 
 [Yes](../stylesheets/stylesheet/architecture.md)
 
-#### App code: services
+#### App code structure
 
-[Yes](https://github.com/Eiskis/bellevue/tree/master/src/services)
+- [Services](https://github.com/Eiskis/bellevue/tree/master/src/services)
+- [Models](https://github.com/Eiskis/bellevue/tree/master/src/models)
+- [Utilities](https://github.com/Eiskis/bellevue/tree/master/src/utilities)
 
-#### App code: business logic models
+#### Persistence
 
-[Yes](https://github.com/Eiskis/bellevue/tree/master/src/models)
-
-#### App code: custom utilities
-
-[Yes](https://github.com/Eiskis/bellevue/tree/master/src/utilities)
-
-#### Peristence
-
-[Yes](../ui/persistence.md)
+Persistence can be achieved via routing, or preconfigured local storage support. [Read more](../ui/persistence.md)
 
 #### Vuex
 
-[Yes, preconfigured](../app/vuex.md)
-
-#### Server-side rendering
-
-[Not preconfigured](../ui/ssr.md)
+Vuex becomes preconfigured. [Read more](../app/vuex.md)
 
 #### Offline support
 
-Webpack's offline plugin `comes preconfigured`.
-
-[Read more about offline](../ui/offline.md)
+Webpack's offline plugin comes preconfigured. [Read more](../app/offline.md)
 
 #### Google Analytics
 
-Preconfigured (disabled by default)
+Preconfigured (disabled by default). [Read more](../app/analytics.md)
+
+
+
+## Not included
+
+#### Server-side rendering
+
+[Read more](../ui/ssr.md)
