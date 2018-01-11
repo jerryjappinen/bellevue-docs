@@ -11,14 +11,14 @@
 
 - [Overview](app/overview.md)
 - [Configuration](app/config.md)
+- [Sass architecture](app/stylesheets.md)
 - [Components](app/components.md)
 - [Models](app/models.md)
 - [Services](app/services.md)
 - [Utilities](app/utilities.md)
 - [Vendor code](app/vendor.md)
-- [Vuex](app/vuex.md) *
+- [Vuex](app/vuex.md)
 - [Extending Vue](app/vue.md)
-- [Sass architecture](app/stylesheets.md)
 
 <!--
 ### Stylesheets
