@@ -1,34 +1,48 @@
-
 # Centralised configuration
 
 ```
 src/
-	└── config/
-		├── aliases.js
-		├── base.js
-		├── routes.js
+	config/
+		├── dev/                      // Config overrides for development mode
+		.	├── analytics.js
+		.	├── build.js
+		.	├── meta.js
+		.	├── paths.js
+		.	├── router.js
+		.	└── styles.js
+		.
+		├── tooling/                  // Configuration that won't be available runtime
+		.	├── aliases.js            // Webpack aliases
+		.	├── manifest.js
+		.	├── robotsTxt.js
+		.	├── routes.js             // Routes
+		.	├── sitemap.js
+		.	└── svgo.js
+		.
+		├── analytics.js
+		├── build.js
+		├── meta.js                   // Meta information (app title, description etc.)
+		├── paths.js
+		├── router.js
 		└── styles.js
 ```
 
-This template has carefully been set up so that various parts of the tooling as well as app code pull configurable values from one place. Generally speaking the developer doesn't have to edit Webpack script files while setting up a new project, or doing regular application development (like defining routes).
+Various parts of the tooling as well as your runtime code pull configurable values from one place. Generally speaking, as a developer you don't have to edit Webpack script files while setting up a new project or during everyday app development.
 
-Configuration is spread accross multiple files:
+Configuration is spread accross multiple files, and you can easily override some of them for your development environment only. It's also easy to add more configuration files here for any custom configuration or new Webpack plugins.
 
-- [`config.base.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.base.js) is the general-purpose config file which is most commonly edited.
-- [`config.routes.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.routes.js) includes all route configuration.
-- [`config.aliases.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.aliases.js) defines Webpack aliases that can be used for [URL resolution](../tooling/urls.md).
-- [`config.styles.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.styles.js) will pull variables from `constants.scss` automatically and so you can access them in JavaScript.
+## Accessing config in runtime code
 
-## Accessing config in application code
-
-Anywhere in your application, you can import the extended configuration and use it to trigger any behavior you want.
+Anywhere in your application, you can import the configuration using the `@config` alias.
 
 ```js
-import config from '@config';
+import buildConfig from '@config/build';
 console.log(Object.keys(config));
 // [ 'defaultLocale', 'fallbackLocale', 'meta', 'mobile', 'routes', 'styles', ... ]
 ```
 
-## Environment variables for build scripts
+Note that in development mode, `@config` will point to `src/config/dev/` while in production it points to `src/config/`.
 
-Some of the build scripts accept environment variables for setting things like the development server port or test driver. The supported variables and examples of how to set them are [listed on the setup page](../overview/setup.md).
+## CLI environment variables
+
+You can change the port of your development server by setting an environment variable for your npm script. [See the setup instructions](../overview/setup.md) for an example.
