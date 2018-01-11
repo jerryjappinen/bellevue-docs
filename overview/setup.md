@@ -27,9 +27,6 @@ npm install
 ## Building and testing
 
 ``` bash
-# install dependencies
-npm install
-
 # serve with hot reload at localhost:8080
 npm run dev
 
@@ -46,7 +43,7 @@ npm run build:report
 npm run unit
 
 # run unit tests and show coverage report
-npm run unit:coverage
+npm run unit:report
 
 # run unit tests and with hot reload (`jest --watch`)
 # NOTE: You have more options in the terminal after you run this command
