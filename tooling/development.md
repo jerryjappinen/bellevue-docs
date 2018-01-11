@@ -6,7 +6,7 @@ The following development tools have been configured for development aids:
 - EditorConfig
 - ESLint: JS linting
 - htmllint: HTML linting
-- Stylelint: SCSS linting
+- Stylelint: Sass linting
 
 During development, Webpack will automatically recompile any of the assets needed and only the components that have changed will be rerendered in the browser. This is called "hot reload" or "module hot swapping". No browser extensions or other setup is required for this.
 

@@ -38,56 +38,41 @@ All relevant parts of your source code are preconfigured in Webpack, allowing yo
 
 [Yes](../app/config.md)
 
-#### SCSS
+#### Stylesheets
 
-Supported in `.scss` files (global styles), `.vue` files (component styles). Sass variables are also exposed to JavaScript, avoiding duplication.
+Sass support is preconfigured for global styling (separate `.scss` files), and component styles (`.vue` files). Sass variables are also exposed to JavaScript, avoiding duplication. Included are commonly used mixins and other Sass tools that are shared across the application code.
 
-Includes many commonly used mixins, and separation between shared Sass tooling and global CSS.
+[Read more](../app/stylesheets.md)
 
-#### Linting for `.js` and `.vue` files
+#### Assets and SVG optimisation
 
-Supported for `.js`, `.vue`, `.css` and `.scss` files. Additional linting configuration for JS imports, Vue-specific code styling (template, script and style) and Jest spec files.
+Preconfigured support for using bitmap and other assets from one place without relative paths. SVG assets are compiled and optimized, and support `currentColor` for CSS-based coloring. Support for adding local web fonts is also preconfigured.
 
-#### Workspace configuration
+- [Using assets](../ui/assets.md)
+- [SVG tooling](../tooling/svg-compilation.md)
+- [Web fonts](../ui/webfonts)
 
-Preconfigured settings for VS Code, common plugins, all linting tools, Babel etc.
+#### Linting and workspace configuration
 
-#### SVG optimisation
+Linting is preconfigured for `.js`, `.vue`, `.css` and `.scss` files. Additional linting configuration for JS imports, Vue-specific code stylesheets (template, script and style) and Jest spec files. Linters can be run on command line or in your editor.
 
-Optimized with SVGO, and compiled to Vue components. Supports outputting SVGs with `currentColor` for CSS-based coloring.
-
-[Read more)](../tooling/svg-compilation.md)
-
-#### Preconfigured web font loading
-
-[Yes](https://github.com/Eiskis/bellevue/tree/master/src/styles/webfonts)
+Preconfigured settings for VS Code (common plugins, all linting tools, Babel etc.).
 
 #### Manifest files and meta tags
 
 - Sitemap generation (`sitemap.xml`)
 - `robots.txt` and robots meta tags
 - WebApp `manifest.json` generation
-- HTML meta tags: site-wide, prerendered
+- Advanced `index.html` templating (prerendered)
+- Run-time meta tag management
 
 See [FAQ/meta](../faq/meta.md) for more information.
 
-#### HTML meta tags: per route, run-time
+#### Vue plugins
 
-[Yes, preconfigured](../faq/meta.md) (`vue-meta`)
-
-#### Localisation capability
-
-[Yes, preconfigured](../ui/localisation.md) (`vue-i18n`)
-
-#### Centralised registration of Vue
-
-Plugins, components, directives and mixins are preconfigured and can easily be extended.
+Plugins, components, directives and mixins are preconfigured and registered in a centralised manner. New plugins and other extensions can be added easily.
 
 [Read more](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
-
-#### Global stylesheet architecture
-
-[Yes](../stylesheets/stylesheet/architecture.md)
 
 #### App code structure
 
@@ -101,11 +86,11 @@ Persistence can be achieved via routing, or preconfigured local storage support.
 
 #### Vuex
 
-Vuex becomes preconfigured. [Read more](../app/vuex.md)
+Preconfigured Vuex with module support and tests. [Read more](../app/vuex.md)
 
 #### Offline support
 
-Webpack's offline plugin comes preconfigured. [Read more](../app/offline.md)
+Webpack's offline plugin preconfigured (disabled by default). Included `network` service to detect network status in runtime code. [Read more](../app/offline.md)
 
 #### Google Analytics
 
@@ -113,8 +98,7 @@ Preconfigured (disabled by default). [Read more](../app/analytics.md)
 
 
 
-## Not included
+## Not preconfigured
 
-#### Server-side rendering
-
-[Read more](../ui/ssr.md)
+- Localisation: [Read more](../ui/localisation.md)
+- Server-side rendering: [Read more](../ui/ssr.md)

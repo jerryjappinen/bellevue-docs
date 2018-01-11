@@ -39,10 +39,10 @@ src/
 	.	├── transitions/
 	.	├── utilities/
 	.	|
-	.	├── constants.scss        // Global SCSS variables and defaults
+	.	├── constants.scss        // Global Sass variables and defaults
 	.	├── font-face.scss        // Generates @font-face rules for local web fonts
-	.	├── functions.scss        // All SCSS functions
-	.	├── mixins.scss           // All SCSS mixins
+	.	├── functions.scss        // All Sass functions
+	.	├── mixins.scss           // All Sass mixins
 	.	└── normalize.scss        // Global resets
 	.
 	├── svg/                      // SVG assets to optimize and compile

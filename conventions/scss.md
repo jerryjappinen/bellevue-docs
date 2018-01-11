@@ -1,5 +1,4 @@
-
-# SCSS coding conventions
+# Sass coding conventions
 
 Global base and utility styles are written under `src/styles/`. Component-specific styles are written in each `.vue` file.
 
@@ -20,7 +19,7 @@ src/
 
 ### Duplicate code while @importing
 
-SCSS is a preprocessor, and outputs CSS. When you use `@import` to define dependencies in `.scss` files, any CSS output from those files will be included in the output. If multiple source files @import the same file, any output from the imported file will be included twice in the final output. This makes sense from the file processing perspective but is usually not what we want.
+Sass is a preprocessor, and outputs CSS. When you use `@import` to define dependencies in `.scss` files, any CSS output from those files will be included in the output. If multiple source files @import the same file, any output from the imported file will be included twice in the final output. This makes sense from the file processing perspective but is usually not what we want.
 
 To avoid any issues, we follow the best practices:
 

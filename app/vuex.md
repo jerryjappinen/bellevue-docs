@@ -9,9 +9,11 @@ src/
 		└── index.js
 ```
 
-Global state is for things that user can directly control and would expect (explicitly or implicitly) the application to know, keep track of and ensure persistence of (latter is currently not included). Global state is shared between components, and can be further split into modules, persisted across sessions on local storage etc.
+Vuex is a **state management pattern + library** for managing global state in Vue applications. Global state is shared between components, and can be further split into modules, persisted across sessions on local storage etc. You can also unit test your getters, mutations, and actions with Jest in isolation from your components.
 
-[See included example of store](https://github.com/Eiskis/bellevue/tree/master/src/store). Official Vuex documentation is available at [vuex.vuejs.org](https://vuex.vuejs.org/en/).
+- [Example of store](https://github.com/Eiskis/bellevue/tree/master/src/store)
+- [Official Vuex documentation](https://vuex.vuejs.org/en/)
+- [Example of Vuex unit test](https://github.com/Eiskis/bellevue/tree/master/unit/store/myModule.spec.js)
 
 ## Alternatives
 

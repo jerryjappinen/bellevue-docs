@@ -47,7 +47,7 @@ Components are **reusable** and **nestable** UI snippets that encapsulate view l
 
 ### Styles
 
-You can and should use SCSS in component styles. You can `@import` the shared styles to use shared mixins and other tools.
+You can and should use Sass in component styles. You can `@import` the shared styles to use shared mixins and other tools.
 
 One components can generally appear under multiple different parent components in the application. In order to make it easy to customize component styles in any given context, it's best to
 

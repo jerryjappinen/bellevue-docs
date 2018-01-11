@@ -18,16 +18,18 @@
 - [Vendor code](app/vendor.md)
 - [Vuex](app/vuex.md) *
 - [Extending Vue](app/vue.md)
+- [Sass architecture](app/stylesheets.md)
 
+<!--
 ### Stylesheets
 
-- [Stylesheet architecture](stylesheets/stylesheet-architecture.md)
-- Classnames and selectors<!-- (ui/style-selectors.md) -->
-- Global base styling<!-- (ui/global-styles.md) -->
-- SCSS constants<!-- (ui/style-constants.md) -->
-- SCSS mixins<!-- (ui/scss-mixins.md) -->
-- SCSS functions<!-- (ui/scss-functions.md) -->
-- Utility styles<!-- (ui/utility-styles.md) -->
+- [Classnames and selectors](ui/style-selectors.md)
+- [Global base styling](ui/global-styles.md)
+- [Sass constants](ui/style-constants.md)
+- [Sass mixins](ui/scss-mixins.md)
+- [Sass functions](ui/scss-functions.md)
+- [Utility styles](ui/utility-styles.md)
+-->
 
 ### App features
 
@@ -49,13 +51,6 @@
 - [End-to-end tests](tests/e2e.md)
 - [Unit tests](tests/unit.md)
 
-### Coding guidelines
-
-- [Naming conventions](conventions/naming.md)
-- HTML
-- [JS](conventions/js.md)
-- [SCSS](conventions/scss.md)
-
 ### Tooling
 
 - [App icons](tooling/app-icons.md)
@@ -68,9 +63,14 @@
 - [URL resolving and aliases](tooling/urls.md)
 - [IDE integration](misc/ide.md)
 
+### Coding guidelines
+
+- [Naming conventions](conventions/naming.md)
+- [JS](conventions/js.md)
+- [Sass](conventions/scss.md)
+
 ### FAQ
 
 - [Getting started](faq/getting-started.md)
-- [Adding new assets](faq/new-assets.md)
 - [Creating a new component](faq/creating-components.md)
 - [Using a new Vue plugin](faq/vue-plugins.md)

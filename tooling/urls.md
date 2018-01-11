@@ -22,7 +22,7 @@ HTML (**with** `~` prefix):
 <img src="~@assets/logo.png">
 ```
 
-SCSS (**with** `~` prefix):
+Sass (**with** `~` prefix):
 
 ```scss
 @import '~@shared-styles';
@@ -31,4 +31,4 @@ SCSS (**with** `~` prefix):
 }
 ```
 
-Aliases work in `.vue` files as well as standalone JS/SCSS/HTML files.
+Aliases work in `.vue` files as well as standalone JS/Sass/HTML files.

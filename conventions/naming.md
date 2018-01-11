@@ -1,9 +1,8 @@
-
 # Naming conventions
 
 ## kebab-case
 
-SCSS files:
+Sass files:
 
 ```
 src/
@@ -11,7 +10,7 @@ src/
 		└── shared.scss
 ```
 
-SCSS variable names and mixins:
+Sass variable names and mixins:
 
 ```scss
 $some-breakpoint: 800px;

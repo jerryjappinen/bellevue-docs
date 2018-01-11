@@ -8,16 +8,16 @@ Any practical modern web application will be built with a mix of **global** and 
 └── src/
 	└── styles/
 		├── defaults/          // BAse styling for <body> and other elements
-		├── functions/         // SCSS functions
+		├── functions/         // Sass functions
 		├── keyframes/         // CSS animation definitions
-		├── mixins/            // SCSS mixins
+		├── mixins/            // Sass mixins
 		├── transitions/       // Named transition definitions
 		├── utilities/         // CSS utilities
 		|
-		├── constants.scss     // Global SCSS variables and defaults
+		├── constants.scss     // Global Sass variables and defaults
 		├── font-face.scss     // Generates @font-face rules for local web fonts
-		├── functions.scss     // All SCSS functions
-		├── mixins.scss        // All SCSS mixins
+		├── functions.scss     // All Sass functions
+		├── mixins.scss        // All Sass mixins
 		├── normalize.scss     // Global resets
 		|
 		└── global.scss        // All global base styling
@@ -35,6 +35,6 @@ Vue's `<style scoped>` is **not** used, as this will make it difficult to overri
 
 If you've traditionally had troubles with the cascade though, and are not interested in overwriting child component styles per context, you might want to use `scoped` in your components.
 
-## SCSS variables in JS
+## Sass variables in JS
 
-Commonly accessed variables in SCSS are set in `constants.scss`. You can also access these in JS by importing [`@config/styles`](../app/config.md).
+Commonly accessed variables in Sass are set in `constants.scss`. You can also access these in JS by importing [`@config/styles`](../app/config.md).
