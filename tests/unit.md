@@ -9,13 +9,15 @@ unit/                 // Spec files
 	├── store/
 	└── util/
 		└── myUtilName.spec.js
-test/                 // Setup configuration
+test/                 // Jest configuration
 	└── unit/
+		└── coverage/
+		└── stubs/
 ```
 
 Unit tests run on [Jest](https://facebook.github.io/jest/). Unit tests can be written for all the elements of application code, meaning services, models, components and utilities as well as Vuex code.
 
-You can use the scripts listed in [setup instructions](../overview/setup.md) to run tests in different modes. Running unit tests on the command line gives you a report like this:
+Run the tests with the scripts listed in [setup instructions](../overview/setup.md). Running unit tests on the command line gives you a report like this:
 
 <!-- ![Unit test results](../images/unit-test-report-cli-success.png) -->
 

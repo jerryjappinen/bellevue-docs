@@ -2,29 +2,21 @@
 # End-to-end tests
 
 ```
-reports/
-	├── e2e/
-	└── e2e.html
-spec/
-	└── e2e/
-tooling/
+e2e/                              // Spec files
+	└── myTest.e2e.js
+test/                             // Nightwatch configuration
 	└── e2e/
 		└── custom-assertions/
+		└── reports/
 ```
 
-End-to-end tests are written using [Nightwatch.js](http://nightwatchjs.org/). By default they are run on Chrome, which has a [standalone driver](https://sites.google.com/a/chromium.org/chromedriver/) that doesn't have dependencies.
+End-to-end tests are written using [Nightwatch.js](http://nightwatchjs.org/). By default they run on Selenium, which requires Java, but this can be changed to a [standalone driver](http://nightwatchjs.org/gettingstarted#browser-drivers-setup).
 
-You can use the scripts listed in [setup instructions](../overview/setup.md) to run tests.
-
-When running the tests, you will see test report in your CLI that looks like this:
+Run the tests with the scripts listed in [setup instructions](../overview/setup.md). When running the tests, you will see report that looks like this:
 
 ![End-to-end test results on command line](../images/e2e-test-report-cli.png)
 
-An HTML version will also be generated:
-
-![End-to-end test results in browser](../images/e2e-test-report-html.png)
-
-The HTML report will be available as `/reports/e2e.html`. You can open it over `file://`, no file server is needed.
+XML reports are also stored under `test/e2e/reports/`.
 
 ### Selenium
 

@@ -1,9 +1,6 @@
-
 # Production builds
 
-In production builds, the Webpack pipeline will do a lot of things to bundle all the requires code and assets as efficiently as possible for production environments.
-
-Among other things,
+In production builds, the Webpack pipeline will do a lot of things to bundle all the requires code and assets as efficiently as possible for production environments. Among other things,
 
 - HTML will be minified, and comments will be removed.
 - CSS will be minified, and comments will be removed.
@@ -11,7 +8,7 @@ Among other things,
 - All static assets will be copied ofer to a the assets directory, and all related URLs resolved.
 - Source maps will be generated for debugging production.
 
-As server-side rendering is not yet included in this template, the result of the production build is simply a collection of static assets, i.e. files that you can serve over any simple server, be it on Node, Apache, Nginx or other.
+The resulting package is simply a collection of static files, that you can serve with any serve (Node, Apache, Nginx or etc.).
 
 ## Running the build scripts
 
@@ -21,11 +18,11 @@ To compile a bundle for production, simply use the following command:
 npm run build
 ```
 
-The build process will take a while, but once it's done, you will see a satisfying report in your terminal:
+Once the build is complete, you will see a satisfying report in your terminal:
 
 ![Build report](../images/build-report-cli.png)
 
-You can also `npm run build --report` to get a more detailed report on your final bundle. At the end of the build, Webpack will open an inspectable graph in your browser that gives you a great overview of how your bundle breaks down.
+You can also `npm run build:report` to open a more detailed, inspectable graph in your browser:
 
 ![Detailed build report](../images/build-report-html.png)
 
