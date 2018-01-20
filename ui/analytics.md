@@ -11,4 +11,4 @@ To enable GA support:
 
 ## Other analytics providers
 
-To configure any other analytics solution, initialise its JS SDK in a new file under `@vendor` and import this file in `main.js`.
+To configure any other analytics solution, initialise its JS SDK in a new file under `src/vendor/` and import this file in `main.js`.
