@@ -3,7 +3,7 @@
 ```
 src/
 	config/
-		├── dev/                      // Config overrides for development mode
+		├── dev/                    // Config overrides for development mode
 		.	├── analytics.js
 		.	├── build.js
 		.	├── meta.js
@@ -11,17 +11,17 @@ src/
 		.	├── router.js
 		.	└── styles.js
 		.
-		├── tooling/                  // Configuration that won't be available runtime
-		.	├── aliases.js            // Webpack aliases
+		├── tooling/                // Configuration that won't be available runtime
+		.	├── aliases.js      // Webpack aliases
 		.	├── manifest.js
 		.	├── robotsTxt.js
-		.	├── routes.js             // Routes
+		.	├── routes.js       // Routes
 		.	├── sitemap.js
 		.	└── svgo.js
 		.
 		├── analytics.js
 		├── build.js
-		├── meta.js                   // Meta information (app title, description etc.)
+		├── meta.js                 // Meta information (app title, description etc.)
 		├── paths.js
 		├── router.js
 		└── styles.js
@@ -37,8 +37,8 @@ Anywhere in your application, you can import the configuration using the `@confi
 
 ```js
 import buildConfig from '@config/build';
-console.log(Object.keys(config));
-// [ 'defaultLocale', 'fallbackLocale', 'meta', 'mobile', 'routes', 'styles', ... ]
+console.log(buildConfig);
+// { isDebug: false, offline: false }
 ```
 
 Note that in development mode, `@config` will point to `src/config/dev/` while in production it points to `src/config/`.
