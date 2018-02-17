@@ -5,7 +5,7 @@ Webpack will resolve URLs for you. You can use relative URLs in any context (imp
 
 We can also use aliases though, so that you don't always have to keep track of the relative positioning of specific source files (which easily leads to bugs when refactoring).
 
-Aliases are configured in [`src/config/config.aliases.js`](https://github.com/Eiskis/bellevue/tree/master/src/config/config.aliases.js).
+Aliases are configured in [`src/config/tooling/aliases.js`](https://github.com/Eiskis/bellevue/tree/master/src/config/tooling/aliases.js).
 
 ## Using aliases
 
