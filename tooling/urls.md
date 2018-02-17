@@ -12,8 +12,8 @@ Aliases are configured in [`src/config/tooling/aliases.js`](https://github.com/E
 JavaScript (**no** `~` prefix):
 
 ```js
-import config from '@config';
-var imgPath = require('@assets/logo.png');
+import metaConfig from '@config/meta';
+const imgPath = require('@assets/logo.png');
 ```
 
 HTML (**with** `~` prefix):
@@ -25,7 +25,8 @@ HTML (**with** `~` prefix):
 Sass (**with** `~` prefix):
 
 ```scss
-@import '~@shared-styles';
+@import '~@styles-global';
+
 .foo {
 	background-image: url('~@assets/logo.png');
 }
