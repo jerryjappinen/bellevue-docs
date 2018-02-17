@@ -4,8 +4,8 @@
 **What practical steps should I take when starting a new project?**
 
 1. Clone [`Eiskis/bellevue`](https://github.com/Eiskis/bellevue)
-	- [SSH](git@github.com:Eiskis/bellevue.git)
-	- [HTTPS](https://github.com/Eiskis/bellevue.git))
+	- git@github.com:Eiskis/bellevue.git
+	- https://github.com/Eiskis/bellevue.git
 2. Install dependencies with `npm install`
 3. Take a quick look at the [application structure diagram](../app/overview.md)?
 4. Decide: do you want to use [Vuex](../app/vuex.md)?
