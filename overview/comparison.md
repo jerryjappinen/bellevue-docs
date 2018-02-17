@@ -50,7 +50,7 @@ Preconfigured support for using bitmap and other assets from one place without r
 
 - [Using assets](../ui/assets.md)
 - [SVG tooling](../tooling/svg-compilation.md)
-- [Web fonts](../ui/webfonts)
+- [Web fonts](../ui/webfonts.md)
 
 #### Linting and workspace configuration
 
@@ -66,7 +66,7 @@ Preconfigured settings for VS Code (common plugins, all linting tools, Babel etc
 - Advanced `index.html` templating (prerendered)
 - Run-time meta tag management
 
-See [FAQ/meta](../faq/meta.md) for more information.
+[Read more](../tooling/meta.md)
 
 #### Vue plugins
 
