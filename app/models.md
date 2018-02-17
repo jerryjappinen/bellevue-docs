@@ -21,7 +21,7 @@ If you are fetching data from an API, it's probably a good idea to author roughl
 
 You should spend a while thinking about what functionality belongs in your models and what doesn't. The same best practices apply for models as for any object-oriented patterns: keep them concise, and use the features Vue provides.
 
-Models should **not** include logic unrelated to the business logic they're encapsulating. If you're writing a lot of helpers, it might be better to move them to [utilities](util.md).
+Models should **not** include logic unrelated to the business logic they're encapsulating. If you're writing a lot of helpers, it might be better to move them to [utilities](./utilities.md).
 
 Models should **not** include logic that is purely a one-time presentational concern.
 
