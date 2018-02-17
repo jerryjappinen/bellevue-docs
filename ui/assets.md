@@ -18,7 +18,7 @@ You can use the assets under the asset folder normally in HTML, CSS and JS. Just
 
 ## Using SVGs
 
-This project template comes with tooling that optimizes compiles SVGs automatically. It's most convenient and robust to render SVG with a dedicated component so you don't need to worry about the details when using SVG assets in your views.
+This project template comes with tooling that compiles SVGs automatically. It's most convenient and robust to render SVG with a dedicated component so you don't need to worry about the details when using SVG assets in your views.
 
 **Example:** [`<vector :src="my-asset" />`](https://github.com/Eiskis/bellevue/blob/master/src/components/snippets/Vector.vue)
 
