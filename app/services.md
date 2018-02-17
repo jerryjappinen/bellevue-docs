@@ -10,9 +10,9 @@ src/
 - [See included services on GitHub](https://github.com/Eiskis/bellevue/tree/master/src/services)
 - [See demo source code](https://github.com/Eiskis/bellevue/blob/master/src/components/pages/PageDemo.vue)
 
-Services are viewless Vue objects that are shared across components. They can expose values, computed values and helpers like any other Vue object. Change detection is enabled, and you can use any data, computed values and methods of a service in your components or other parts of the application code as you would expect.
+Services are viewless Vue objects that are shared across components. They can expose values, computed values and helpers like any other Vue object. Services are used for things such as storing and providing access to shared UI state (for example, track if a popup is visible) or other things that are not directly related to any specific UI elements (for example, tracking the current time).
 
-Services are used for things such as storing and providing access to shared UI state (for example, track if a popup is visible) or other things that are not directly related to any specific UI elements (for example, tracking the current time). The reason you might use a service over [utilities](../app/utilities.md) for these things is that change detection is enabled when the shared state changes.
+The reason you might use a service over [utilities](../app/utilities.md) is that they are reactive, and so any changes in the shared state are propagated throughout your application.
 
 ## Services vs. Vuex
 
