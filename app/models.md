@@ -67,12 +67,19 @@ console.log(someProfile.fullName); // 'Bar Bar'
 
 ## Helpers
 
-You can import some helpers along with the models to reduce a little bit of boilerplate, namely having to wrap the input of a new object as `propsData`.
+You can import some helpers along with the models to reduce a little bit of boilerplate, namely having to wrap the input of a new object as `propsData`, or manually running the beforeDestory hook when destroying instances:
 
 ```js
-import { init, Profile } from '@models';
-var someProfile = init(Profile, {
+import createInstance from '@util/createInstance';
+import destroyInstances from '@util/destroyInstances';
+import { Profile } from '@models';
+
+const someProfile = createInstance(Profile, {
 	firstName: 'Foo',
 	lastName: 'Bar'
 });
+
+someProfile.lastName = 'Baz'
+
+destroyInstances(someProfile);
 ```
