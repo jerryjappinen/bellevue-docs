@@ -7,7 +7,7 @@ src/
 		└── index.js
 ```
 
-SVG assets are compiled into Vue components with [`vue-svg-loader`](https://www.npmjs.com/package/vue-svg-loader). SVGs are already a lightweight way to deliver image assets to the browser, but this pipeline will also optimize them with [SVGO](https://github.com/svg/svgo). SVGO parameters can be adjusted in [`config.svgo.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/config.svgo.js).
+SVG assets are compiled into Vue components with [`vue-svg-loader`](https://www.npmjs.com/package/vue-svg-loader). SVGs are already a lightweight way to deliver image assets to the browser, but this pipeline will also optimize them with [SVGO](https://github.com/svg/svgo). SVGO parameters can be adjusted in [`config/svgo.js`](https://github.com/Eiskis/bellevue/blob/master/src/config/tooling/svgo.js).
 
 Any SVG exported in `src/svg/index.js` will be registered as a Vue component. You can organize your files into directories freely, but when exported each asset should have a unique name.
 
