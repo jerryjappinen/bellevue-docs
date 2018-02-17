@@ -20,7 +20,7 @@ Vue mixins can be added under `src/mixins/`. Global mixins defined there will be
 
 [Official guide on Vue directives](https://vuejs.org/v2/guide/custom-directive)
 
-Vue mixins can be added under `src/directives/`. Global mixins defined there will be registered automatically and will be available in your components.
+Vue mixins can be added under `src/directives/`. Global directives defined there will be registered automatically and will be available in your components.
 
 ## Vue plugins
 
