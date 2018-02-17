@@ -11,7 +11,7 @@ External dependencies required for client builds **need to also be declared in `
 // Import external dependency directly
 // Needs to be installed via NPM
 // Should have been saved in package.json via npm install lodash --save
-import _ from 'lodash';
+import { groupBy } from 'lodash';
 
 // Import internal dependency
 import Role from '@models/Role';
