@@ -10,10 +10,9 @@ src/
 
 ## TL;DR
 
-- Use tabs, semicolons, single quotes.
+- Use tabs, single quotes, no semicolons.
 - Declare vars one by one in the lowest scope as you use them, not in a batch.
-- Avoid arrow notation; use `function` to avoid any gotchas with `this` or unclear syntax.
-- Write consistent code with `:` and `=`, avoid mixing typical assignment syntax with unclear object shorthands.
+- Avoid confusing arrow notations; use the full `() => { ... }` format to avoid unclear syntax.
 - Use `import` rather than `require`.
 - Use `export` rather than `module.exports`.
 
