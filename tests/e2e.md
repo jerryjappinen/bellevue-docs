@@ -24,4 +24,4 @@ To use the Selenium driver you must have `Java SE Development Kit` installed. Yo
 
 ### Changing Selenium to standalone driver
 
-You can lose the Java dependency by changing Selenium to a standalone driver. See [Nightwatch's documentation](http://nightwatchjs.org/gettingstarted#browser-drivers-setup) for more information.
+You can lose the Java dependency by changing Selenium to a standalone driver. This requires reconfiguring the E2E test setup slightly. See [detailed Nightwatch's documentation](http://nightwatchjs.org/gettingstarted#browser-drivers-setup) for more information.
