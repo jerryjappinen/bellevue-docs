@@ -10,7 +10,7 @@ test/                             // Nightwatch configuration
 		└── reports/
 ```
 
-End-to-end tests are written using [Nightwatch.js](http://nightwatchjs.org/). By default they run on Selenium, which requires Java, but this can be changed to a [standalone driver](http://nightwatchjs.org/gettingstarted#browser-drivers-setup).
+End-to-end tests are written using [Nightwatch.js](http://nightwatchjs.org/) and run on Selenium.
 
 Run the tests with the scripts listed in [setup instructions](../overview/setup.md). When running the tests, you will see report that looks like this:
 
@@ -18,8 +18,10 @@ Run the tests with the scripts listed in [setup instructions](../overview/setup.
 
 XML reports are also stored under `test/e2e/reports/`.
 
-### Selenium
+### Selenium and Java
 
-Selenium is also supported, as it supports more browsers, but to use the Selenium driver you must have `Java SE Development Kit` installed. You can download the latest JDK for your platform on [Oracle's download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+To use the Selenium driver you must have `Java SE Development Kit` installed. You can download the latest JDK for your platform on [Oracle's download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). After installing JDK successfully you can run the `e2e` script that is included out of the box.
 
-After installing JDK successfully, you can set `DRIVER=selenium` when running the `e2e` script, and the tests will be run on Selenium instead of standalone Chrome.
+### Changing Selenium to standalone driver
+
+You can lose the Java dependency by changing Selenium to a standalone driver. See [Nightwatch's documentation](http://nightwatchjs.org/gettingstarted#browser-drivers-setup) for more information.
