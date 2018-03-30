@@ -34,9 +34,9 @@ For a quick overview of what the full feature set of Bellevue is, check out the 
 
 All relevant parts of your source code are preconfigured in Webpack, allowing you to avoid relative paths in your files.
 
-#### Centralised config for tooling and app code
+#### Configuration
 
-[Yes](../app/config.md)
+[Centralised config for tooling and app code](../app/config.md)
 
 #### Stylesheets
 
@@ -45,7 +45,7 @@ Sass support is preconfigured for global styling (separate `.scss` files), and c
 [Read more](../app/stylesheets.md)
 
 #### Assets and SVG optimisation
-
+Centralised config for tooling and app code
 Preconfigured support for using bitmap and other assets from one place without relative paths. SVG assets are compiled and optimized, and support `currentColor` for CSS-based coloring. Support for adding local web fonts is also preconfigured.
 
 - [Using assets](../ui/assets.md)
@@ -70,7 +70,15 @@ Preconfigured settings for VS Code (common plugins, all linting tools, Babel etc
 
 #### Vue plugins
 
-Plugins, components, directives and mixins are preconfigured and registered in a centralised manner. New plugins and other extensions can be added easily.
+Support for the following comes preconfigured:
+
+- Plugins
+- Components
+- Directives
+- Filters
+- Mixins
+
+Each of these can be registered globally or imported per component. New plugins and other extensions can be added easily.
 
 [Read more](https://github.com/Eiskis/bellevue/tree/master/src/vendor/vue.js)
 
@@ -82,7 +90,7 @@ Plugins, components, directives and mixins are preconfigured and registered in a
 
 #### Persistence
 
-Persistence can be achieved via routing, or preconfigured local storage support. [Read more](../ui/persistence.md)
+Persistence can be achieved via preconfigured routing or local storage support. [Read more](../ui/persistence.md)
 
 #### Vuex
 
