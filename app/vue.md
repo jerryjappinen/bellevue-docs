@@ -22,6 +22,12 @@ Vue mixins can be added under `src/mixins/`. Global mixins defined there will be
 
 Vue mixins can be added under `src/directives/`. Global directives defined there will be registered automatically and will be available in your components.
 
+## Vue filters
+
+[Official guide on Vue filters](https://vuejs.org/v2/guide/filters)
+
+Vue filters can be added under `src/filters/`. Global filters defined there will be registered automatically and will be available in your components.
+
 ## Vue plugins
 
 [Official guide on Vue plugins](https://vuejs.org/v2/guide/plugins)
