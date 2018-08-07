@@ -36,8 +36,8 @@ Configuration is spread accross multiple files, and you can easily override some
 Anywhere in your application, you can import the configuration using the `@config` alias.
 
 ```js
-import buildConfig from '@config/build';
-console.log(buildConfig);
+import buildConfig from '@config/build'
+console.log(buildConfig)
 // { isDebug: false, offline: false }
 ```
 
