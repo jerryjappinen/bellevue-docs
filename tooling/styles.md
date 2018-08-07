@@ -9,7 +9,7 @@ This template comes preconfigured with support for both _preprocessing_ and _pos
 
 Shared functions, variables and mixins are injected into `.vue` components automatically, so you don't have to import them in every file.
 
-Testing is not included for Sass but is possible to include. This might make sense for ensuring the complex utility class generation works as intended.
+Testing Sass is not included in this template.
 
 ## PostCSS
 
