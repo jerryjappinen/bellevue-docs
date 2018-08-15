@@ -12,4 +12,4 @@ App icons should be placed under `static/`. App icons are used by various browse
 
 We have created a Sketch file that you can use to export all the different versions of your app icon and other assets to your Bellevue project.
 
-[Download here](../downloads/bellevue-assets.sketch)
+[Download here](https://github.com/Eiskis/bellevue-docs/tree/master/downloads)
