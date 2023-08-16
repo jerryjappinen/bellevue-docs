@@ -11,6 +11,8 @@ Bellevue is based on the official `vuejs-templates/webpack` template, but extend
 
 But while the official template is only a _Hello world_, Bellevue's goal is to set you up with a well-documented, [thought-out application structure](./app/overview.md) with all the patterns you need for building a complex application including routing, state management, persistence, localisation and more (see [feature comparison](./overview/comparison.md)).
 
+**NOTE:** There is no version of Bellevue for Vue 3. Use [Bonn](https://bonn.vercel.app/) instead.
+
 ## Table of contents
 
 {% include "./SUMMARY.md" %}
